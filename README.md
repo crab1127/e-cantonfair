@@ -42,35 +42,35 @@
 
 *目录规范* 
 project
-  |- components_module  生态模块，通过bower安装
-  |  |- angular
-  |  |  └─ angular.js
-  |  |- jqeury
-  |  └─ ... 
-  |
-  |- components  工程模块
-  |  |- component  组件
-  |  |  |- header
-  |  |  |  |- ico.png
-  |  |  |  |- header.css
-  |  |  |  |- header.tel
-  |  |  |  └─ header.js 
-  |  |  |- dialog
-  |  |  └─ slider
-  |  |- directive 指令 （angular）  
-  |  └─ filter 过滤器
-  |
-  |- static  非模块资源
-  |  |- less
-  |  |- css
-  |  |- js
-  |  |- images
-  |  └─ fonts
-  |
-  |- bower.json
-  |- package.json
-  |- gruntfile.js
-  └─ readme.md
+  |- components_module  生态模块，通过bower安装  
+  |  |- angular  
+  |  |  └─ angular.js  
+  |  |- jqeury  
+  |  └─ ...   
+  |  
+  |- components  工程模块  
+  |  |- component  组件  
+  |  |  |- header  
+  |  |  |  |- ico.png   
+  |  |  |  |- header.css  
+  |  |  |  |- header.tel  
+  |  |  |  └─ header.js   
+  |  |  |- dialog  
+  |  |  └─ slider  
+  |  |- directive 指令 （angular）    
+  |  └─ filter 过滤器  
+  |  
+  |- static  非模块资源  
+  |  |- less  
+  |  |- css  
+  |  |- js  
+  |  |- images  
+  |  └─ fonts  
+  |  
+  |- bower.json  
+  |- package.json  
+  |- gruntfile.js  
+  └─ readme.md  
 
 *发布后的目录* 
 publish
