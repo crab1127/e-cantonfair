@@ -2,8 +2,8 @@
 
 ## 规范
 
-* 开发规范
-  模块化开发：针对js、css，以功能或业务为单元组织代码。js方面解决独立作用域、依赖管理、api暴露、按需加载与执行、安全合并等问题，css方面解决依赖管理、组件内部样式管理等问题。是提升前端开发效率的重要基础。现在流行的模块化框架有requirejs、seajs等。
+* 开发规范     
+  模块化开发：针对js、css，以功能或业务为单元组织代码。js方面解决独立作用域、依赖管理、api暴露、按需加载与执行、安全合并等问题，css方面解决依赖管理、组件内部样式管理等问题。是提升前端开发效率的重要基础。现在流行的模块化框架有requirejs、seajs等。    
   组件化开发：在模块化基础上，以页面小部件(component)为单位将页面小部件的js、css、html代码片段放在一起进行开发、维护，组件单元是资源独立的，组件在系统内可复用。比如头部(header)、尾部(footer)、搜索框(searchbar)、导航(menu)、对话框(dialog)等，甚至一些复杂的组件比如编辑器(editor)等。通常业务会针对组件化的js部分进行必要的封装，解决一些常见的组件渲染、交互问题。
 
 * 部署规范
@@ -40,42 +40,52 @@
   - 生态模块：从 模块生态 下载的模块，属于外部依赖。
 + 非模块化资源：虽然在模块化开发体系内，应该 一切皆模块，但总有不应该成为模块的资源，比如入口页面、模块化框架、页面启动器等。
 
-*目录规范* 
-project
-  |- components_module  生态模块，通过bower安装  
-  |  |- angular  
-  |  |  └─ angular.js  
-  |  |- jqeury  
-  |  └─ ...   
-  |  
-  |- components  工程模块  
-  |  |- component  组件  
-  |  |  |- header  
-  |  |  |  |- ico.png   
-  |  |  |  |- header.css  
-  |  |  |  |- header.tel  
-  |  |  |  └─ header.js   
-  |  |  |- dialog  
-  |  |  └─ slider  
-  |  |- directive 指令 （angular）    
-  |  └─ filter 过滤器  
-  |  
-  |- static  非模块资源  
-  |  |- less  
-  |  |- css  
-  |  |- js  
-  |  |- images  
-  |  └─ fonts  
-  |  
-  |- bower.json  
-  |- package.json  
-  |- gruntfile.js  
-  └─ readme.md  
+**目录规范** 
 
-*发布后的目录* 
-publish
-  - 0.0.0 (version)
-    - project 
+      
+    project    
+      |- components_module  生态模块，通过bower安装        
+      |  |- angular    
+      |  |  └─ angular.js  
+      |  |- jqeury  
+      |  └─ ...   
+      |  
+      |- components  工程模块  
+      |  |- component  组件  
+      |  |  |- header  
+      |  |  |  |- ico.png   
+      |  |  |  |- header.css  
+      |  |  |  |- header.tel  
+      |  |  |  └─ header.js   
+      |  |  |- dialog  
+      |  |  └─ slider  
+      |  |- directive 指令 （angular）    
+      |  └─ filter 过滤器  
+      |  
+      |- static  非模块资源  
+      |  |- less  
+      |  |- css  
+      |  |- js  
+      |  |- images  
+      |  └─ fonts  
+      |  
+      |- bower.json  
+      |- package.json  
+      |- gruntfile.js  
+      └─ readme.md  
+
+
+**发布后的目录**
+
+      
+    publish
+    |- 0.0.0 (version)
+    | └─project 
+    |   |- ...
+    |- 0.1.0
+    |- ...
+
+
  
 ### 定义模块
 
