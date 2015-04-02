@@ -41,33 +41,41 @@
 + 非模块化资源：虽然在模块化开发体系内，应该 一切皆模块，但总有不应该成为模块的资源，比如入口页面、模块化框架、页面启动器等。
 
 *目录规范* 
-- components_module  生态模块（第三方）通过bower安装
-  - angular
-  - jqeury
-  ... 
-- components         工程模块
-  - component        组件
-    - header
-      - ico.png
-      - header.css
-      - header.tel
-      - header.js 
-    - dialog
-    - slider
-  - directive        指令 （angular）  
-  - filter           过滤器
-  ...
-- static             非模块资源
-  - less
-  - css
-  - js
-  - images
-  - fonts
+project
+  |- components_module  生态模块，通过bower安装
+  |  |- angular
+  |  |  └─ angular.js
+  |  |- jqeury
+  |  └─ ... 
+  |
+  |- components  工程模块
+  |  |- component  组件
+  |  |  |- header
+  |  |  |  |- ico.png
+  |  |  |  |- header.css
+  |  |  |  |- header.tel
+  |  |  |  └─ header.js 
+  |  |  |- dialog
+  |  |  └─ slider
+  |  |- directive 指令 （angular）  
+  |  └─ filter 过滤器
+  |
+  |- static  非模块资源
+  |  |- less
+  |  |- css
+  |  |- js
+  |  |- images
+  |  └─ fonts
+  |
+  |- bower.json
+  |- package.json
+  |- gruntfile.js
+  └─ readme.md
 
 *发布后的目录* 
 publish
   - 0.0.0 (version)
-    - object 
+    - project 
  
 ### 定义模块
 
@@ -79,22 +87,22 @@ publish
 
 定义一个模块
 
-    '
+      
     define('dialog', ['jquery'], function(){
       function dialog() {
         ...
       }    
       return dialog    
     })
-    '
+    
 
 ### 引用模块
-    '
+    
     require(['dialog'], function(dialog){
       ...
       // 业务逻辑
     })
-    '
+    
 
 
 ## 项目部署
