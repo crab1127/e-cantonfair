@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slide</title>
+	<style>
+		body,div,ul,li{margin:0;padding:0;}
+		ul{list-style-type:none;}
+		body{background:#000;text-align:center;font:12px/20px Arial;}
+		
+	</style>
+</head>
+<body>
+<div id="box">
+    <div class="list">
+        <ul>
+            <li><img src="http://kissygalleryteam.github.io/slide/doc/demo/img/slide-1.jpg" width="490" height="170" /></li>
+            <li><img src="http://kissygalleryteam.github.io/slide/doc/demo/img/slide-2.jpg" width="490" height="170" /></li>
+            <li><img src="http://kissygalleryteam.github.io/slide/doc/demo/img/slide-3.jpg" width="490" height="170" /></li>
+            <li><img src="http://kissygalleryteam.github.io/slide/doc/demo/img/slide-4.jpg" width="490" height="170" /></li>
+            <li><img src="http://kissygalleryteam.github.io/slide/doc/demo/img/slide-5.jpg" width="490" height="170" /></li>
+        </ul>
+    </div>
+</div>
+<script src="/components_module/requirejs/require.js"></script>
+<script>
+	require.config({
+		paths: {
+		    'jquery': '/components_module/jquery/dist/jquery'
+		},
+		shim: {
+		    jquery : {
+		      exports: '$'
+		    }
+	    },
+	    map: {
+	    	'*' : {
+	    		'css': '/components_module/require-css/css.js'
+	    	}
+	    }
+	});
+	require(['slide', 'css!slide'], function(slide){
+		new slide('box')
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<h1 id="arttemplate-">artTemplate - 模板引擎</h1>
+<p>腾讯出品的javascript模板引擎</p>
+<h2 id="-">优点</h2>
+<ul>
+<li>性能好，执行速度比同类型的的都好。 <a href="http://blog.csdn.net/wuchengzhi82/article/details/8938122">性能比较</a></li>
+<li>小， 只有5k</li>
+<li>错误调试友好</li>
+<li>模板语言类似angular</li>
+</ul>
+<h2 id="-">快速上手</h2>
+<p>html</p>
+<pre><code>// 使用一个type=&quot;text/html&quot;的script标签存放模板    
+&lt;script id=&quot;test&quot; type=&quot;text/html&quot;&gt;
+    &lt;h1&gt;{{title}}&lt;/h1&gt;
+    &lt;ul&gt;
+        {{each list as value i}}
+            &lt;li&gt;索引 {{i + 1}} ：{{value}}&lt;/li&gt;
+        {{/each}}
+    &lt;/ul&gt;
+&lt;/script&gt;
+</code></pre><p>js </p>
+<pre><code>var data = {
+    title: &#39;标签&#39;,
+    list: [&#39;文艺&#39;, &#39;博客&#39;, &#39;摄影&#39;, &#39;电影&#39;, &#39;民谣&#39;, &#39;旅行&#39;, &#39;吉他&#39;]
+};
+var html = template(&#39;test&#39;, data);
+document.getElementById(&#39;content&#39;).innerHTML = html;
+</code></pre><p><a href="/dev/components/component/artTemplate/index.html">演示</a> </p>
+<h2 id="-">模板语法</h2>
+<pre><code>{{if admin}}
+    {{include &#39;admin_content&#39;}}
+
+    {{each list}}
+        &lt;div&gt;{{$index}}. {{$value.user}}&lt;/div&gt;
+    {{/each}}
+{/if}
+</code></pre><p> 表达式</p>
+<blockquote>
+<p>{{ 与 }} 符号包裹起来的语句则为模板的逻辑表达式。</p>
+</blockquote>
+<p>输出表达式</p>
+<p>对内容编码输出：</p>
+<pre><code>{{content}}
+</code></pre><p>不编码输出：</p>
+<pre><code>{{#content}}
+</code></pre><p>编码可以防止数据中含有 HTML 字符串，避免引起 XSS 攻击。</p>
+<p>条件表达式</p>
+<pre><code>{{if admin}}
+    &lt;p&gt;admin&lt;/p&gt;
+{{else if code &gt; 0}}
+    &lt;p&gt;master&lt;/p&gt;
+{{else}}
+    &lt;p&gt;error!&lt;/p&gt;
+{{/if}}
+</code></pre><p>遍历表达式</p>
+<p>无论数组或者对象都可以用 each 进行遍历。</p>
+<pre><code>{{each list as value index}}
+    &lt;li&gt;{{index}} - {{value.user}}&lt;/li&gt;
+{{/each}}
+</code></pre><p>亦可以被简写：</p>
+<pre><code>{{each list}}
+    &lt;li&gt;{{$index}} - {{$value.user}}&lt;/li&gt;
+{{/each}}
+</code></pre><p>模板包含表达式</p>
+<p>用于嵌入子模板。</p>
+<pre><code>{{include &#39;template_name&#39;}}
+</code></pre><p>子模板默认共享当前数据，亦可以指定数据：</p>
+<pre><code>{{include &#39;template_name&#39; news_list}}
+</code></pre><p>辅助方法</p>
+<p>使用template.helper(name, callback)注册公用辅助方法：</p>
+<pre><code>template.helper(&#39;dateFormat&#39;, function (date, format) {
+    // ..
+    return value;
+});
+</code></pre><p>模板中使用的方式：</p>
+<pre><code>{{time | dateFormat:&#39;yyyy-MM-dd hh:mm:ss&#39;}}
+</code></pre><p>支持传入参数与嵌套使用：</p>
+<pre><code>{{time | say:&#39;cd&#39; | ubb | link}}   
+</code></pre><h2 id="api">api</h2>
+<p><strong>template(id, data)</strong></p>
+<p>根据 id 渲染模板。内部会根据document.getElementById(id)查找模板。</p>
+<p>如果没有 data 参数，那么将返回一渲染函数。</p>
+<p><strong>template.compile(source, options)</strong></p>
+<p>将返回一个渲染函数。演示</p>
+<p><strong>template.render(source, options)</strong></p>
+<p>将返回渲染结果。</p>
+<p><strong>template.helper(name, callback)</strong></p>
+<p>添加辅助方法。</p>
+<p>例如时间格式器：演示</p>
+<p><strong>template.config(name, value)</strong></p>
+<h2 id="-">附</h2>
+<p><a href="https://github.com/aui/artTemplate">官网</a></p>

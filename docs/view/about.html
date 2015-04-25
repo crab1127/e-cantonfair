@@ -1,0 +1,255 @@
+<div class="docs-jumbotron jumbotron">
+  <div class="container">
+    <h1>代码组织</h1>
+    <p>孙子曰: 前端者,网站之大事,死生之地,存亡之道,不可不察也。</p>
+  </div>
+</div>
+<div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="docs-sidebar">
+        <ul class="nav docs-sidenav">
+          <li class="active">
+            <a href="">规范</a>
+            <ul class="nav">
+              <li><a href="">开发规范</a></li>
+              <li><a href="">部署规范</a></li>
+              <li><a href="">代码规范</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">框架选型</a>            
+          </li>
+          <li>
+            <a href="">模块开发</a>
+            <ul class="nav">
+              <li><a href="">目录规范</a></li>
+              <li><a href="">定义模块</a></li>
+              <li><a href="">使用模块</a></li>
+            </ul>
+          </li>
+          <li><a href="">开发工具</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-9">
+      <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+        <h2>
+          <a id="user-content-规范" class="anchor" href="#%E8%A7%84%E8%8C%83" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          规范
+        </h2>
+
+        <ul class="task-list">
+          <li>
+            <p>
+              开发规范
+              <br>
+              模块化开发：针对js、css，以功能或业务为单元组织代码。js方面解决独立作用域、依赖管理、api暴露、按需加载与执行、安全合并等问题，css方面解决依赖管理、组件内部样式管理等问题。是提升前端开发效率的重要基础。现在流行的模块化框架有requirejs、seajs等。
+              <br>
+              组件化开发：在模块化基础上，以页面小部件(component)为单位将页面小部件的js、css、html代码片段放在一起进行开发、维护，组件单元是资源独立的，组件在系统内可复用。比如头部(header)、尾部(footer)、搜索框(searchbar)、导航(menu)、对话框(dialog)等，甚至一些复杂的组件比如编辑器(editor)等。通常业务会针对组件化的js部分进行必要的封装，解决一些常见的组件渲染、交互问题。
+            </p>
+          </li>
+          <li>
+            <p>
+              部署规范 <br>
+              自动化部署：请求合并，压缩，校验，加md5戳，发布到指定目录
+            </p>
+          </li>
+          <li>
+            <p>
+              代码规范 <br>
+              详情看前端代码规范及最佳实践
+            </p>
+          </li>
+        </ul>
+
+        <h2>
+          <a id="user-content-框架选型" class="anchor" href="#%E6%A1%86%E6%9E%B6%E9%80%89%E5%9E%8B" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          框架选型
+        </h2>
+
+        <p>网站前端的2种形态</p>
+
+        <ul class="task-list">
+          <li>内容型，侧重seo优化</li>
+          <li>操作型，侧重数据和逻辑</li>
+        </ul>
+
+        <p>对于不同的产品形态，用一套框架很难去适应，总有偏颇</p>
+
+        <p>
+          用户未登入的界面，偏向内容的展示效果，特效，这时使用jquery，duang～duang～duang～，就很酷很炫很酷很炫。
+        </p>
+
+        <p>
+          对于用户中心，这时肯定是要用angularjs，angularjs是采用MVVM、模块化、自动化双向数据绑定、语义化标签、依赖注入配制而成，除了有些学习难度外，构建一个CRUD（增加Create、查询Retrieve、更新Update、删除Delete）的应用更是一等一的好。
+        </p>
+
+        <h2>
+          <a id="user-content-模块开发" class="anchor" href="#%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          模块开发
+        </h2>
+
+        <blockquote>
+          <p>工程师希望能像 搭积木 一样开发和维护系统，通过组装模块得到一个完整的系统。</p>
+        </blockquote>
+
+        <p>
+          在模块化系统的结构中，模块是可组合、可分解和更换的单元，这就要求模块本身具有一定的独立性，完整的前端模块化方案需要将js、css和模板维护在一起，保证模块的独立。
+        </p>
+
+        <p>
+          静态资源分： <strong>模块资源</strong>
+          ，与 <strong>非模块资源</strong>
+          ，其中模块资源又分
+          <strong>工程模块</strong>
+          和
+          <strong>生态模块</strong>
+          两类。
+        </p>
+
+        <ul class="task-list">
+          <li>
+            模块化资源：具有独立性的模块所对应的静态资源。每个独立的模块将自己所需要的js、css、模板、图片等资源放在一起维护，使得模块具备独立性，引用模块的js即可。
+            <ul class="task-list">
+              <li>工程模块：当前工程所开发的模块。这些模块通常跟业务耦合较高。</li>
+              <li>生态模块：从 模块生态 下载的模块，属于外部依赖。</li>
+            </ul>
+          </li>
+          <li>
+            非模块化资源：虽然在模块化开发体系内，应该 一切皆模块，但总有不应该成为模块的资源，比如入口页面、模块化框架、页面启动器等。
+          </li>
+        </ul>
+
+        <p>
+          <strong>目录规范</strong>
+        </p>
+
+        <pre><code>project    
+  |- components_module  生态模块，通过bower安装        
+  |  |- angular    
+  |  |  └─ angular.js  
+  |  |- jqeury  
+  |  └─ ...   
+  |  
+  |- components  工程模块  
+  |  |- component  组件  
+  |  |  |- header  
+  |  |  |  |- ico.png   
+  |  |  |  |- header.css  
+  |  |  |  |- header.tel  
+  |  |  |  └─ header.js   
+  |  |  |- dialog  
+  |  |  └─ slider  
+  |  |- directive 指令 （angular）    
+  |  └─ filter 过滤器  
+  |  
+  |- static  非模块资源  
+  |  |- less  
+  |  |- css  
+  |  |- js  
+  |  |- images  
+  |  └─ fonts  
+  |  
+  |- bower.json  
+  |- package.json  
+  |- gruntfile.js  
+  └─ readme.md  
+</code></pre>
+
+        <p>
+          <strong>发布后的目录</strong>
+        </p>
+
+        <pre><code>publish
+|- 0.0.0 (version)
+| └─project 
+|   |- ...
+|- 0.1.0
+|- ...
+</code></pre>
+
+        <h3>
+          <a id="user-content-定义模块" class="anchor" href="#%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          定义模块
+        </h3>
+
+        <blockquote>
+          <p>
+            模块规范分 AMD规范与CMD规范
+AMD 是 requirejs 在推广中对模块定义的规范化产出
+CMD 是seajs 在推广中对模块定义的规范化产出
+          </p>
+        </blockquote>
+
+        <p>
+          这2者的区别请自行百度，在该项目中我就使用
+          <strong>requirejs</strong>
+          来做模块加载器
+        </p>
+
+        <p>定义一个模块</p>
+
+        <pre><code>define('dialog', ['jquery'], function(){
+  function dialog() {
+    ...
+  }    
+  return dialog    
+})
+</code></pre>
+
+        <h3>
+          <a id="user-content-引用模块" class="anchor" href="#%E5%BC%95%E7%94%A8%E6%A8%A1%E5%9D%97" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          引用模块
+        </h3>
+
+        <pre><code>require(['dialog'], function(dialog){
+  ...
+  // 业务逻辑
+})
+</code></pre>
+
+        <h2>
+          <a id="user-content-项目部署" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          项目部署
+        </h2>
+
+        <blockquote></blockquote>
+
+        <h2>
+          <a id="user-content-开发工具" class="anchor" href="#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7" aria-hidden="true">
+            <span class="octicon octicon-link"></span>
+          </a>
+          开发工具
+        </h2>
+
+        <blockquote>
+          <p>包括：nodejs， grunt， bower， git</p>
+        </blockquote>
+
+        <ul class="task-list">
+          <li>nodejs：js后端运行环境，也是前端工程化的基础</li>
+          <li>
+            grunt： 基于Node.js的项目构建工具，对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你正确配置好了任务，任务运行器就会自动帮你或你的小组完成大部分无聊的工作。
+          </li>
+          <li>
+            bower：Web开发的包管理器。该工具主要用来帮助用户轻松安装CSS、JavaScript、图像等相关包,并管理这些包之间的依赖，基于git
+          </li>
+          <li>git：免费、开源的分布式版本控制系统</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</div>

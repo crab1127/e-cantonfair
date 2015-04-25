@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>广电商前端架构</title>
+  <link rel="stylesheet" href="/components_module/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/demo.css">
+  <script src="http://tools.regou.me/libs/html5shiv.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+  <header class="navbar navbar-static-top docs-nav" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a ui-sref="index" class="navbar-brand">广电商前端架构</a>
+      </div>
+      <nav class="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li ui-sref-active="active" ng-click="switchs()"><a ui-sref="module">模块</a></li>
+          <li ui-sref-active="active" ng-click="switchs()"><a ui-sref="about">代码组织</a></li>
+          <li ui-sref-active="active" ng-click="switchs()"><a ui-sref="dev-module">开发一个模块</a></li>
+          <li ui-sref-active="active" ng-click="switchs()"><a ui-sref="standard">开发规范</a></li>
+          <li ui-sref-active="active" ng-click="switchs()"><a ui-sref="standard">web开发模式的演变</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div ui-view ng-class="slide"></div>
+  <script src="/components_module/requirejs/require.js" data-main="main"></script>
+</body>
+</html>

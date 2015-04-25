@@ -1,0 +1,86 @@
+{
+  "base": [
+    {
+      "id" : 0,
+      "title" : "Class",
+      "desc" : "提供 OO 实现",
+      "isFinish" : false
+    }
+  ],
+  "util": [
+    {
+      "id" : 1,
+      "title" : "cookie",
+      "desc" : "提供cookie操作方法",
+      "isFinish" : true
+    },
+    {
+      "id" : 2,
+      "title" : "Han",
+      "desc" : "模板渲染,一些ajax，ui控件的渲染",
+      "isFinish" : false
+    },
+    {
+      "id" : 3,
+      "title" : "upload",
+      "desc" : "上传，提供h5与falsh方式",
+      "isFinish" : false
+    },
+    {
+      "id" : 4,
+      "title" : "md5",
+      "desc" : "加密",
+      "isFinish" : true
+    },
+    {
+      "id" : 5,
+      "title" : "validation",
+      "desc" : "表单验证",
+      "isFinish" : false
+    },
+    {
+      "id" : 6,
+      "title" : "delayload",
+      "desc" : "延迟加载",
+      "isFinish" : false
+    },
+    {
+      "id" : 7,
+      "title" : "chart",
+      "desc" : "图表",
+      "isFinish" : false
+    },
+    {
+      "id" : 8,
+      "title" : "editer",
+      "desc" : "编辑器",
+      "isFinish" : false
+    },
+    {
+      "id" : 9,
+      "title" : "rq",
+      "desc" : "生成二维码",
+      "isFinish" : false
+    },
+    {
+      "id" : 10,
+      "title" : "rq",
+      "desc" : "浏览器升级提示",
+      "isFinish" : false
+    }
+  ],
+  "ui" : [
+    {
+      "id" : 11,
+      "title" : "dialog",
+      "desc" : "弹窗",
+      "isFinish" : false
+    },
+    {
+      "id" : 12,
+      "title" : "tab",
+      "desc" : "选项卡",
+      "isFinish" : false
+    }
+  ]
+}

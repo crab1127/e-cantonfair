@@ -1,0 +1,17 @@
+<div ng-repeat="(key, value) in menus" class="docs-module">
+  <h2>{{ key }}</h2>
+  <div class="row">
+    <div class="col-sm-3" ng-repeat="menu in value">
+      <div class="thumbnail" ng-class="{'finish': menu.isFinish}">                       
+          <div class="caption">
+            <a ui-sref="module.{{ key }}.{{ menu.title }}">
+              <h3>{{ menu.title }}</h3>
+            </a>
+            <p>
+              {{ menu.desc }} 
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+<h1 id="validation">validation</h1>
+<p>Validate 插件为表单提供了强大的验证功能，让客户端表单验证变得更简单，同时提供了大量的定制选项，满足应用程序各种需求。该插件捆绑了一套有用的验证方法，包括 URL 和电子邮件验证，同时提供了一个用来编写用户自定义方法的 API。  </p>
+<p>Validation组件使用生态组件，依赖jquery。</p>
+<h2 id="-">最佳实践</h2>
+<p>提供2种调用方式</p>
+<ul>
+<li>DOM。 验证匹配规则写在html</li>
+<li>js。  验证匹配规则写在js</li>
+</ul>
+<h3 id="dom-">DOM调用</h3>
+<p>HTML</p>
+<pre><code>&lt;form action=&quot;&quot; id=&quot;form&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;email&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;请填写正确的邮箱&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;phone&quot;&gt;电话&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;请填写手机号码&quot;&gt;
+  &lt;/div&gt;
+  ...
+  &lt;div class=&quot;form&quot;&gt;&lt;button class=&quot;btn&quot;&gt;提交&lt;/button&gt;&lt;/div&gt;
+&lt;/form&gt;      
+</code></pre><p>JS </p>
+<pre><code>require([&#39;jquery&#39;, &#39;validation&#39;], function($){
+  $(&#39;#form&#39;).validate();
+})
+</code></pre><h3 id="js-">JS调用</h3>
+<pre><code>require([&#39;jquery&#39;, &#39;validation&#39;], function($){
+  $(&#39;#form&#39;).validate({
+    rules: {
+      firstname: &quot;required&quot;,
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+      confirm_password: {
+        required: true,
+        minlength: 5,
+        equalTo: &quot;#password&quot;
+      }
+    },
+    messages: {
+      firstname: &quot;请输入姓名&quot;,
+      email: {
+        required: &quot;请输入Email地址&quot;,
+        email: &quot;请输入正确的email地址&quot;
+      },
+      password: {
+        required: &quot;请输入密码&quot;,
+        minlength: jQuery.format(&quot;密码不能小于{0}个字 符&quot;)
+      },
+      confirm_password: {
+        required: &quot;请输入确认密码&quot;,
+        minlength: &quot;确认密码不能小于5个字符&quot;,
+        equalTo: &quot;两次输入密码不一致不一致&quot;
+      }
+    }
+  });
+})
+</code></pre><h2 id="-">参数说明</h2>
+<p>校验规则   </p>
+<pre><code>(1)、required:true               必输字段
+(2)、remote:&quot;remote-valid.jsp&quot;   使用ajax方法调用remote-valid.jsp验证输入值
+(3)、email:true                  必须输入正确格式的电子邮件
+(4)、url:true                    必须输入正确格式的网址
+(5)、date:true                   必须输入正确格式的日期，日期校验ie6出错，慎用
+(6)、dateISO:true                必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性
+(7)、number:true                 必须输入合法的数字(负数，小数)
+(8)、digits:true                 必须输入整数
+(9)、creditcard:true             必须输入合法的信用卡号
+(10)、equalTo:&quot;#password&quot;        输入值必须和#password相同
+(11)、accept:                    输入拥有合法后缀名的字符串（上传文件的后缀）
+(12)、maxlength:5                输入长度最多是5的字符串(汉字算一个字符)
+(13)、minlength:10               输入长度最小是10的字符串(汉字算一个字符)
+(14)、rangelength:[5,10]         输入长度必须介于 5 和 10 之间的字符串&quot;)(汉字算一个字符)
+(15)、range:[5,10]               输入值必须介于 5 和 10 之间
+(16)、max:5                      输入值不能大于5
+(17)、min:10                     输入值不能小于10
+</code></pre><p>添加规则</p>
+<pre><code>  //添加一个手机的规则
+  $.validator.addMethod(&#39;mobile&#39;, function(value, element){
+    var length = value.length;
+    var mobile = /^1[3458]{1}\d{9}$/;
+    return this.optional(element) || (length === 11 &amp;&amp; mobile.test(value));
+  }, &#39;手机号码格式错误&#39;)
+</code></pre><h2 id="-">附</h2>
+<p><em>例子</em>
+<a href="/dev/components/component/validation/index.html">例子</a></p>
+<p><em>参考文档</em>
+<a href="http://www.tuicool.com/articles/y6fyme">jQuery Validate</a></p>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>echarts-百度数据可视化图表</title>
+</head>
+<body>
+<div id="content" style="min-width:700px;height:400px"></div>
+
+<script src="/components_module/requirejs/require.js"></script>
+<script>
+  require.config({
+    paths: {
+      'jquery': '/components_module/jquery/dist/jquery',
+      'highcharts' : '/components_module/highcharts/highcharts',
+      'highcharts-3d' : '/components_module/highcharts/highcharts-3d'
+    },
+    shim: {
+      'highcharts' : {
+        deps: ['jquery'],
+        exports: 'highcharts'
+      },
+      'highcharts-3d': {
+        deps: ['highcharts']
+      }
+
+    }
+  })
+  // 演示JSON数据
+
+  require(['jquery', 'highcharts', 'highcharts-3d'], function($){
+    $('#content').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45,
+                beta: 0
+            }
+        },
+        title: {
+            text: 'Browser market shares at a specific website, 2014'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 35,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                ['Firefox',   45.0],
+                ['IE',       26.8],
+                {
+                    name: 'Chrome',
+                    y: 12.8,
+                    sliced: true,
+                    selected: true
+                },
+                ['Safari',    8.5],
+                ['Opera',     6.2],
+                ['Others',   0.7]
+            ]
+        }]
+    });
+  })
+</script>
+</body>
+</html>

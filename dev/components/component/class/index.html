@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class</title>
+</head>
+<body>
+  <script src="/components_module/requirejs/require.js"></script>
+  <script> 
+  require.config({
+    //pat
+  })
+  require(['./class'], function(Class){
+    var human = Class.extend({
+      title: '人类',
+      type: '灵长类',
+      say: function() {
+        alert('my name human')
+      },
+      ctor: function (age) {
+        this.age = age;
+        this.testProp = 'animal'
+      }
+    });
+
+    console.log(1,new human('22'))
+  })
+  </script>
+</body>
+</html>

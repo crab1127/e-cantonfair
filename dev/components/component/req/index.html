@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>req</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="req"></div>
+<script src="/components_module/requirejs/require.js"></script>
+<script>  
+  require(['./src/index'], function(req){
+    var a = req()
+    console.log(a);
+    document.getElementById('req').innerHTML = JSON.stringify(a)
+  })
+</script>
+</body>
+</html>

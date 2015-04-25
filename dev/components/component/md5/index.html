@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>md5</title>
+</head>
+<body>
+	<script src="/components_module/requirejs/require.js"></script>
+	<script>
+	require(['md5'], function(md5){
+		var a = md5('hello');
+
+		console.log('hello:' + a);
+		console.log('crab:' + md5('crab'));
+		console.log('俞海燕:' + md5('俞海燕'));
+		console.log('俞海燕:' + md5('俞海燕'));
+	})
+	</script>
+</body>
+</html>

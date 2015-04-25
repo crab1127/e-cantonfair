@@ -1,0 +1,212 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <h1 id="validation">validation</h1>
+<p>Validate 插件为表单提供了强大的验证功能，让客户端表单验证变得更简单，同时提供了大量的定制选项，满足应用程序各种需求。该插件捆绑了一套有用的验证方法，包括 URL 和电子邮件验证，同时提供了一个用来编写用户自定义方法的 API。  </p>
+<p>Validation组件使用生态组件，依赖jquery。</p>
+<h2 id="-">最佳实践</h2>
+<p>提供2种调用方式</p>
+<ul>
+<li>DOM。 验证匹配规则写在html</li>
+<li>js。  验证匹配规则写在js</li>
+</ul>
+<h3 id="dom-">DOM调用</h3>
+<p>HTML</p>
+<pre><code>&lt;<span class="hljs-tag">form</span> action=<span class="hljs-string">""</span> id=<span class="hljs-string">"form"</span>&gt;
+  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"form-group"</span>&gt;
+    &lt;<span class="hljs-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"email"</span>&gt;email&lt;/label&gt;
+    &lt;<span class="hljs-tag">input</span> type=<span class="hljs-string">"text"</span> class=<span class="hljs-string">"form-control"</span> id=<span class="hljs-string">"email"</span> name=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"请填写正确的邮箱"</span>&gt;
+  &lt;/div&gt;
+  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"form-group"</span>&gt;
+    &lt;<span class="hljs-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"phone"</span>&gt;电话&lt;/label&gt;
+    &lt;<span class="hljs-tag">input</span> type=<span class="hljs-string">"text"</span> class=<span class="hljs-string">"form-control"</span> id=<span class="hljs-string">"phone"</span> name=<span class="hljs-string">"phone"</span> placeholder=<span class="hljs-string">"请填写手机号码"</span>&gt;
+  &lt;/div&gt;
+  ...
+  &lt;<span class="hljs-tag">div</span> class=<span class="hljs-string">"form"</span>&gt;&lt;<span class="hljs-tag">button</span> class=<span class="hljs-string">"btn"</span>&gt;提交&lt;/button&gt;&lt;/div&gt;
+&lt;/form&gt;      
+</code></pre><p>JS </p>
+<pre><code><span class="hljs-built_in">require</span>([<span class="hljs-string">'jquery'</span>, <span class="hljs-string">'validation'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span></span>{
+  $(<span class="hljs-string">'#form'</span>).validate();
+})
+</code></pre><h3 id="js-">JS调用</h3>
+<pre><code><span class="hljs-built_in">require</span>([<span class="hljs-string">'jquery'</span>, <span class="hljs-string">'validation'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span></span>{
+  $(<span class="hljs-string">'#form'</span>).validate({
+    rules: {
+      firstname: <span class="hljs-string">"required"</span>,
+      email: {
+        required: <span class="hljs-literal">true</span>,
+        email: <span class="hljs-literal">true</span>
+      },
+      password: {
+        required: <span class="hljs-literal">true</span>,
+        minlength: <span class="hljs-number">5</span>
+      },
+      confirm_password: {
+        required: <span class="hljs-literal">true</span>,
+        minlength: <span class="hljs-number">5</span>,
+        equalTo: <span class="hljs-string">"#password"</span>
+      }
+    },
+    messages: {
+      firstname: <span class="hljs-string">"请输入姓名"</span>,
+      email: {
+        required: <span class="hljs-string">"请输入Email地址"</span>,
+        email: <span class="hljs-string">"请输入正确的email地址"</span>
+      },
+      password: {
+        required: <span class="hljs-string">"请输入密码"</span>,
+        minlength: jQuery.format(<span class="hljs-string">"密码不能小于{0}个字 符"</span>)
+      },
+      confirm_password: {
+        required: <span class="hljs-string">"请输入确认密码"</span>,
+        minlength: <span class="hljs-string">"确认密码不能小于5个字符"</span>,
+        equalTo: <span class="hljs-string">"两次输入密码不一致不一致"</span>
+      }
+    }
+  });
+})
+</code></pre><h2 id="-">参数说明</h2>
+<p>校验规则   </p>
+<pre><code>(<span class="hljs-number">1</span>)、required:<span class="hljs-constant">true</span>               必输字段
+(<span class="hljs-number">2</span>)、remote:<span class="hljs-string">"remote-valid.jsp"</span>   使用ajax方法调用remote-valid.jsp验证输入值
+(<span class="hljs-number">3</span>)、email:<span class="hljs-constant">true</span>                  必须输入正确格式的电子邮件
+(<span class="hljs-number">4</span>)、url:<span class="hljs-constant">true</span>                    必须输入正确格式的网址
+(<span class="hljs-number">5</span>)、<span class="hljs-type">date</span>:<span class="hljs-constant">true</span>                   必须输入正确格式的日期，日期校验ie6出错，慎用
+(<span class="hljs-number">6</span>)、dateISO:<span class="hljs-constant">true</span>                必须输入正确格式的日期(ISO)，例如：<span class="hljs-number">2009</span>-<span class="hljs-number">06</span>-<span class="hljs-number">23</span>，<span class="hljs-number">1998</span>/<span class="hljs-number">01</span>/<span class="hljs-number">22</span> 只验证格式，不验证有效性
+(<span class="hljs-number">7</span>)、<span class="hljs-type">number</span>:<span class="hljs-constant">true</span>                 必须输入合法的数字(负数，小数)
+(<span class="hljs-number">8</span>)、digits:<span class="hljs-constant">true</span>                 必须输入整数
+(<span class="hljs-number">9</span>)、creditcard:<span class="hljs-constant">true</span>             必须输入合法的信用卡号
+(<span class="hljs-number">10</span>)、equalTo:<span class="hljs-string">"#password"</span>        输入值必须和<span class="hljs-comment">#password相同</span>
+(<span class="hljs-number">11</span>)、accept:                    输入拥有合法后缀名的字符串（上传文件的后缀）
+(<span class="hljs-number">12</span>)、maxlength:<span class="hljs-number">5</span>                输入长度最多是<span class="hljs-number">5</span>的字符串(汉字算一个字符)
+(<span class="hljs-number">13</span>)、minlength:<span class="hljs-number">10</span>               输入长度最小是<span class="hljs-number">10</span>的字符串(汉字算一个字符)
+(<span class="hljs-number">14</span>)、rangelength:[<span class="hljs-number">5</span>,<span class="hljs-number">10</span>]         输入长度必须介于 <span class="hljs-number">5</span> 和 <span class="hljs-number">10</span> 之间的字符串<span class="hljs-string">")(汉字算一个字符)
+(15)、range:[5,10]               输入值必须介于 5 和 10 之间
+(16)、max:5                      输入值不能大于5
+(17)、min:10                     输入值不能小于10</span>
+</code></pre><p>添加规则</p>
+<pre><code>  <span class="hljs-comment">//添加一个手机的规则</span>
+  $.validator.addMethod(<span class="hljs-string">'mobile'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value, element)</span></span>{
+    <span class="hljs-keyword">var</span> length = value.length;
+    <span class="hljs-keyword">var</span> mobile = <span class="hljs-regexp">/^1[3458]{1}\d{9}$/</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.optional(element) || (length === <span class="hljs-number">11</span> &amp;&amp; mobile.test(value));
+  }, <span class="hljs-string">'手机号码格式错误'</span>)
+</code></pre><h2 id="-">附</h2>
+<p><em>例子</em>
+<a href="/dev/components/component/validation/index.html">例子</a></p>
+<p><em>参考文档</em>
+<a href="http://www.tuicool.com/articles/y6fyme">jQuery Validate</a></p>
+
+  </body>
+</html>

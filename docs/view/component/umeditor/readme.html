@@ -1,0 +1,58 @@
+<h1 id="ueditor">ueditor</h1>
+<p>写一个富文本编辑器工程实在太过浩大， 就直接引用第三方编辑器。  </p>
+<p>UEditor是由百度web前端研发部开发所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码  </p>
+<p>UEditor优点</p>
+<ul>
+<li>功能全面</li>
+<li>开源免费</li>
+<li>专业稳定</li>
+</ul>
+<h2 id="-">快速上手</h2>
+<p>html</p>
+<pre><code>&lt;script type=&quot;text/plain&quot; id=&quot;myEditor&quot; style=&quot;width:1000px;height:240px;&quot;&gt;
+    &lt;p&gt;这里我可以写一些输入提示&lt;/p&gt;
+&lt;/script&gt;   
+</code></pre><p>js</p>
+<pre><code>//定义别名   
+require.config({
+paths: {
+    &#39;jquery&#39; : &#39;/components_module/jquery/jquery&#39;,
+    &#39;umeditor&#39;: &#39;/components_module/umeditor/dist/utf8-jsp/umeditor&#39;,
+    &#39;umeditor-config&#39;: &#39;/components_module/umeditor/dist/utf8-jsp/umeditor.config&#39;,
+    &#39;umeditor-lang&#39;: &#39;/components_module/umeditor/dist/utf8-jsp/lang/zh-cn/zh-cn&#39;,
+    &#39;umeditor-css&#39; : &#39;/components_module/umeditor/dist/utf8-jsp/themes/default/css/umeditor&#39;
+},
+shim: {
+    jquery:{
+      exports: &#39;$&#39;,
+    },        
+    umeditor : {
+      exports: &#39;UM&#39;,
+      deps: [&#39;jquery&#39;]
+    },
+    &#39;umeditor-lang&#39; : {
+      deps: [&#39;umeditor&#39;]
+    },
+    &#39;umeditor-config&#39; : {
+      deps: [&#39;umeditor&#39;]
+    }
+  },
+  map: {
+    &#39;*&#39; : {
+      &#39;css&#39;: &#39;/components_module/require-css/css.js&#39;
+    }
+  }
+});
+
+//实例化
+require([&#39;jquery&#39;, &#39;umeditor&#39;, &#39;umeditor-config&#39;, &#39;umeditor-lang&#39;, &#39;css!umeditor-css&#39;], function($, UM){        
+    var um = UM.getEditor(&#39;myEditor&#39;);
+})
+</code></pre><h2 id="api">api</h2>
+<blockquote>
+<p>见范例与官网     </p>
+</blockquote>
+<p><a href="http://ueditor.baidu.com/doc">api</a></p>
+<h2 id="-">附</h2>
+<p>使用范例<br><a href="/dev/components/component/umeditor/index.html">例子</a></p>
+<p>官网<br><a href="http://ueditor.baidu.com/website/index.html">http://ueditor.baidu.com/website/index.html</a></p>

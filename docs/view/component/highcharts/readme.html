@@ -1,0 +1,101 @@
+<h1 id="highcharts-">highcharts 图表库</h1>
+<p>Highcharts是一个用纯 JavaScript编写的一个图表库，能够很简单便捷的在web网站或是web应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。</p>
+<p>Highcharts 支持的图表类型有直线图、曲线图、区域图、柱状图、饼状图、散状点图、仪表图、气泡图、瀑布流图等多达20种图表，其中很多图表可以集成在同一个图形中形成综合图。</p>
+<blockquote>
+<p>依赖 jquery</p>
+</blockquote>
+<h2 id="-">优点</h2>
+<ul>
+<li>兼容性好</li>
+<li>简单易用</li>
+<li>图表类型丰富</li>
+</ul>
+<h2 id="-">快速上手</h2>
+<p>html</p>
+<pre><code>&lt;div id=&quot;content&quot; style=&quot;min-width:700px;height:400px&quot;&gt;&lt;/div&gt;
+</code></pre><p>js</p>
+<pre><code>//设置别名   
+require.config({
+    paths: {
+      &#39;jquery&#39;: &#39;/components_module/jquery/dist/jquery&#39;,
+      &#39;highcharts&#39; : &#39;/components_module/highcharts/highcharts&#39;
+    },
+    shim: {
+      &#39;highcharts&#39; : {
+        deps: [&#39;jquery&#39;],
+        exports: &#39;highcharts&#39;
+      }
+    }
+  })
+
+  // 引用
+  require([&#39;jquery&#39;, &#39;highcharts&#39;], function($){
+    $(&#39;#content&#39;).highcharts({
+      title: {
+          text: &#39;Monthly Average Temperature&#39;,
+          x: -20 //center
+      },
+      subtitle: {
+          text: &#39;Source: WorldClimate.com&#39;,
+          x: -20
+      },
+      xAxis: {
+          categories: [&#39;Jan&#39;, &#39;Feb&#39;, &#39;Mar&#39;, &#39;Apr&#39;, &#39;May&#39;, &#39;Jun&#39;,&#39;Jul&#39;, &#39;Aug&#39;, &#39;Sep&#39;, &#39;Oct&#39;, &#39;Nov&#39;, &#39;Dec&#39;]
+      },
+      yAxis: {
+          title: {
+              text: &#39;Temperature (°C)&#39;
+          },
+          plotLines: [{
+              value: 0,
+              width: 1,
+              color: &#39;#808080&#39;
+          }]
+      },
+      tooltip: {
+          valueSuffix: &#39;°C&#39;
+      },
+      legend: {
+          layout: &#39;vertical&#39;,
+          align: &#39;right&#39;,
+          verticalAlign: &#39;middle&#39;,
+          borderWidth: 0
+      },
+      series: [{
+          name: &#39;Tokyo&#39;,
+          data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      }, {
+          name: &#39;New York&#39;,
+          data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+      }, {
+          name: &#39;Berlin&#39;,
+          data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+      }, {
+          name: &#39;London&#39;,
+          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+      }]
+    })
+})  
+</code></pre><p><a href="/dev/components/component/highcharts/index.html">演示</a></p>
+<h2 id="-">参数说明</h2>
+<pre><code>lang   语言文字对象 所有Highcharts文字相关的设置  
+chart   图表 图表区、图形区和通用图表配置选项    
+colors 颜色 图表数据列颜色配置，是一个颜色数组   
+credits 版权信息    Highcharts在图表的右下方放置的版权信息及链  
+drilldown   向下钻取    向下钻取数据，深入到其中的具体数据   
+exporting   导出模块    导出功能配置，导出即将图表下载为图片或打印图表 
+labels  标签  可以放置到图表区域内任何位置的HTML标签  
+legend  图例  用不同形状、颜色、文字等标示不同数据列，通过点击标示可以显示或隐藏该数据列  
+loading 加载中 加载选项控制覆盖绘图区的加载屏的外观和文字  
+navigation  导航  导出模块按钮和菜单配置选项组  
+noData  没有数据    没有数据时显示的内容  
+pane    分块  针对仪表图和雷达图专用的配置，主要设置弧度及背景色  
+plotOptions 数据点配置  针对不同类型图表的配置。Highcharts所有图表类型请看下表 
+series  数据列 图表上一个或多个数据系列，比如图表中的一条曲线，一个柱形   
+title  标题 包括即标题和副标题，其中副标题为非必须的    
+tooltip 据点提示框 当鼠标滑过某点时，以框的形式提示改点的数据，比如该点的值，数据单位等  
+Axis    坐标轴 包括x轴和y轴。多个不同的数据列可共用同一个X轴或Y轴，当然，还可以有两个X轴或Y轴，分别显示在图表的上下或左右。
+</code></pre><p><strong>详细API</strong> 
+<a href="http://www.hcharts.cn/api/index.php">api文档</a></p>
+<h2 id="-">附</h2>
+<p><a href="http://www.hcharts.cn/">中文官网</a><br><a href="/dev/components/component/highcharts/bar.html">例子2</a></p>

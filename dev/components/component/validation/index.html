@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单验证</title>
+  <link rel="stylesheet" href="/components_module/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <form action="/docs/index.html" method="get" id="form">
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="请填写正确的邮箱">
+        </div>
+        <div class="form-group">
+          <label for="phone">电话</label>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="请填写手机号码">
+        </div>
+        <div class="form-group">
+          <label for="name">用户名</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="请填写用户名" required minlength="2" maxlength="6">
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="text" class="form-control" id="password"  name="password" placeholder="请填写密码" required>
+        </div>
+        <div class="form-group">
+          <label for="password">url</label>
+          <input type="url" class="form-control" id="url"  name="url" placeholder="请填写url">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-priamy">提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src="/components_module/requirejs/require.js"></script>
+
+  <script>
+    require.config({
+      paths: {
+          'jquery': '/components_module/jquery/dist/jquery',
+          'validation' : '/components_module/jquery-validation/dist/jquery.validate',
+          'validation-lang' : '/components_module/jquery-validation/src/localization/messages_zh',
+      },
+      shim: {
+          jquery : {
+            exports: '$'
+          },
+          'validation': {
+            deps: ['jquery']
+          },
+          'validation-lang': {
+            deps: ['jquery', 'validation']
+          }
+        }
+    });
+    require(['jquery', 'validation','validation-lang'], function($){
+      $.validator.addMethod('mobile',function(value, element){
+        var length = value.length;
+        var mobile = /^1[3458]{1}\d{9}$/;
+        return this.optional(element) || (length === 11 && mobile.test(value));
+      }, '手机号码格式错误');
+
+      $.validator.setDefaults({
+        submitHandler: function() {
+          alert("认证成功!");
+        }
+      });
+      
+      $(function(){        
+        $('#form').validate({
+          rules: {
+            email: {
+              required: true,
+              email: true
+            },
+            phone : {
+              required: true,
+              mobile: true
+            }
+          }
+        });
+      })
+    })
+</script>
+</body>
+</html>

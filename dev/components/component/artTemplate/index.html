@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>artTemplate-模板引擎</title>
+</head>
+<body>
+<div id="content"></div>
+<script id="test" type="text/html">
+  <h1>{{title}}</h1>
+  
+  {{include('list')}}
+</script>
+<script id="list" type="text/html">
+  <ul>
+    {{each list as value i}}
+      <li>索引 {{i +　1}} : {{value}}</li>
+    {{/each}}
+  </ul>
+</script>
+<script src="/components_module/requirejs/require.js"></script>
+<script>
+  require.config({
+    paths: {
+      'artTemplate' : '/components_module/artTemplate/dist/template'
+    }
+  })
+  // 演示JSON数据
+  var data = {
+    title: '标签',
+    list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+  }
+  require(['artTemplate'], function(template){
+    var html = template('test', data);
+    document.getElementById('content').innerHTML = html;
+  })
+</script>
+</body>
+</html>

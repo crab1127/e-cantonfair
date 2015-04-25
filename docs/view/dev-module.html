@@ -1,0 +1,64 @@
+<div class="docs-jumbotron jumbotron">
+  <div class="container">
+    <h1>开发一个模块</h1>
+    <p>上帝说："要有光"，就有了光 <br>经理说："要有XX模块"，就按照这个欢快的去写吧（眼里饱含着泪花）</p>
+  </div>
+</div>
+<div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="docs-sidebar">
+        <ul class="nav docs-sidenav">
+          <li class="active"><a href="">模块开发规范</a></li>
+          <li><a href="">开始开发</a></li>
+          <li><a href="">本地调试</a></li>
+          <li><a href="">单元测试</a></li>
+          <li><a href="">使用</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-9">
+      <h2>模块开发规范</h2>
+      <blockquote>
+        <p>遵循AMD规范，AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定义"。它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p>
+      </blockquote>
+      
+    <h2>开始开发</h2>
+      <h5>目录结构</h5>
+      <p>模块和目录的名称要符合 [a-z\d-.]，并以英文字母开头，首选合适的英文单词。</p>
+      <p>先来看看整个模块的结构，这样会有一个直观的感受。</p>
+      <pre><code>
+  modulename
+  |- tests      单元测试
+  |  |- ...
+  |
+  |- src        存放 js，css文件
+  |  |- xxx.js
+  |  └─ xxx.js
+  |
+  |- examples   例子
+  |  └─ index.html
+  |
+  └─ README.md  模块说明
+    </code></pre>
+    <p>编写模块代码</p>
+    <h2>本地调试</h2>
+    <p>
+      在examples目录编写使用例子 <br>
+      在READNE.md 编写模块说明
+    </p>
+    <h2>单元测试</h2>
+    <p>使用karma配合requirejs进行单元测试</p>
+    <a href="https://www.zybuluo.com/bornkiller/note/24759">参考</a>
+    <h2>使用</h2>
+    <p>设置别名</p> 
+    调用方式
+    <pre><code>
+      require('modulename', function(name){
+        // name.... 
+      })
+    </code></pre>
+    </div>
+
+  </div>
+</div>

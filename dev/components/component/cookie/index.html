@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie</title>
+</head>
+<body>
+<h1>
+	cookie使用方式
+</h1>
+	<form action="">
+		<input type="text" name="cookieName" id="">
+		<input type="text" name="cookieValue" id="">
+		<input type="button" value="添加cookie" name="add">
+		<input type="button" value="获取cookie" name="get">
+		<input type="button" value="删除cookie" name="remove">
+	</form>
+<h3>
+	get cookie.get(name)
+</h3>
+<p>获取cookie值</p>
+<h3>
+	set cookie.set(name, value, options)
+</h3>
+<p>设置cookie值</p>
+<h3>
+	remove cookie.remove(name, options)
+</h3>
+<p>删除cookie值</p>
+
+<script src="/components_module/requirejs/require.js"></script>
+<script>
+	require.config({
+		paths: {
+		    'jquery': '/components_module/jquery/dist/jquery'
+		},
+		shim: {
+		    jquery : {
+		      exports: '$'
+		    }
+	    },
+	    map: {
+	    	'*' : {
+	    		'css': '/components_module/require-css/css.js'
+	    	}
+	    }
+	});
+	require(['jquery', 'cookie',], function($, cookie){
+
+		$('input[name=add]').on('click', function(){
+			cookie.set($('input[name=cookieName]').val(), $('input[name=cookieValue]').val());
+
+			console.log('设置成功:'+document.cookie);
+		})
+
+		$('input[name=get]').on('click', function(){
+			var valuer = cookie.get($('input[name=cookieName]').val())
+			valuer && $('input[name=cookieValue]').val(valuer)
+		})
+
+		$('input[name=remove]').on('click', function(){
+			var valuer = cookie.remove($('input[name=cookieName]').val())
+			console.log('设置成功:'+document.cookie);
+		})
+	})
+</script>
+</body>
+</html>
