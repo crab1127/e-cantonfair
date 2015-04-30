@@ -12,18 +12,82 @@
   })
   require(['./class'], function(Class){
     var human = Class.extend({
+      statics: {
+        a: '全群',
+        b: '家',
+        cMethod: function ()  {
+          this.aa = 'asdfasf';
+          return this;
+        },
+        dMethod: function () {
+          return 3;
+        }
+      },
       title: '人类',
       type: '灵长类',
       say: function() {
-        alert('my name human')
+        return this.aa;
       },
       ctor: function (age) {
         this.age = age;
         this.testProp = 'animal'
       }
     });
+    var human1 = Class.extend({
+      statics: {
+        a: '全群1',
+        b: '家1',
+        cMethod: function ()  {
+          return this.a;
+        },
+        dMethod: function () {
+          return 3;
+        }
+      },
+      title: '人类1',
+      type: '灵长类1',
+      say: function() {
+        return 'my name human';
+      },
+      ctor: function (age) {
+        this.age = age;
+        this.testProp = 'animal1'
+      }
+    });
+    var man = human.extend({
+      statics: {
+        a: '城市'      
+      },
+      ctor: function (age, name) {
+        this._super(age);
+        this.name = name
+      },
+      say: function () {
+        return 'dddddd'
+      }
+    })
+    var bigman = man.extend({
+      ctor: function() {
+        console.log(typeof this._super === 'function')
+      },
+      getSuper: function () {
+        return this._super;
+      }
+    })
+    var a = new human('22');
+    var b = new man('25','crab');
 
-    console.log(1,new human('22'))
+    //
+    //解开了；
+    console.log(a.title)
+    console.log(1,a.say())
+    console.log(human.title);
+    console.log(2,human.cMethod());
+    console.log(man.a);
+    console.log(b instanceof human);
+    console.log(b instanceof human);
+    console.log(b._super instanceof man);
+    console.log(a);
   })
   </script>
 </body>

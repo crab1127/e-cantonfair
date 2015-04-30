@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
   //配置工程路径
   var appConfig = {
-    app: 'dev_assets',
+    app: 'dev',
     dist: 'dist',
     version: '0.0.0'
   };
@@ -17,6 +17,27 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     cfec : appConfig,
+    pkg: grunt.file.readJSON('package.json'),
+    banner: '/*!\n' +
+            ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            ' */\n',
+
+    less: {
+      compileCore: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: '<%= pkg.name %>.css.map',
+          sourceMapFilename: '<%= cfec.app %>/static/css/<%= pkg.name %>.css.map'
+        },
+        files: {
+          '<%= cfec.app %>/static/css/<%= pkg.name %>.css': '<%= cfec.app %>/static/less/bootstrap.less'
+        }
+      }
+    },
 
     //grunt/grunt-contrib-connect 启动一个静态web服务器
     //git: https://github.com/gruntjs/grunt-contrib-connect
@@ -94,7 +115,42 @@ module.exports = function (grunt) {
       }
     },
 
+    markdown : {
+      all: {
+        files: [{
+          expand: true,
+          src: 'dev/components/component/*/*.md',
+          ext: '.html'
+        }],
+        options: {
+          preCompile: function(src, context) {},
+          postCompile: function(src, context) {},
+          templateContext: {},
+          contextBinder: true,
+          contextBinderMark: '@@@',
+          markdownOptions: {
+            gfm: true,
+            highlight: 'manual',
+            codeLines: {
+              before: '<span>',
+              after: '</span>'
+            }
+          }
+        }
+      }
+    },
 
+    md2html: {
+      multiple_files: {
+        files: [{
+          expand: true,
+          cwd: 'dev/components/component',
+          src: '*/*.md',
+          dest: 'docs/view/component',
+          ext: '.html'
+        }]
+      }
+    }
 
 
   });

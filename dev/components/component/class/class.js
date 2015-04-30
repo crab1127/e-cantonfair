@@ -1,5 +1,6 @@
 /*
  * 实现oo
+ * 
  */
 
 define(function(){
@@ -14,34 +15,34 @@ define(function(){
     //吧要扩张的属性复制到prototype上
     for (var name in prop) {
       //下面代码是让ctor里可以直接访问使用this._super访问父类构造函数，除了ctor的其他方法，this._super都是访问父类的实例
-      prototype[name] = (name == 'ctor' && typeof prop[name] == 'function' &&
+      prototype[name] = (name == 'init' && typeof prop[name] == 'function' &&
         typeof _super[name] == 'function') ?
         (function (name, fn) {
           return function () {
             var tmp = this._super;
 
             this._super = _super[name];
-            var ret = fn.apply(this, anguments);
+            var ret = fn.apply(this, arguments);
             this._super = tmp;
             return ret;
           }
         })(name, prop[name]) :
         prop[name];
     }
-    console.log(prototype);
+    //console.log(prototype);
 
     //假的构造函数
     function Cfec() {
-      this.ctor.apply(this, arguments);
+      this.init.apply(this, arguments);
     }
 
     //基础父类的静态属性
     for (var key in this) {
       if (this.hasOwnProperty(key) && key != 'extend') {
-        Cfec[Key] = this[key]
+        Cfec[key] = this[key]
       };
     }
-    console.log(this);
+//    console.log(this);
 
     //之类的原型指向父类的实例
     Cfec.prototype = prototype;
@@ -53,7 +54,7 @@ define(function(){
       for (var name in prop.statics) {
         if (prop.statics.hasOwnProperty(name)) {
           Cfec[name] = prop.statics[name];
-          if (name == 'ctor') {
+          if (name == 'init') {
             Cfec[name]()
           }
         }

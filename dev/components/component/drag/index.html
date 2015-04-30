@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>drag</title>
+  <script src="/components_module/requirejs/require.js"></script>
+  <script>
+    require.config({
+      paths: {
+        'jquery': '/components_module/jquery/dist/jquery',
+        'class': '/dev/components/component/class/class',
+        'base': '/dev/components/component/base/base',
+      },
+      shim: {
+        jquery : {
+          exports: '$'
+        }
+      }
+    });
+    require(['jquery', './drag'], function($, drag){
+      var a = new drag({
+        input : $('#j_input')
+      });
+      console.log(a);
+    })
+  </script>
+</head>
+<body>
+  <input type="text" name="number" id="j_input">
+
+</body>
+</html>
