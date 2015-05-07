@@ -1,13 +1,23 @@
-define(['app'], function(app){
-	app.controller('IndexCtrl', ['$scope','$injector', function($scope, $injector){
-        require(['./components/controller/index/index.js'], function(login){
-    		$injector.invoke(login, this, {'$scope': $scope});
-    	})
-    }]);
-    app.controller('loginCtrl', ['$scope','$injector', function($scope, $injector){
-    	require(['./components/controller/login/login.js'], function(login){
-    		$injector.invoke(login, this, {'$scope': $scope});
-    	})
-        
-    }]);
-});
+// define(['app'], function(app){
+//   app
+//     .controller('MainCtrl', ['$scope', 'menus', function($scope, menus){
+//       //console.log(menus);
+//       $scope.menus = menus;
+//     }])
+//     .controller('AccountCtrl', ['$scope', function($scope){
+
+//     }])
+
+
+
+// });
+
+define(['./main'
+        , './set/index'
+        , './login/login'
+        //,'./uploader'
+       ], function(angular) {
+
+  //return angular.module('webapp.Ctrl', [])
+
+})

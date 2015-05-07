@@ -25,7 +25,7 @@ define(['app'], function(app){
         "id" : 3,
         "title" : "upload",
         "desc" : "上传，提供h5与falsh方式",
-        "isFinish" : false
+        "isFinish" : true
       },
       {
         "id" : 4,
