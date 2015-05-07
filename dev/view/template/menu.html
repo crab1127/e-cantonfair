@@ -1,0 +1,12 @@
+<nav class="docs-sidebar">
+  <ul class="nav docs-sidenav">
+    <li ng-repeat="menu in menus" ui-sref-active="active">
+      <a ui-sref="{{menu.path}}">{{ menu.title }}</a>
+      <ul class="nav">
+        <li ng-repeat="nav in menu.items" ui-sref-active="active">
+          <a ui-sref="{{menu.path}}.{{ nav.path }}">{{ nav.title }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
