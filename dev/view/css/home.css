@@ -1,0 +1,700 @@
+/*body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}*/
+h2, .h2{
+  font-size: 20px;
+  margin-top: 0;
+}
+.docs-nav{
+  background: #e04d2c;
+  border-bottom: 0;
+
+}
+.docs-nav a{
+    color:#fff;
+}
+.docs-nav li:hover a{
+    background: #C24023;
+}
+.docs-nav li.active a{
+  background: #fff;
+  color:#e04d2c;
+}
+.docs-jumbotron{
+  background: #6f5499;
+  color:#cdbfe3
+}
+.docs-jumbotron h1{
+  color:#fff;
+  font-size: 40px;
+}
+
+.docs-module{
+
+}
+.docs-module .thumbnail{
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+.docs-module .thumbnail a:hover{
+  text-decoration: none;
+}
+.docs-module .thumbnail h3{
+  font-size: 16px;
+  margin: 5px 0;
+}
+.docs-module .thumbnail p{
+  font-size: 14px;
+}
+.docs-module .thumbnail.finish:after{
+  content: '完成';
+  position: absolute;
+  display: block;
+  font-size: 10px;
+  width: 80px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  top:12px;
+  right: -20px; 
+  background-color:#d00;
+  color:#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+    .docs-sidebar {
+        padding-left:20px
+    }
+}
+
+.docs-sidenav {
+    padding-top: 10px;
+    background: #f8f8f8;
+}
+
+.docs-sidebar .nav>li>a {
+    display: block;
+    padding: 4px 20px;
+    font-weight: 500;
+    color: #767676
+}
+
+.docs-sidebar .nav>li>a:focus,.docs-sidebar .nav>li>a:hover {
+    padding-left: 19px;
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-right: 1px solid #563d7c
+}
+
+.docs-sidebar .nav>.active:focus>a,.docs-sidebar .nav>.active:hover>a,.docs-sidebar .nav>.active>a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #563d7c;
+    background-color: transparent;
+    border-right: 2px solid #563d7c
+}
+
+.docs-sidebar .nav .nav {
+    padding-bottom: 10px
+}
+
+.docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.docs-sidebar .nav .nav>li>a:focus,.docs-sidebar .nav .nav>li>a:hover {
+    padding-left: 29px
+}
+
+.docs-sidebar .nav .nav>.active:focus>a,.bs-docs-sidebar .nav .nav>.active:hover>a,.bs-docs-sidebar .nav .nav>.active>a {
+    padding-left: 28px;
+    font-weight: 500
+}
+
+
+
+html{
+    overflow-x: hidden;
+}
+.switchs.ng-enter,
+.switchs.ng-leave,
+.slide-right.ng-enter,
+.slide-right.ng-leave {
+    position: absolute;
+    top: 50px; right: 0; bottom: 0; left: 0;
+    background: inherit;
+    -ms-transition: .55s ease-in-out;
+    -webkit-transition: .55s ease-in-out;
+    transition:  .55s ease-in-out;
+}
+
+
+.switchs.ng-enter {
+    z-index: 101;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.switchs.ng-enter.ng-enter-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.switchs.ng-leave {
+    z-index: 100;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.switchs.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slide-right.ng-enter {
+    z-index: 100;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slide-right.ng-enter.ng-enter-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide-right.ng-leave {
+    z-index: 101;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide-right.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+@-webkit-keyframes ngdialog-fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ngdialog-fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes ngdialog-fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ngdialog-fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.ngdialog,
+.ngdialog *,
+.ngdialog *:before,
+.ngdialog *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ngdialog {
+  position: fixed;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.ngdialog-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: ngdialog-fadein 0.5s;
+  animation: ngdialog-fadein 0.5s;
+}
+
+.ngdialog.ngdialog-closing .ngdialog-overlay {
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: ngdialog-fadeout 0.5s;
+  animation: ngdialog-fadeout 0.5s;
+}
+
+.ngdialog-content {
+  background: white;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: ngdialog-fadein 0.5s;
+  animation: ngdialog-fadein 0.5s;
+}
+
+.ngdialog.ngdialog-closing .ngdialog-content {
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: ngdialog-fadeout 0.5s;
+  animation: ngdialog-fadeout 0.5s;
+}
+
+.ngdialog-close:before {
+  font-family: 'Helvetica', Arial, sans-serif;
+  content: '\00D7';
+  cursor: pointer;
+}
+
+body.ngdialog-open {
+  overflow: hidden;
+}
+
+@-webkit-keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes ngdialog-flyin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes ngdialog-flyout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+}
+
+.ngdialog.ngdialog-theme-default {
+  padding-bottom: 160px;
+  padding-top: 160px;
+}
+
+.ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
+  -webkit-animation: ngdialog-flyout .5s;
+  animation: ngdialog-flyout .5s;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+  -webkit-animation: ngdialog-flyin .5s;
+  animation: ngdialog-flyin .5s;
+  background: #f0f0f0;
+  border-radius: 5px;
+  color: #444;
+  font-family: 'Helvetica',sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1em;
+  position: relative;
+  width: 450px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close {
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+  background: transparent;
+  border-radius: 3px;
+  color: #bbb;
+  content: '\00D7';
+  font-size: 26px;
+  font-weight: 400;
+  height: 30px;
+  line-height: 26px;
+  position: absolute;
+  right: 3px;
+  text-align: center;
+  top: 3px;
+  width: 30px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:hover:before,
+.ngdialog.ngdialog-theme-default .ngdialog-close:active:before {
+  color: #777;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-message {
+  margin-bottom: .5em;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input {
+  margin-bottom: 1em;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"],
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"] {
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0 0 .25em;
+  min-height: 2.5em;
+  padding: .25em .67em;
+  width: 100%;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"]:focus,
+.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"]:focus {
+  -webkit-box-shadow: inset 0 0 0 2px #8dbdf1;
+  box-shadow: inset 0 0 0 2px #8dbdf1;
+  outline: none;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons {
+  *zoom: 1;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button {
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+  font-family: inherit;
+  font-size: .8em;
+  letter-spacing: .1em;
+  line-height: 1em;
+  margin: 0 0 0 .5em;
+  padding: .75em 2em;
+  text-transform: uppercase;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+  -webkit-animation: ngdialog-pulse 1.1s infinite;
+  animation: ngdialog-pulse 1.1s infinite;
+  outline: none;
+}
+
+@media (max-width: 568px) {
+  .ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-primary {
+  background: #3288e6;
+  color: #fff;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-secondary {
+  background: #e0e0e0;
+  color: #777;
+}
+
+
+@-webkit-keyframes ngdialog-flipin-horizontal {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes ngdialog-flipin-horizontal {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes ngdialog-flipout-horizontal {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes ngdialog-flipout-horizontal {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+}
+
+.ngdialog.ngdialog-theme-flat {
+  font-size: 1.5em;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  -webkit-perspective: 1300px;
+  -ms-perspective: 1300px;
+  perspective: 1300px;
+  -webkit-perspective-origin: 50% 150px;
+  -ms-perspective-origin: 50% 150px;
+  perspective-origin: 50% 150px;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-overlay {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.ngdialog.ngdialog-theme-flat.ngdialog-closing .ngdialog-content {
+  -webkit-animation: ngdialog-flipout-horizontal .5s;
+  animation: ngdialog-flipout-horizontal .5s;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-content {
+  -webkit-animation: ngdialog-flipin-horizontal .5s;
+  animation: ngdialog-flipin-horizontal .5s;
+  background: #fff;
+  color: #444;
+  border: 5px solid #27ae60;
+  font-family: "Helvetica Neue",sans-serif;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 2em 2em 3em;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 600px;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-close:before {
+  background: #27ae60;
+  color: #fff;
+  display: block;
+  font-family: "Helvetica Neue",sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  height: 1.25em;
+  line-height: 1px;
+  overflow: hidden;
+  padding-top: .5em;
+  right: 0;
+  text-align: center;
+  text-indent: 1px;
+  top: 0;
+  width: 1.25em;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-message {
+  margin-bottom: .5em;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-input {
+  margin-bottom: .5em;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-input textarea,
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="text"],
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="password"],
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="email"],
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="url"] {
+  background: #f0f0f0;
+  border: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0 0 .25em;
+  min-height: 2.5em;
+  padding: .25em .67em;
+  width: 100%;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-input textarea:focus,
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="text"]:focus,
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="password"]:focus,
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="email"]:focus,
+.ngdialog.ngdialog-theme-flat .ngdialog-input input[type="url"]:focus {
+  -webkit-box-shadow: inset 0 0 0 2px #666;
+  box-shadow: inset 0 0 0 2px #666;
+  outline: none;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-buttons {
+  margin-bottom: -3em;
+  margin-left: -2em;
+  margin-right: -2em;
+  padding-top: 1em;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-buttons:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button {
+  border: 0;
+  float: right;
+  font-family: inherit;
+  font-size: 1em;
+  letter-spacing: .1em;
+  line-height: 1em;
+  margin: 0;
+  padding: .5em 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button:focus {
+  outline: none;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-primary {
+  background: #27ae60;
+  color: #fff;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-primary:focus {
+  -webkit-box-shadow: inset 0 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 3px rgba(0,0,0,0.2);
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-secondary {
+  background: #fff;
+  color: #ccc;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-secondary:focus {
+  background: #eee;
+  -webkit-box-shadow: inset 0 3px #aaa;
+  box-shadow: inset 0 3px #aaa;
+  color: #777;
+}
+
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-secondary:hover,
+.ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-secondary:active {
+  color: #777;
+}

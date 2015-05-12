@@ -44,7 +44,7 @@ require([
 
   //在Angular运行之前获取到用户的permission的映射关系
   var path = 'http://127.0.0.1:3000/api';
-  $.get(path + '/getUserInfo', function(data){    
+  $.get(path + '/getUserInfo', {token: localStorage.token}, function(data){    
     //把用户数据缓存在本地
     localStorage.userInfo = JSON.stringify(data);
     angular.bootstrap(document, ['webapp']);

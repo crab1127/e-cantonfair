@@ -10,18 +10,56 @@
       </tr>
       <tr>
         <td>邮箱：</td>
-        <td>{{userInfo.email}}</td>
-        <td><a href="#/set/modifyemail" class="btn">changes</a></td>
+        <td>{{userInfo.name}}</td>
+        <td><a href="javascript:;" class="btn" ng-click="go('/set/modifyemail')">changes</a></td>
       </tr>
       <tr>
         <td>手机：</td>
-        <td>{{userInfo.mobile}}</td>
-        <td><a href="#/set/modifymobile" class="btn">changes</a></td>
+        <td>{{userInfo.Type}}</td>
+        <td><a href="javascript:;" class="btn" ng-click="go('/set/modifymobile')">changes</a></td>
       </tr>
       <tr>
         <td>密码：</td>
         <td>*********</td>
-        <td><a href="#/set/modifypassword" class="btn">changes</a></td>
+        <td><a href="javascript:;" class="btn" ng-click="go('/set/modifypassword')">changes</a></td>
       </tr>
     </table>
 </div>
+<script type="text/ng-template" id="viailate">
+  
+      <div class="ngdialog-message">
+        <h2>验证安全问题</h2>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">安全问题：</label>
+            <div class="col-sm-9">
+              <select name="" id="" class="form-control">
+                <option value="">用户之前设置的问题</option>
+                <option value="1">你的生日是哪天</option>
+                <option value="2">你的家乡在哪里</option>
+                <option value="3">你最喜欢的动物</option>
+                <option value="4">你最爱的人</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">答案：</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <a href="">忘记答案点这里</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="button" class="btn btn-default" ng-click="submit()">确认</button>
+              <button type="button" class="btn btn-default" ng-click="closeThisDialog()">取消</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+</script>

@@ -10,8 +10,29 @@ define(['../module'], function(ng) {
       
     }])
     //账号设置
-    .controller('AccountCtrl', ['$scope', function($scope){
-
+    .controller('AccountCtrl', ['$scope', '$location', 'ngDialog', function($scope, $location, ngDialog){
+      $scope.go = function (goal) {
+        $scope.goal = goal;
+        //
+        ngDialog.open({
+          template: 'viailate',
+          controller: 'DialogCtrl',
+          className: 'ngdialog-theme-default ngdialog-theme-custom',
+          scope: $scope //将作用域传给弹窗
+        });
+        //
+        
+        
+        //$location.path(goal)
+      }
+    }])
+    .controller('DialogCtrl',['$scope', 'ngDialog', '$location', function($scope, ngDialog, $location){
+      
+      $scope.submit = function() {        
+        $location.path($scope.goal);
+        //ngDialog.closeThisDialog();
+        ngDialog.close();
+      }
     }])
     //个人资料
     .controller('UserCtrl', ['$scope', function($scope){

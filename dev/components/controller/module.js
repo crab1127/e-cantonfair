@@ -1,4 +1,4 @@
-define(['angular'], function(ng){
+define(['angular', '../service/dialog'], function(ng){
   'use strict';
-  return ng.module('webapp.Ctrl',[]);
+  return ng.module('webapp.Ctrl',['ngDialog']);
 })

@@ -1,0 +1,21 @@
+input.short{ width: 110px;}
+
+.main-container{
+    width: 100%;
+}
+.cnt-title{height: 35px; border: none; border-bottom: 2px solid #f2f2f2; padding-left: 25px;}
+.cnt-title h3{ margin: 0; line-height: 35px;}
+
+.cnt-main{margin: 0px;}
+
+.notice{ font-size: 13px; color:#a0a0a0; text-indent: -110px; margin-left: 120px;}
+.field{ margin: 15px 0; vertical-align: top}
+.field *{ vertical-align: top;}
+.field span{ width: 210px; text-align: right; display: inline-block; margin-right: 10px; }
+
+
+.scr-img{ display: inline-block; right: 0px; width: 200px;}
+.scr-img p{ margin: 3px 0; font-size: 12px;}
+.scr-img a{ font-size: 12px; margin-left: 5px; }
+
+.account-tab td{height: 120px; border: none; border-bottom: 1px solid #d0d0d0; text-align: left;}
