@@ -1,7 +1,7 @@
 define(['app', './menus'], function(app){ 
 
-  app.config(function($stateProvider, $urlRouterProvider, menus) {
-
+  app.config(function($stateProvider, $urlRouterProvider, $httpProvider, menus) {
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
     $urlRouterProvider.otherwise('/index');
 
     $stateProvider
@@ -16,7 +16,7 @@ define(['app', './menus'], function(app){
         templateUrl: './components/controller/login/login.html',
         controller: 'loginCtrl'
       })
-      //设置页
+      //账号设置
       .state('set', {
         url: '/set',
         views: {
@@ -27,8 +27,24 @@ define(['app', './menus'], function(app){
             templateUrl: './view/template/menu.html'
           },
           'main@set': {
-            templateUrl : './components/controller/set/index.html',
-            controller: 'SetCtrl'
+            templateUrl : './components/controller/set/account.html',
+            controller: 'AccountCtrl'
+          }
+        }
+      })
+      //资料设置
+      .state('sets', {
+        url: '/sets',
+        views: {
+          '': {
+            templateUrl: './view/template/layout.html'
+          },
+          'side@sets' : {
+            templateUrl: './view/template/menu.html'
+          },
+          'main@sets': {
+            templateUrl : './components/controller/set/user.html',
+            controller: 'UserCtrl'
           }
         }
       })
@@ -39,10 +55,10 @@ define(['app', './menus'], function(app){
           '': {
             templateUrl: './view/template/layout.html'
           },
-          'side@set' : {
+          'side@applySeller' : {
             templateUrl: './view/template/menu.html'
           },
-          'main@set': {
+          'main@applySeller': {
             templateUrl : './components/controller/applySeller/index.html'
           }
         }
@@ -54,10 +70,10 @@ define(['app', './menus'], function(app){
           '': {
             templateUrl: './view/template/layout.html'
           },
-          'side@set' : {
+          'side@goods' : {
             templateUrl: './view/template/menu.html'
           },
-          'main@set': {
+          'main@goods': {
             templateUrl : './components/controller/goods/index.html'
           }
         }
@@ -82,6 +98,31 @@ define(['app', './menus'], function(app){
             url: '/' + nav.path,
             views: {              
               'main@set': {
+                templateUrl : './components/controller/'+ nav.template,
+                controller: nav.controller
+              }
+            }
+          })
+        })
+      }
+      //设置子分类
+      if ('sets' === menu.path) {
+        angular.forEach(menu.items, function(nav){
+          $stateProvider.state('sets.' + nav.path, {
+            url: '/' + nav.path,
+            views: {              
+              'main@sets': {
+                templateUrl : './components/controller/'+ nav.template,
+                controller: nav.controller
+              }
+            }
+          })
+        })
+        angular.forEach(menu.hideItems, function(nav){
+          $stateProvider.state('sets.' + nav.path, {
+            url: '/' + nav.path,
+            views: {              
+              'main@sets': {
                 templateUrl : './components/controller/'+ nav.template,
                 controller: nav.controller
               }

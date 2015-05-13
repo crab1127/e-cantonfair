@@ -14,11 +14,10 @@ define(['app'], function(app){
     if ('success' !== userInfo.status) {
       user.isLogin = false;
     } else {
-      user.isLogin = true;
+
+      user = userInfo.data
       user.name = userInfo.data.username;
-      user.id = userInfo.data.id;
-      user.password = userInfo.data.password;
-      user.Type = userInfo.data.userType;
+      user.isLogin = true;
     }
     return user
   })

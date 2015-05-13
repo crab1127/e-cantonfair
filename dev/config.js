@@ -5,7 +5,8 @@ require.config({
   paths: {
     'jquery': '/components_module/jquery/dist/jquery',
     'angular': '/components_module/angular/angular',
-    'ui-route' : '/components_module/angular-ui-router/release/angular-ui-router',
+    'ui-route' : '/components_module/angular-ui-router/release/angular-ui-router',    
+    'ui-bootstrap' : '/components_module/angular-bootstrap/ui-bootstrap-tpls.min',
     'animate' : '/components_module/angular-animate/angular-animate',
     'app' : './app',
     'route' : './route'
@@ -20,6 +21,9 @@ require.config({
     'ui-route' : {
       deps: ['angular'],
       exports: 'ui-route'
+    },
+    'ui-bootstrap' : {
+      deps: ['angular']
     },
     'animate':{
       deps: ['angular'],
@@ -36,6 +40,7 @@ require([
   'jquery'
   ,'angular'
   ,'ui-route'
+  ,'ui-bootstrap'
   ,'animate'
   ,'route'
   ,'./components/controller/controller'
