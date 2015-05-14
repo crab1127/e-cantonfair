@@ -1,0 +1,47 @@
+<h1>安全问题设置</h1>
+
+<div class="alert">
+  为了保证你的账户的安全, 请你设置下面的安全问题,作为以后的操作要求
+</div> 
+<h5>功能提示:</h5>
+<p>由用户选定的3个问题及对应答案组成，专门用于修改及找回密码, 修改email, 修改手机号和其它设置。主要包含用户的个人私有信息，包括：你的生日、你的家乡、你最爱的人等问题。（注：广电商不会泄露用户的隐私。</p>
+
+ <form name="aq" novalidate ng-submit="submit()">
+  <div class="form-group">
+    <label for="name">用户名</label>
+    <select name="" id="">
+      <option value="">你的偶像是谁</option>
+    </select>
+    <select name="" id="">
+      <option value=""></option>
+    </select>
+    <div class="error" ng-show="login.name.$dirty && login.name.$invalid">
+      <small class="error" ng-show="login.name.$error.required">
+        姓名为必填项
+      </small>
+      <small class="error" ng-show="login.name.$error.minlength || login.name.$error.maxlength">
+        长度为3~20字符
+      </small>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password"
+      placeholder="输入密码"
+      name="password"
+      ng-model="user.password"
+      ng-minlength=6
+      ng-maxlength=20 required>
+    <div class="error" ng-show="login.password.$dirty && login.password.$invalid">
+        <small class="error" ng-show="login.password.$error.required">
+        密码为必填项
+      </small>
+      <small class="error" ng-show="login.password.$error.minlength || login.password.$error.maxlength">
+        长度为6~20字符
+      </small>
+    </div>
+  </div>
+  <button type="submit" ng-disabled="login.$invalid" class="btn btn-default">提交</button>
+
+  <span ng-bind="message"></span>
+</form>

@@ -15,6 +15,7 @@
 define(['./main'
         , './set/index'
         , './login/login'
+        , './address/index'
         //,'./uploader'
        ], function(angular) {
 

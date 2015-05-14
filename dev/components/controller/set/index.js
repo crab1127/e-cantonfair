@@ -14,14 +14,7 @@ define(['../module'], function(ng) {
     .controller('AccountCtrl', ['$scope', '$location', '$modal', function($scope, $location, $modal){
       $scope.go = function (goal) {
         $scope.goal = goal;
-        //
-        // ngDialog.open({
-        //   template: 'viailate',
-        //   controller: 'DialogCtrl',
-        //   className: 'ngdialog-theme-default ngdialog-theme-custom',
-        //   scope: $scope //将作用域传给弹窗
-        // });
-        //
+        
         var modalViailat = $modal.open({
           animation: true,
           templateUrl: 'viailate.html',
@@ -71,9 +64,11 @@ define(['../module'], function(ng) {
       };
     }])
     //安全问题设置
-    .controller('SecurityissueCtrl', ['$scope', function($scope){
-      
-    }])
+    .controller('SecurityissueCtrl', ['$scope',
+      function($scope) {
+        $scope.
+      }
+    ])
     //个人资料
     .controller('UserCtrl', ['$scope', '$http', '$location', 'userService',
       function($scope, $http, $location, userService) {
@@ -90,9 +85,35 @@ define(['../module'], function(ng) {
       }
     ])
     //公司资料
-    .controller('CompanyCtrl', ['$scope', function($scope){
-      
-    }])
+    .controller('CompanyCtrl', ['$scope', '$http',
+      function($scope, $http) {
+        $http.get(path + 'companyController/getBuyerComp')
+          .success(function(data) {
+            if ('success' === data.status) {
+              $scope.company = data.data;
+              console.log($scope.company);
+            } else {
+              alert('获取公司失败，请刷新')
+            }
+          }).error(function(data) {
+            alert('获取公司失败，请刷新')
+          })
+        $scope.submit = function() {
+          $http.post(path + 　'companyController/saveBuyerCompInfo', {
+              params: $scope.company
+            })
+            .success(function(data) {
+              if ('success' === data.status) {
+                alert('保存公司成功')
+              } else {
+                alert('保存公司失败')
+              }
+            }).error(function(data) {
+              alert('保存公司失败')
+            })
+        }
+      }
+    ])
     //收货地址
     .controller('AddressCtrl', ['$scope', function($scope){
       

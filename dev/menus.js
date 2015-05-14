@@ -89,6 +89,13 @@ define(['app'], function(app){
         }
       ]      
     },
+     {
+      'id' : 5,
+      'title': '收货地址',
+      'path': 'address',
+      'template': 'set/address.html',
+      'controller' : 'AddressCtrl'
+    },  
     {
       'id' : 4,
       'title': '店铺管理',
@@ -96,13 +103,7 @@ define(['app'], function(app){
       'template': 'set/shop-manage.html',
       'controller' : 'ShopmanageCtrl'
     },   
-    {
-      'id' : 5,
-      'title': '收货地址',
-      'path': 'address',
-      'template': 'set/address.html',
-      'controller' : 'AddressCtrl'
-    },  
+   
     {
       'id' : 6,
       'title' : '申请卖家',

@@ -48,6 +48,22 @@ define(['app', './menus'], function(app){
           }
         }
       })
+       //收货地址
+      .state('address', {
+        url: '/address',
+        views: {
+          '': {
+            templateUrl: './view/template/layout.html'
+          },
+          'side@address' : {
+            templateUrl: './view/template/menu.html'
+          },
+          'main@address': {
+            templateUrl : './components/controller/address/index.html',
+            controller: 'AddressCtrl'
+          }
+        }
+      })
       //卖家申请
       .state('applySeller', {
         url: '/applySeller',
