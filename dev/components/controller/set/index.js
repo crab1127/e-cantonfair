@@ -1,12 +1,8 @@
 define(['../module'], function(ng) {
-  var path = 'http://127.0.0.1:3000/';
+  var path = 'http://192.168.200.201:8080'
   ng
     .controller('SetCtrl', ['$scope', '$http','$location', function($scope, $http,$location) {
       
-      // if (!$scope.isLogin) {
-      //    console.log(2);
-      //   $location.path('/login');
-      // }
       $scope.name = '设置页';
       
     }])
@@ -42,19 +38,31 @@ define(['../module'], function(ng) {
         //$location.path(goal)
       }
     }])
-    .controller('DialogCtrl',['$scope', '$modalInstance', '$location', 'goal', '$http', function($scope, $modalInstance, $location, goal, $http){
-      
-      $scope.goal = goal;
-      $scope.issue = 1;
-      $scope.answer = '';
+    .controller('DialogCtrl',['$scope', '$modalInstance', '$location', 'goal', '$http', '$rootScope',
+     function($scope, $modalInstance, $location, goal, $http, $rootScope){
 
+      $http.get(path+ '/seller_center/sellerAccountSetting/getIssuesInfoForUser.cf', {params:{sellerId:$rootScope.userInfo.sellerId}})
+        .success(function(data){
+          if ('success' === data.status) {
+            console.log(data.data);
+            $scope.issueOptions = data.data;
+          };
+        })
+      $scope.goal = goal;
+
+
+      $scope.validat = {};
       $scope.ok = function () {
         //验证答案
-        // $http.get('',{params: $scope.security}).success(function(){
-
-          $location.path(goal)
-          $modalInstance.close();
-        // })
+        $http.get(path + '/seller_center/sellerAccountSetting/validatSecurityAnswer.cf', {
+            params: $scope.validat
+          })
+          .success(function(data) {
+            if('success' === data.status) {
+            $location.path(goal)
+            $modalInstance.close();
+            }
+          })
 
         
       };
@@ -64,17 +72,114 @@ define(['../module'], function(ng) {
       };
     }])
     //安全问题设置
-    .controller('SecurityissueCtrl', ['$scope',
-      function($scope) {
-        $scope.
+    .controller('SecurityissueCtrl', ['$scope', '$http', '$location', '$rootScope',
+      function($scope, $http, $location, $rootScope) {
+        $scope.isset = $scope.isshow = false;
+        $http.get(path + '/seller_center/sellerAccountSetting/validatSellerHasSecurityIssues.cf', {params: {sellerId: $rootScope.userInfo.sellerId}})
+          .success(function(data){
+            if ('success' === data.status) {
+              $scope.isset = true;
+            } else {
+              $scope.isshow = true;
+            }
+          })
+        $scope.title = "安全问题设置";
+        $scope.isIssuesCustom1 = false;
+        $scope.isIssuesCustom2 = false;
+        $scope.isIssuesCustom3 = false;
+        $scope.issueList = [
+          {
+            'id':1,
+            'issue': '你的生日是那天'
+          },{
+            'id':2,
+            'issue': '你的偶像是谁'
+          },{
+            'id':3,
+            'issue': '你最喜欢的动物是什么'
+          },{
+            'id':4,
+            'issue': '你的家乡在哪里'
+          },{            
+            'id':5,
+            'issue': '你的家乡在哪里'
+          },{
+            'id':6,
+            'issue': '自定义问题'
+          }
+        ];
+        $scope.saveIssue =  {
+          sellerId : $rootScope.userInfo.userId,
+          saveType : 0,
+          securityIssuesSystemId1 : '',
+          securityIssuesCustom1: '',
+          securityIssuesAnswer1: '',
+          securityIssuesSystemId2 : '',
+          securityIssuesCustom2: '',
+          securityIssuesAnswer2: '',
+          securityIssuesSystemId3 : '',
+          securityIssuesCustom3: '',
+          securityIssuesAnswer3: ''
+        };
+        $scope.selectChange = function(id){
+          if(1 === id) {
+            if(!$scope.saveIssue.securityIssuesSystemId1) return
+
+            if (6 === $scope.saveIssue.securityIssuesSystemId1) {
+              $scope.isIssuesCustom1 = true;
+            } else {
+              if ($scope.saveIssue.securityIssuesSystemId1 === $scope.saveIssue.securityIssuesSystemId2 || $scope.saveIssue.securityIssuesSystemId1 === $scope.saveIssue.securityIssuesSystemId3){
+                alert('安全问题不能重复')
+                $scope.saveIssue.securityIssuesSystemId1 = '';
+              }
+              $scope.isIssuesCustom1 = false;
+            }
+          }
+          if(2 === id) {
+            if(!$scope.saveIssue.securityIssuesSystemId1) return
+            if (6 === $scope.saveIssue.securityIssuesSystemId2) {
+              $scope.isIssuesCustom2 = true;              
+            } else {
+              if ($scope.saveIssue.securityIssuesSystemId2 === $scope.saveIssue.securityIssuesSystemId1 || $scope.saveIssue.securityIssuesSystemId2 === $scope.saveIssue.securityIssuesSystemId3){
+                alert('安全问题不能重复');
+                $scope.saveIssue.securityIssuesSystemId2 = '';
+              }
+              $scope.isIssuesCustom2 = false;
+            }
+          }
+          if(3 === id) {
+            if(!$scope.saveIssue.securityIssuesSystemId1) return
+            if (6 === $scope.saveIssue.securityIssuesSystemId3) {
+              $scope.isIssuesCustom3 = true;              
+            } else {
+              if ($scope.saveIssue.securityIssuesSystemId3 === $scope.saveIssue.securityIssuesSystemId2 || $scope.saveIssue.securityIssuesSystemId3 === $scope.saveIssue.securityIssuesSystemId1){
+                alert('安全问题不能重复')
+                $scope.saveIssue.securityIssuesSystemId3 = '';
+              }
+              $scope.isIssuesCustom3 = false;
+            }
+          }
+        }
+        $scope.submit = function(){
+          $http.post(path+'seller_center/sellerAccountSetting/saveSecurityIssuesInfo',{params: $scope.saveIssue})
+            .success(function(data){
+              if ('success' === data.status) {
+                alert('保存成功');
+                setTimeout(function(){
+                  console.log(1);
+                  $location.path('/set')
+                }, 1000);
+              }
+            })
+        }
       }
     ])
     //个人资料
-    .controller('UserCtrl', ['$scope', '$http', '$location', 'userService',
-      function($scope, $http, $location, userService) {
-        $scope.user = userService;
+    .controller('UserCtrl', ['$scope', '$http', '$location', '$rootScope',
+      function($scope, $http, $location, $rootScope) {
+        $scope.user = $rootScope.userInfo;
         $scope.submit = function(){
-          $http.post(path + 'buyer/saveBuyerInfo', {params: $scope.user})
+          $.post(path + '/seller_center/informationSetting/saveSellerInfo.cf', $scope.user)
             .success(function(data){
               alert(data.message);
               if ('success' === data.status) {
@@ -85,9 +190,9 @@ define(['../module'], function(ng) {
       }
     ])
     //公司资料
-    .controller('CompanyCtrl', ['$scope', '$http',
-      function($scope, $http) {
-        $http.get(path + 'companyController/getBuyerComp')
+    .controller('CompanyCtrl', ['$scope', '$http', '$rootScope',
+      function($scope, $http, $rootScope) {
+        $http.get(path + '/seller_center/informationSetting/fetchCompanyInfo.cf', {params: {companyId:1}})
           .success(function(data) {
             if ('success' === data.status) {
               $scope.company = data.data;
@@ -99,17 +204,13 @@ define(['../module'], function(ng) {
             alert('获取公司失败，请刷新')
           })
         $scope.submit = function() {
-          $http.post(path + 　'companyController/saveBuyerCompInfo', {
-              params: $scope.company
-            })
+          $.post(path + 　'/seller_center/informationSetting/saveCompanyInfo.cf', $scope.company)
             .success(function(data) {
               if ('success' === data.status) {
                 alert('保存公司成功')
               } else {
                 alert('保存公司失败')
               }
-            }).error(function(data) {
-              alert('保存公司失败')
             })
         }
       }

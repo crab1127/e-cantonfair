@@ -9,6 +9,7 @@ define(['./module'], function(ng){
       function($scope, $rootScope,$location,$state, menus, userinfo){
 
         $rootScope.isLogin = userinfo.isLogin;
+
         $rootScope.userInfo = userinfo;
         console.log($rootScope.userInfo);
         if (!$rootScope.isLogin) {
@@ -74,5 +75,14 @@ define(['./module'], function(ng){
             return $q.reject(rejection);
         }
       };
-    });
+    })
+    .filter('parseIn', function(){
+      return function(str) {
+        if (typeof str === 'number'){
+          return str
+        } else {
+          return parseInt(str, 10);
+        }
+      }
+    })
 });

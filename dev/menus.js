@@ -93,8 +93,25 @@ define(['app'], function(app){
       'id' : 5,
       'title': '收货地址',
       'path': 'address',
-      'template': 'set/address.html',
-      'controller' : 'AddressCtrl'
+      'template': 'address/address.html',
+      'controller' : 'AddressCtrl',
+      'items': [
+  
+        {
+          'id' : 51,
+          'title': '收货地址',
+          'path': 'receiving',
+          'template': 'address/index.html',
+          'controller' : 'AddressCtrl'
+        },
+        {
+          'id' : 52,
+          'title': '退货地址',
+          'path': 'returns',
+          'template': 'address/returns.html',
+          'controller' : 'returnsAddressCtrl'
+        }
+      ]    
     },  
     {
       'id' : 4,

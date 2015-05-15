@@ -121,6 +121,7 @@ define(['app', './menus'], function(app){
           })
         })
       }
+
       //设置子分类
       if ('sets' === menu.path) {
         angular.forEach(menu.items, function(nav){
@@ -154,6 +155,20 @@ define(['app', './menus'], function(app){
             views: {              
               'main@goods': {
                 templateUrl : './components/controller/'+ nav.template
+              }
+            }
+          })
+        })
+      }
+      //地址子分类
+      if ('address' === menu.path) {
+        angular.forEach(menu.items, function(nav){
+          $stateProvider.state('address.' + nav.path, {
+            url: '/' + nav.path,
+            views: {              
+              'main@address': {
+                templateUrl : './components/controller/'+ nav.template,
+                controller: nav.controller
               }
             }
           })

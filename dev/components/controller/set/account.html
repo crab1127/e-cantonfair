@@ -5,17 +5,17 @@
     <table class="table">
       <tr>
         <td>canton fair Id：</td>
-        <td>{{userInfo.accountId}}</td>
+        <td>{{userInfo.userId}}</td>
         <td></td>
       </tr>
       <tr>
         <td>邮箱：</td>
-        <td>{{userInfo.name}}</td>
+        <td>{{userInfo.email}}</td>
         <td><a href="javascript:;" class="btn" ng-click="go('/set/modifyemail')">changes</a></td>
       </tr>
       <tr>
         <td>手机：</td>
-        <td>{{userInfo.Type}}</td>
+        <td>{{userInfo.mobile}}</td>
         <td><a href="javascript:;" class="btn" ng-click="go('/set/modifymobile')">changes</a></td>
       </tr>
       <tr>
@@ -33,14 +33,10 @@
     <form class="form-horizontal" novalidate name="security">
       <div class="form-group">
         <label for="inputEmail3" class="col-sm-3 control-label">安全问题：</label>
-        <div class="col-sm-8">
-          <select name="issue" id="" class="form-control" ng-model="issue">
-            <option value="">用户之前设置的问题</option>
-            <option value="1">你的生日是哪天</option>
-            <option value="2">你的家乡在哪里</option>
-            <option value="3">你最喜欢的动物</option>
-            <option value="4">你最爱的人</option>
-          </select>
+        <div class="col-sm-8">          
+          <select name="issue" class="form-control" ng-model="validat.issue">
+            <option value="{{key.securityIssuesAnswerId}}" ng-repeat="key in issueOptions">{{key.question}}</option>
+          </select>   
         </div>
       </div>
       <div class="form-group">
@@ -49,7 +45,7 @@
           <input type="text" class="form-control"
             placeholder="请抢答。。。"
             name="answer"
-            ng-model="answer" required>
+            ng-model="validat.answer" required>
         </div>
       </div>
       <div class="form-group">

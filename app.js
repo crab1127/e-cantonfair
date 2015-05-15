@@ -73,8 +73,12 @@ app.get('/api/getUserInfo', function(req, res) {
       "data": {
         "password": null,
         "username": "s2",
+        "id": 1,
+        "sellerId": 1,
+        "CompanyId":1,
         "userType": 1,
         "companyId": 273835,
+        "email": '191815416@qq.com',
         "photo": "http://static.acfun.tv/dotnet/artemis/u/cms/www/default/avatarNone.jpg",
         "userId": 1303191,
         "mobile": 18679633373,
@@ -186,6 +190,18 @@ app.post('/buyer/saveBuyerInfo', function(req, res) {
   res.send(data);
 })
 
+
+//保存安全问题
+app.post('/seller_center/sellerAccountSetting/saveSecurityIssuesInfo', function(req, res) {
+  var data = {
+    "message": "保存成功",
+    "type": "json",
+    "data": {},
+    "status": "success",
+    "errorCode": null
+  }
+  res.send(data);
+})
 // //添加/更新买家公司信息
 // app.post('/buyer/saveBuyerCompInfo', function(req, res){
 
