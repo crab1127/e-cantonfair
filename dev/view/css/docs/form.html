@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>from</title>
+  <link rel="stylesheet" href="../cfec.css">
+  <style type="text/css">
+form.bs-docs-example {
+  padding-bottom: 19px;
+}
+.bs-docs-example {
+  display: block;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  position: relative;
+}
+  </style>
+</head>
+<body>
+<h2>表单默认样式</h2>
+ <form class="bs-docs-example">
+    <fieldset>
+      <legend>Legend</legend>
+      <label>Label name</label>
+      <input type="text" value="Type something…">
+      <span class="help-block">Example block-level help text here.</span>
+      <label class="checkbox">
+         <input type="checkbox"> Check me out
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </fieldset>
+  </form>
+  <h2>表单输入框圆角效果</h2>
+  <form class="bs-docs-example form-search">
+            <input type="text" class="input-medium search-query">
+            <button class="btn" type="submit">查询</button>
+    </form>
+    <h2>表单排成一行</h2>
+    <form class="bs-docs-example form-inline">
+            <input type="text" value="电子邮件" class="input-small"/>
+            <input type="password"  class="input-small" placeholder="密码"/>
+            <label class="checkbox">
+              <input type="checkbox"> 记住我
+            </label>
+            <button class="btn" type="submit">登 录</button>
+    </form>
+     <h2>表单排成多行</h2>
+    <form class="bs-docs-example form-horizontal">
+            <div class="control-group">
+              <label for="inputEmail" class="control-label">电子邮件</label>
+              <div class="controls">
+                <input type="text" value="邮件地址" id="inputEmail">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="inputPassword" class="control-label">用户密码</label>
+              <div class="controls">
+                <input type="password"  id="inputPassword" placeholder="密码"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox">
+                  <input type="checkbox"> 记住我
+                </label>
+                <button class="btn" type="submit">登 录</button>
+              </div>
+            </div>
+    </form>
+    <h2>表单的下拉框</h2>
+    
+    <form class="bs-docs-example">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <br>
+            <select multiple="multiple">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+     </form>
+    <h2>扩展表单前缀与后缀</h2>
+     <form class="bs-docs-example">
+            <div class="input-prepend">
+              <span class="add-on">@</span>
+              <input type="text" value="用户名" class="span2">
+            </div>
+            <br>
+            <div class="input-append">
+              <input type="text" value="输入金额" class="span2">
+              <span class="add-on">.00</span>
+            </div>
+    </form>
+     <h2>扩展表单前缀与后缀组合在一起</h2>
+    <form class="bs-docs-example form-inline">
+            <div class="input-prepend input-append">
+              <span class="add-on">$</span>
+              <input type="text" class="span2">
+              <span class="add-on">.00</span>
+            </div>
+     </form>
+     <h2>文本域（Textarea）</h2>
+     <form class="bs-docs-example">
+            <textarea rows="3"></textarea>
+     </form>
+     <h2>复选框和单选框</h2>
+     <form class="bs-docs-example">
+        <label class="checkbox">
+           <input type="checkbox" value=""> Option one is this and that—be ure to include why it's great
+        </label>
+      <label class="radio">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this and that—be sure to include why it's great
+      </label>
+      <label class="radio">
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2"> Option one is this and that—be sure to include why it's great
+      </label>
+     </form>
+    <h2>行内复选框</h2>
+    <from class="bs-docs-example form-inline">
+      <label class="checkbox inline">
+         <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+    </from>
+    <h2>按钮情况</h2>
+    <form class="bs-docs-example">
+        <div class="input-append">
+            <input class="span2" id="appendedInputButton" type="text">
+            <button class="btn" type="button">Go!</button>
+        </div>
+    </form>
+    
+    <form class="bs-docs-example">
+            <div class="input-append">
+              <input class="span2" id="appendedInputButtons" type="text">
+              <button class="btn" type="button">Search</button>
+              <button class="btn" type="button">Options</button>
+            </div>
+    </form>
+    <h2>搜索菜单</h2>
+    <form class="bs-docs-example form-search">
+            <div class="input-append">
+              <input type="text" class="span2 search-query">
+              <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="input-prepend">
+              <button type="submit" class="btn">Search</button>
+              <input type="text" class="span2 search-query">
+            </div>
+    </form>
+    <h2>网格大小</h2>
+      <form class="bs-docs-example">
+       <div class="controls">
+         <input class="input-mini" type="text" value="input-mini">
+         <input class="input-small " type="text" value="input-small ">
+         <input class="input-medium " type="text" value="input-medium ">
+         <input class="input-large" type="text" value="input-large">
+         <input class="input-xlarge " type="text" value="input-xlarge ">
+         <input class="input-xxlarge " type="text" value="input-xxlarge ">
+        </div>
+    </form>
+    <h2>不可编辑的表单</h2>
+    <form class="bs-docs-example">
+    <input class="input-xlarge uneditable-input" value="Some value here" disabled="disabled"></input>
+    </span>
+    <h2>多彩表单</h2>
+    <form class="bs-docs-example form-horizontal">
+      <div class="control-group warning">
+        <label for="inputWarning" class="control-label">Input with warning</label>
+        <div class="controls">
+        <input type="text" id="inputWarning">
+        <span class="help-inline">Something may have gone wrong</span>
+        </div>
+      </div>
+      <div class="control-group error">
+        <label for="inputError" class="control-label">Input with error</label>
+        <div class="controls">
+          <input type="text" id="inputError">
+          <span class="help-inline">Please correct the error</span>
+        </div>
+      </div>
+      <div class="control-group info">
+        <label for="inputInfo" class="control-label">Input with info</label>
+          <div class="controls">
+          <input type="text" id="inputInfo">
+          <span class="help-inline">Username is taken</span>
+        </div>
+      </div>
+      <div class="control-group success">
+        <label for="inputSuccess" class="control-label">Input with success</label>
+          <div class="controls">
+            <input type="text" id="inputSuccess">
+            <span class="help-inline">Woohoo!</span>
+        </div>
+      </div>
+  </form>
+</body>
+</html>

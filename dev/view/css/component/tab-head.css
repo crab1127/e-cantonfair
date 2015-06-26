@@ -1,0 +1,131 @@
+/**
+ * 定义全局变量
+ * author: 周王献
+ * time: 2015-06-15
+ */
+.tab-head {
+  padding: 10px 0 0;
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 20px;
+  line-height: 35px;
+  zoom: 1;
+}
+.tab-head:before,
+.tab-head:after {
+  display: table;
+  content: " ";
+}
+.tab-head:after {
+  clear: both;
+}
+.tab-head a {
+  font-size: 14px;
+  color: #404040;
+  text-decoration: none;
+}
+.tab-head .tab-tt {
+  float: left;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 35px;
+  margin-bottom: 0;
+}
+.tab-head .tab-more {
+  float: right;
+  margin-left: 10px;
+  padding: 0 15px;
+}
+.tab-head.tab-pullRight > .tab-menu {
+  float: right;
+}
+.tab-head .tab-menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tab-head .tab-menu > li {
+  float: left;
+  position: relative;
+  margin: 0 0 0 4px;
+  bottom: -1px;
+}
+.tab-head .tab-menu > li a {
+  display: block;
+  padding: 0 15px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  background: #f8f8f8;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+}
+.tab-head .tab-menu > li.active a {
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+}
+.tab-head .tab-menu > li:first-child {
+  margin-left: 0;
+}
+.tab-hasBackground {
+  background: #f2f2f2;
+  border-radius: 6px 6px 0 0;
+}
+.tab-head.tab-small {
+  padding: 2.5px 0 0;
+  margin-bottom: 5px;
+  line-height: 25px;
+  zoom: 1;
+}
+.tab-head.tab-small:before,
+.tab-head.tab-small:after {
+  display: table;
+  content: " ";
+}
+.tab-head.tab-small:after {
+  clear: both;
+}
+.tab-head.tab-small a {
+  font-size: 11.9px;
+}
+.tab-head.tab-small .tab-tt {
+  float: left;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+.tab-head.tab-small .tab-more {
+  float: right;
+  margin-left: 5px;
+  padding: 0 5px;
+}
+.tab-head.tab-small .tab-menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tab-head.tab-small .tab-menu > li {
+  position: relative;
+  bottom: -1px;
+}
+.tab-head.tab-small .tab-menu > li a {
+  display: block;
+  padding: 0 5px;
+  border-radius: 4px 4px 0 0;
+}

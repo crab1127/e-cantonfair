@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>uploader</title>
+</head>
+<body>
+<div class="upload"></div>
+<iframe src="sameOrigin.html" name="sameOrigin" frameborder="0"></iframe>
+</body>
+<script src="/components_module/requirejs/require.js"></script>
+<script type="text/javascript">
+    function callback(data){return data}
+    require(["uploader"], function(Upload){
+        var load = new Upload({
+            parent : document.querySelector('.upload'),
+            action : "http://192.168.200.234:8082/seller_center/fdfsUpload/uploadSingleImage.cf"
+        });
+
+        console.log(load);
+    });
+
+
+    window.onload = function(){
+
+        document.sameOrigin.window.eval('var parent = window.parent;'
+                                                + 'var data = { a : "a"};'
+                                                + 'console.log(parent.callback(data), parent);')
+
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+<div class="main-container">
+    <div class="cnt-title">
+        <h3>Change Password</h3>
+    </div>
+    <div class="cnt-main">
+        <div class="field">
+            <p class="notice">Helpful hints ： change emal address(for contact),A valid email address is required for the contact between us.</p>
+        </div>
+        <form id="cng_password">
+            <div class="field">
+                <span>Old Email:</span><input id="old-email" type="text" readonly value="{{}}">
+            </div>
+            <div class="field">
+                <span>New Email:</span><input id="new-email" type="email" value="" placeholder="">
+            </div>
+            <div class="field">
+                <span>Security Code:</span><input class="short" id="scr-code" type="email" value="" placeholder="">
+                <div class="scr-img">
+                    <img src="" width="60" height="25"><a href="">Refresh the image</a>
+                    <p>please enter the security code above as it is.</p>
+                </div>
+            </div>
+            <div class="field">
+                <span></span>
+                <button> 提交</button>
+            </div>
+        </form>
+    </div>
+</div>

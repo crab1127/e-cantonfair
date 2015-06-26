@@ -1,0 +1,426 @@
+.contain{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: '微软雅黑';
+	margin-top: 20px;
+	display: table;
+  	content: " ";
+  	clear:both;
+}
+
+.relative{
+	position: relative;
+}
+
+.w180{
+	width: 180px;
+}
+
+.w200{
+	width: 200px;
+}
+
+.pad-bom40{
+	padding-bottom: 40px;
+}
+
+.text-vertical{
+	vertical-align: middle;
+}
+
+.pad-bom15{
+	padding-bottom: 15px;
+}
+
+.pad-rig20{
+	padding-right: 20px;
+}
+
+.linehei35{
+	line-height: 35px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.marLeft20{
+	margin-left: 20px;
+}
+
+.marLeft200{
+	margin-left: 200px;
+}
+
+.inline{
+	display: inline;
+}
+
+.top{
+	height: 30px;
+	border-bottom: 2px solid #DEDEDE;
+	color: #6F6F6F;
+}
+
+input+label{
+	padding-left: 20px;
+	color: red;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix{
+	display: table;
+  	content: " ";
+  	clear:both;
+}
+
+/*chgPwdSucess*/
+.chgSuccess{
+	margin: 0 auto;
+	margin-top:30px;
+	text-align: center;
+}
+
+.chgSuccess div{
+	display:inline;
+	font-size:13px;
+}
+
+.chgSuccess div span{
+	color:#FF5001;
+}
+
+.chgSuccess img{
+	display: inline;
+	vertical-align: middle;
+}
+
+.login-but{
+	margin:30px 460px;
+	width:260px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+/*loginNewPage*/
+.right{
+	float: right;
+	width: 320px;
+	margin-top: 30px;
+	padding-right: 100px;
+}
+
+.right-float{
+	float:right;
+}
+
+.left{
+	float: left;
+}
+
+.right input[type=text]{
+	width: 300px;
+	height: 25px;
+	margin-bottom:18px;
+}
+
+.pwd .control-label{
+	width: 175px;
+}
+
+.login-but2{
+	margin:30px 30px;
+	width:260px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+.identifyCode div input[type=text]{
+	width:120px;
+	height: 25px;
+}
+
+.identifyCode img{
+	vertical-align: middle;
+}
+
+.pwd input[type="password"]{
+	width: 300px;
+}
+
+.checkbox1{
+	position:absolute;
+	top:0;
+	left:270px;
+	width: 120px;
+}
+
+/*phoneNumTest*/
+.form-contain{
+	margin: 0 auto;
+	width: 600px;
+	margin-top:30px;
+}
+
+.left span{
+	color:red;
+}
+
+.form-line{
+	margin-top: 30px;
+}
+
+.tip{
+	color: #6F6F6F;
+	font-size:13px;
+	margin: 30px 0 20px 0;
+}
+
+.form-line input,
+.form-line select{
+	width:240px;
+	height: 25px;
+	margin-left: 20px;
+}
+
+.form-line select{
+	height:30px;
+}
+
+.marTop{
+	margin-top: 215px;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+.marTop a{
+	font-color: red;
+}
+
+.login-but3{
+	margin:30px 140px;
+	width:240px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+.control-group select{
+	width: 250px;
+	height: 35px;
+}
+
+/*forgetPwd*/
+.tip span{
+	font-size: 18px;
+	color: #FF5001;
+	margin-left:100px; 
+}
+
+.left img{
+	vertical-align: middle;
+}
+
+.marTop2{
+	margin-top:95px;
+}
+
+.login-but33{
+	margin-top:30px;
+	margin-left: 165px;
+	width:240px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+.rightOver{
+	margin-right: 78px;
+}
+
+/*forgetPwd2*/
+.form-text{
+	margin-left: 150px;
+	font-weight: 600;
+	margin-top: 50px;
+}
+
+.small{
+	font-size: 13px;
+	margin-left: 180px;
+}
+
+.small span{
+	color: #FF5001;
+}
+
+/*forgetPwd3*/
+.text{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.text a{
+	text-decoration: underline;
+}
+
+.text span{
+	color: #FF5001;
+	font-size: 16px;
+}
+
+/*forgetPwd3_2*/
+.text input{
+	width: 100px;
+	height: 25px;
+}
+
+/*forgetPwd4*/
+.formline{
+	margin-right: 142px;
+	margin-bottom: 
+}
+
+.tipp{
+	margin-left: 120px;
+	margin-bottom: 40px;
+}
+
+.tipp span{
+	color:#FF5001;
+}
+
+.login-but22{
+	margin-top:30px;
+	margin-left: 205px;
+	width:240px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+/*registerPage*/
+.center{
+	margin: 0 auto;
+	height: 30px;
+	width: 650px;
+}
+
+.center ul li{
+	margin-top: 8px;
+	float: left;
+	list-style-type: none;
+	margin-right: 30px;
+}
+
+.underline{
+	border-bottom: 3px solid #f00;
+	color: red;
+}
+
+.marLeft{
+	margin-left: 100px;
+	margin-top: 10px;
+	font-size: 13px;
+	color:#6F6F6F;
+}
+
+.login-but34{
+	margin-top: 40px;
+	width:240px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+.form-horizontal{
+	margin:0 auto;
+	width: 50%;
+	padding-top: 50px;
+}
+
+.form-horizontal  .control-label{
+	width: 200px;
+}
+
+.control-group input[type="text"],input[type="password"]{
+	width: 240px;
+	height: 25px;
+}
+
+.control-group span{
+	color: #f00;
+}
+
+.small{
+	font-size:13px;
+}
+
+/*verifyMailbox*/
+.tip{
+	text-align: center;
+}
+
+.form-containL{
+	margin: 0 auto;
+	width: 380px;
+	margin-top:30px;
+}
+
+.form-containL img{
+	vertical-align: middle;
+}
+
+.tip span{
+	margin-left: 0px;
+	font-size: 15px;
+}
+
+.form-containL input{
+	width: 240px;
+	height: 25px;
+	margin-bottom: 20px;
+}
+
+.login-but4{
+	margin-top: 30px;
+	width:240px;
+	height:35px;
+	border:0;
+	background-color:#FF4B00;
+	font-size:18px;
+	color:white;
+}
+
+.chgSuccess a{
+	text-decoration: underline;
+}
+
+.checkbox{
+	position:absolute;
+	top:0;
+	left:136px;
+	width:160px;
+}
+
+/*buyerOrSeller*/
+.chgSucces{
+	text-align: center;
+	margin-top: 100px;
+}

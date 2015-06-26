@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash多文件上传</title>
+</head>
+<body>
+<div>
+<h1>Flash多文件上传</h1>
+<h3>概述</h3>
+<p>
+Flash多文件上传，提供JPG图片压缩选项。显示文件上传进度！
+</p>
+<h3>Flash参数说明</h3>
+<table>
+<tr>
+<th>标识</th>
+<th>名称</th>
+<th>是否必填</th>
+<th>默认值</th>
+<th>取值范围</th>
+<th>说明</th>
+</tr>
+<tr>
+<td>serverUrl</td>
+<td>服务器响应地址</td>
+<td>必填</td>
+<td></td>
+<td></td>
+<td>服务器端接收文件上传的处理页面</td>
+</tr>
+<tr>
+<td>jsFunction</td>
+<td>回调JS函数</td>
+<td>选填</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>回调的JS函数</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>文件格式</td>
+<td>选填</td>
+<td>*.*</td>
+<td>&nbsp;</td>
+<td>默认所有文件<br />
+	多种文件格式可用;分割</td>
+</tr>
+<tr>
+<td>maxFileCount</td>
+<td>一次可最多上传文件数</td>
+<td>选填</td>
+<td>0</td>
+<td>0&lt;=数值</td>
+<td>当为0时没有限制</td>
+</tr>
+<tr>
+<td>maxFileSize</td>
+<td>单文件大小限制</td>
+<td>选填</td>
+<td>0</td>
+<td>0&lt;=数值</td>
+<td>单位为字节<br />
+	为0时没有限制</td>
+</tr>
+<tr>
+<td>imageWidth</td>
+<td>JPG图片压缩宽度</td>
+<td>选填</td>
+<td>0</td>
+<td>0&lt;=数值&lt;=2000</td>
+<td>为0时宽度不缩放</td>
+</tr>
+<tr>
+<td>imageHeight</td>
+<td>JPG图片压缩高度</td>
+<td>选填</td>
+<td>0</td>
+<td>0&lt;=数值&lt;=2000</td>
+<td>为0时高度不缩放</td>
+</tr>
+<tr>
+<td>imageQuality</td>
+<td>JPG图片压缩质量</td>
+<td>选填</td>
+<td>80</td>
+<td>1&lt;=数值&lt;=100</td>
+<td>数值越大质量越高，但文件会越大</td>
+</tr>
+<tr>
+<td>uploadText</td>
+<td>上传按钮文本</td>
+<td>选填</td>
+<td>上 传</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>cancelText</td>
+<td>取消按钮文本</td>
+<td>选填</td>
+<td>取 消</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>labelFormat</td>
+<td>上传时文本提示</td>
+<td>选填</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>例如：已上传{%}</td>
+</tr>
+</table>
+<p>
+说明：
+<ul>
+<li>当imageWidth和imageHeight都为0时，不对JPG图片进行任何缩放，将直接上传原始图片！</li>
+<li>当imageWidth或imageHeight任意一个值不为0时，则对JPG图片进行缩放操作。</li>
+<li>上传时文本提示默认为：{%} {uploadSize}/{allSize} [{fileIndex}/{fileCount}] {fileSize} {fileName}
+<br />
+{%} 表示当前上传百分比<br />
+{uploadSize} 已上传的总文件大小<br />
+{allSize} 需要上传的总文件大小<br />
+{fileIndex} 当前正上传第几个文件<br />
+{fileCount} 文件总数<br />
+{fileSize} 当前上传的文件大小<br />
+{fileName} 当前上传的文件名称
+</li>
+</ul>
+</p>
+<h3>Flash提供的接口函数</h3>
+<p>
+setPara 设置上传参数。setPara(参数标识,值) 返回值：true设置成功。false设置失败！当上传时不允许设置。
+isBusy 返回当前Flash是否正在上传。返回值：true正在上传。false空闲。
+</p>
+<h3>JS函数接口</h3>
+<p>
+参数：type, str
+type 类型
+str 信息
+</p>
+<table>
+<tr>
+<th>type类型</th>
+<th>str值</th>
+<th>说明</th>
+</tr>
+<tr>
+<td>error</td>
+<td>错误信息</td>
+<td>当发生错误时触发</td>
+</tr>
+<tr>
+<td>upload_cancel</td>
+<td>用户取消了上传</td>
+<td>当上传时用户点击取消按钮时触发</td>
+</tr>
+<tr>
+<td>upload_start</td>
+<td>需要上传的文件数|文件总大小</td>
+<td>当用户选择文件后开始上传时触发</td>
+</tr>
+<tr>
+<td>upload_file_complete</td>
+<td>服务器返回信息</td>
+<td>单个文件上传成功时触发</td>
+</tr>
+<tr>
+<td>upload_complete</td>
+<td>服务器返回的所有信息合集，使用|分割</td>
+<td>所有文件上传成功时触发</td>
+</tr>
+<tr>
+<td>upload_progress</td>
+<td>上传进度信息</td>
+<td>上传进度变化时触发</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

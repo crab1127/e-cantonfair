@@ -1,0 +1,2709 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"z",
+				"zoo	zoom: 1;"
+			],
+			[
+				"marign",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"filter",
+				"$filter	AngularJS"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"$roo",
+				"$rootScope	AngularJS(DI)"
+			],
+			[
+				"set",
+				"setTimeout(function, milliseconds);"
+			],
+			[
+				"con",
+				"console.log(message);"
+			],
+			[
+				"广州市海珠区",
+				"广东广州市海珠区城区琶洲"
+			],
+			[
+				"dis",
+				"ng-disabled	AngularJS"
+			],
+			[
+				"$loc",
+				"$location	AngularJS(DI)"
+			],
+			[
+				"ng-d",
+				"ng-disabled	AngularJS"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"Modify",
+				"ModifypasswordCtrl"
+			],
+			[
+				"$lo",
+				"$location	AngularJS"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"ng",
+				"ng-click	AngularJS"
+			],
+			[
+				"$l",
+				"$location	AngularJS(DI)"
+			],
+			[
+				"$",
+				"$http"
+			],
+			[
+				"$http",
+				"$http	AngularJS"
+			],
+			[
+				"data",
+				"fs.writeFile(path, data, encoding_, callback);"
+			],
+			[
+				"sc",
+				"script	Tag"
+			],
+			[
+				"$co",
+				"$scope	AngularJS"
+			],
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"$scope",
+				"$scope	AngularJS"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS(DI)"
+			],
+			[
+				"cons",
+				"console.log(message);"
+			],
+			[
+				"ng-v",
+				"ng-view	AngularJS"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"marin",
+				"margin-left"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"login",
+				"loginWin"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"nw",
+				"new_pro"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"prot",
+				"protocol"
+			],
+			[
+				"dir",
+				"dirPath"
+			],
+			[
+				"pro",
+				"prolocal"
+			],
+			[
+				"s",
+				"scripts"
+			],
+			[
+				"getEL",
+				"getElementsByTagName"
+			],
+			[
+				"init",
+				"initMod"
+			],
+			[
+				"mod",
+				"moduleOptions"
+			],
+			[
+				"modul",
+				"moduleCache"
+			],
+			[
+				"name",
+				"namesCache"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"nam",
+				"namesCache"
+			],
+			[
+				"modn",
+				"modNames"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"a",
+				"alias"
+			],
+			[
+				"module",
+				"moduleOptions"
+			],
+			[
+				"rea",
+				"readyList"
+			],
+			[
+				"doSc",
+				"doScrollCheck"
+			],
+			[
+				"fire",
+				"fireReady"
+			],
+			[
+				"fir",
+				"fireReady"
+			],
+			[
+				"car",
+				"crabJS"
+			],
+			[
+				"crab",
+				"crabJS"
+			],
+			[
+				"fone",
+				"font-size"
+			],
+			[
+				"pr",
+				"pos-r	position: relative;"
+			],
+			[
+				"scr",
+				"src"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"border-top",
+				"border-top-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"margn",
+				"margin-bottom"
+			],
+			[
+				"M",
+				"Microsoft"
+			],
+			[
+				"sel",
+				"selector"
+			],
+			[
+				"de",
+				"detectionests"
+			],
+			[
+				"test",
+				"testName"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"an",
+				"anchorLink"
+			],
+			[
+				"m",
+				"menu"
+			],
+			[
+				"se",
+				"sectionsColor"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"jq",
+				"jquery"
+			],
+			[
+				"si",
+				"slideUp"
+			],
+			[
+				"mian",
+				"main-con"
+			],
+			[
+				"main",
+				"main-con"
+			],
+			[
+				"sea",
+				"seajs"
+			],
+			[
+				"di",
+				"dist"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"ini",
+				"inline-block"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"fo",
+				"font-variant"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"clear",
+				"cleartime"
+			],
+			[
+				"im",
+				"important"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "var express = require('express');\n\n//var routes = require('./server/routes/index');\n\n\nvar app = express();\n\n\nconsole.log('111');\napp.use(express.Router());\n\napp.get('/', function(req, res){\n\n  res.send('{\"d\":2}');\n\n});\n\n\n\napp.listen(3000);\n\nmodule.exports = app;",
+			"file": "server/app.js",
+			"file_size": 283,
+			"file_write_time": 130753667596164576,
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/svn/fsc/fsc/config.js",
+			"settings":
+			{
+				"buffer_size": 1332,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"settings":
+			{
+				"buffer_size": 4837,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1052,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dev/components/component/dialog/dialog.js",
+			"settings":
+			{
+				"buffer_size": 17774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/view/css-component/breadcrumbs.html",
+			"settings":
+			{
+				"buffer_size": 1639,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/view/css.html",
+			"settings":
+			{
+				"buffer_size": 1222,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/view/css-docs.html",
+			"settings":
+			{
+				"buffer_size": 47420,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/task.md",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/css/docs/layout.html",
+			"settings":
+			{
+				"buffer_size": 780,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/index.html",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/route.js",
+			"settings":
+			{
+				"buffer_size": 3486,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/bolg-photo/static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 7423,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "define(function() {\n  //获取id class tagName\n\n  /**\n   * [AutoPlay description]\n   * @param {[array]} data [图片对象]：\n   * ['imgObj.png','imgObj.png']\n   */\n  var AutoPlay = function(data) {\n    this.initialize(data);\n  };\n  AutoPlay.prototype = {\n    initialize: function(data) {\n      var oThis = this;\n      if (!data) {\n        alert('没有数据！');\n      }\n\n      this.data = data;\n      this.timer = null;\n      this.autoTimer = null;\n      this.iNow = 0;\n      //this.creatHTMl(data); //创建按钮\n\n      this.Img = $('#slide').find('li');\n      this.btnPrev = $('#slide').find('.slide-prev');\n      this.btnNext = $('#slide').find('.slide-next');\n      this.loadImg(this.iNow);\n      this.timer = setInterval(function() {\n        oThis.next();\n      }, 5000);\n\n      this.btnPrev.on('mouseover', function(){\n        clearInterval(oThis.timer);\n      });\n      this.btnNext.on('mouseover', function(){\n        clearInterval(oThis.timer);\n      });\n      this.btnPrev.on('click', function(){\n        oThis.prev();\n      });\n      this.btnNext.on('click', function(){\n        oThis.next();\n      });\n\n    },\n    // creatHTMl: function(data) {\n    //   var html = '<a class=\"slide-prev\"></a><ul>';\n    //   for (var i = 0; i < data.length; i++) {\n    //     html += '<li style=\"display:none\"><img src=\"' + data[i] + '\"></li>';\n    //   }\n    //   html +=   '</ul><a class=\"slide-next\"></a>';\n    //   $('#slide').html(html);\n    // },\n    next: function() {\n      this.iNow++;\n      this.iNow == this.data.length && (this.iNow = 0);\n      this.loadImg(this.iNow);\n    },\n    prev: function() {\n      this.iNow--;\n      this.iNow == -1 && (this.iNow = this.data.length);\n      this.loadImg(this.iNow);\n    },\n    loadImg: function(id) {\n      var _this = this;\n      var a = new Image();\n      a.onload = function(){\n        $.each(_this.Img, function(i){\n          _this.Img.eq(i).hide();\n        });\n\n        var size = imgCover(a.width, a.height);\n        _this.Img.eq(id).find('img')\n          .attr({'width': size.w, 'height': size.h})\n          //.css({'marginLeft': -size.w/2,'marginTop': -size.h/2,});\n        _this.Img.eq(id).fadeIn(600);\n      };\n      a.src = this.data[id].img;\n\n    }\n  };\n    //把图像扩展至足够大，以使图像完全覆盖背景区域。\n    //obj 图片的jq对象\n  function imgCover(imgw, imgh) {\n    var width = document.documentElement.clientWidth,\n        height = document.documentElement.clientHeight;\n    if (width > height) {\n      if (imgw > imgh) {\n        if (width / height > imgw / imgh) {\n          w = width;\n          h = Math.round(imgh * (width / imgw));\n        } else {\n          \n          h = height;\n          w = Math.round(imgw * (height / imgh));\n        }\n      } else {\n        w = width;\n        h = Math.round(imgh * (width / imgw));\n      }\n    } else {\n      if (imgw > imgh) {\n        h = height;\n        w = Math.round(imgw * (height / imgh));\n      } else {\n        if (height / width > imgh / imgw) {\n          h = height;\n          w = Math.round(imgw * (height / imgh));\n        } else {          \n          w = width;\n          h = Math.round(imgh * (width / imgw));\n\n        }\n      }\n    }\n    return {\n      'w':w,\n       'h': h\n    };\n  }\n\n  return AutoPlay;\n});",
+			"file": "/D/work/bolg-photo/static/js/fullSlide.js",
+			"file_size": 3388,
+			"file_write_time": 130780689540000000,
+			"settings":
+			{
+				"buffer_size": 3177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/css/home.css",
+			"settings":
+			{
+				"buffer_size": 3600,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div class=\"modal fade in\" ng-controller=\"DialogCtrl\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" ng-click=\"close()\"><span\n            aria-hidden=\"true\">&times;</span><span\n            class=\"sr-only\">Close</span></button>\n        <h4 class=\"modal-title\">我是一个对话框</h4>\n      </div>\n      <div class=\"modal-body\">\n        <form class=\"form-horizontal\" role=\"form\">\n          <div class=\"form-group\">\n            <label class=\"col-sm-2 control-label\">Name</label>\n\n            <div class=\"col-sm-10\">\n              <input type=\"text\" class=\"form-control\" placeholder=\"Name\" ng-model=\"name\"/>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <div class=\"col-sm-offset-2 col-sm-10\">\n              <button type=\"button\" class=\"btn btn-default\" ng-click=\"ok()\">OK</button>\n              <button type=\"button\" class=\"btn btn-default\" ng-click=\"cancel()\">Cancel</button>\n            </div>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>",
+			"file": "dev/components/templat/dialog.html",
+			"file_size": 1146,
+			"file_write_time": 130758909097159712,
+			"settings":
+			{
+				"buffer_size": 1104,
+				"line_ending": "Windows",
+				"name": "<div class=\"modal fade in\" ng-controller=\"DialogCt"
+			}
+		},
+		{
+			"file": "/D/work/bolg-photo/app.js",
+			"settings":
+			{
+				"buffer_size": 1481,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dev/view/less/base/variables.less",
+			"settings":
+			{
+				"buffer_size": 5532,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/base/btn.less",
+			"settings":
+			{
+				"buffer_size": 3428,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/base/mixins.less",
+			"settings":
+			{
+				"buffer_size": 7322,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/base/grid.less",
+			"settings":
+			{
+				"buffer_size": 2219,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 23 files for \"oom\"\n\nD:\\work\\cfec\\dev\\view\\less\\base\\mixins.less:\n   12      clear: both;\n   13    }\n   14:   zoom: 1;\n   15  }\n   16  \n\nD:\\work\\cfec\\dev\\view\\less\\base\\util.less:\n    3  //\n    4  //\n    5: .clearfix{oom:1;}\n    6  .clearfix:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:\".\";}\n    7  .hide{display:none;}\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "dev/view/less/base/util.less",
+			"settings":
+			{
+				"buffer_size": 833,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/view/dev-css.md",
+			"settings":
+			{
+				"buffer_size": 585,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/base/table.less",
+			"settings":
+			{
+				"buffer_size": 4896,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@charset \"utf-8\";\n/**\n * 定义全局变量\n * author: 周王献\n * time: 2015-06-15\n */\n/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */\nhtml {\n  color: #333;\n  background: #fff;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n  text-rendering: optimizelegibility;\n}\nbody {\n  margin: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background: transparent;\n}\na:active,\na:hover {\n  outline: 0;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n.b,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n  margin-bottom: 10px;\n  line-height: 1;\n}\nh1,\n.h1 {\n  font-size: 36px;\n}\nh2,\n.h2 {\n  font-size: 30px;\n}\nh3,\n.h3 {\n  font-size: 24px;\n}\nh4,\n.h4 {\n  font-size: 18px;\n}\nh5,\n.h5 {\n  font-size: 14px;\n  margin-top: 20px;\n}\nh6,\n.h6 {\n  font-size: 12px;\n  margin-top: 20px;\n}\np {\n  margin-top: 0;\n  margin-bottom: 10px;\n  font-size: 14px;\n  color: #777777;\n}\nmark {\n  color: #000;\n  background: #ffff00;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  position: relative;\n  font-size: 75%;\n  line-height: 0;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n  vertical-align: top;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  height: 0;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace;\n  font-size: 1em;\n}\nbutton， input,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  color: inherit;\n  font: inherit;\n}\nbutton {\n  overflow: visible;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  currsor: default;\n}\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  padding: 0;\n  box-sizing: border-box;\n}\ninput[typt=\"number\"]::webkit-inner-spin-button,\ninput[typt=\"number\"]::webkit-outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  -webkit-appearance: testfield;\n}\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\nfieldset {\n  padding: .35em .625em .75em;\n  margin: 0 2px;\n  border: 1px solid #c0c0c0;\n}\nlegend {\n  padding: 0;\n  border: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\ntd,\nth {\n  padding: 0;\n}\n/**\n * 按钮\n * author: 周王献\n * time: 2015-06-15\n */\n.btn {\n  cursor: pointer;\n  display: inline-block;\n  color: #333;\n  border: 1px solid transparent;\n  background-image: none;\n  padding: 5px 14px 6px;\n  font-size: 13px;\n  line-height: normal;\n  border-radius: 2px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.btn:hover,\n.btn:focus {\n  color: #333;\n  text-decoration: none;\n}\n.btn:active,\n.btn.active {\n  outline: 0;\n  background-image: none;\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.btn.disabled,\n.btn[disabled],\nfieldset[disabled] .btn {\n  cursor: not-allowed;\n  pointer-events: none;\n  opacity: 0.65;\n  filter: alpha(opacity=65);\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.btn-default {\n  color: #333333;\n  background-color: #ffffff;\n  border-color: #cccccc;\n}\n.btn-default:hover,\n.btn-default:focus,\n.btn-default:active,\n.btn-default.active,\n.open .dropdown-toggle.btn-default {\n  background-image: none;\n}\n.btn-default.disabled,\n.btn-default[disabled],\nfieldset[disabled] .btn-default,\n.btn-default.disabled:hover,\n.btn-default[disabled]:hover,\nfieldset[disabled] .btn-default:hover,\n.btn-default.disabled:focus,\n.btn-default[disabled]:focus,\nfieldset[disabled] .btn-default:focus,\n.btn-default.disabled:active,\n.btn-default[disabled]:active,\nfieldset[disabled] .btn-default:active,\n.btn-default.disabled.active,\n.btn-default[disabled].active,\nfieldset[disabled] .btn-default.active {\n  background-color: #ffffff;\n  border-color: #cccccc;\n}\n.btn-default .badge {\n  color: #ffffff;\n  background-color: #333333;\n}\n.btn-primary {\n  color: #ffffff;\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.btn-primary:hover,\n.btn-primary:focus,\n.btn-primary:active,\n.btn-primary.active,\n.open .dropdown-toggle.btn-primary {\n  background-image: none;\n}\n.btn-primary.disabled,\n.btn-primary[disabled],\nfieldset[disabled] .btn-primary,\n.btn-primary.disabled:hover,\n.btn-primary[disabled]:hover,\nfieldset[disabled] .btn-primary:hover,\n.btn-primary.disabled:focus,\n.btn-primary[disabled]:focus,\nfieldset[disabled] .btn-primary:focus,\n.btn-primary.disabled:active,\n.btn-primary[disabled]:active,\nfieldset[disabled] .btn-primary:active,\n.btn-primary.disabled.active,\n.btn-primary[disabled].active,\nfieldset[disabled] .btn-primary.active {\n  background-color: #428bca;\n  border-color: #357ebd;\n}\n.btn-primary .badge {\n  color: #428bca;\n  background-color: #ffffff;\n}\n.btn-success {\n  color: #ffffff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success:hover,\n.btn-success:focus,\n.btn-success:active,\n.btn-success.active,\n.open .dropdown-toggle.btn-success {\n  background-image: none;\n}\n.btn-success.disabled,\n.btn-success[disabled],\nfieldset[disabled] .btn-success,\n.btn-success.disabled:hover,\n.btn-success[disabled]:hover,\nfieldset[disabled] .btn-success:hover,\n.btn-success.disabled:focus,\n.btn-success[disabled]:focus,\nfieldset[disabled] .btn-success:focus,\n.btn-success.disabled:active,\n.btn-success[disabled]:active,\nfieldset[disabled] .btn-success:active,\n.btn-success.disabled.active,\n.btn-success[disabled].active,\nfieldset[disabled] .btn-success.active {\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success .badge {\n  color: #5cb85c;\n  background-color: #ffffff;\n}\n.btn-info {\n  color: #ffffff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info:hover,\n.btn-info:focus,\n.btn-info:active,\n.btn-info.active,\n.open .dropdown-toggle.btn-info {\n  background-image: none;\n}\n.btn-info.disabled,\n.btn-info[disabled],\nfieldset[disabled] .btn-info,\n.btn-info.disabled:hover,\n.btn-info[disabled]:hover,\nfieldset[disabled] .btn-info:hover,\n.btn-info.disabled:focus,\n.btn-info[disabled]:focus,\nfieldset[disabled] .btn-info:focus,\n.btn-info.disabled:active,\n.btn-info[disabled]:active,\nfieldset[disabled] .btn-info:active,\n.btn-info.disabled.active,\n.btn-info[disabled].active,\nfieldset[disabled] .btn-info.active {\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info .badge {\n  color: #5bc0de;\n  background-color: #ffffff;\n}\n.btn-warning {\n  color: #ffffff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning:hover,\n.btn-warning:focus,\n.btn-warning:active,\n.btn-warning.active,\n.open .dropdown-toggle.btn-warning {\n  background-image: none;\n}\n.btn-warning.disabled,\n.btn-warning[disabled],\nfieldset[disabled] .btn-warning,\n.btn-warning.disabled:hover,\n.btn-warning[disabled]:hover,\nfieldset[disabled] .btn-warning:hover,\n.btn-warning.disabled:focus,\n.btn-warning[disabled]:focus,\nfieldset[disabled] .btn-warning:focus,\n.btn-warning.disabled:active,\n.btn-warning[disabled]:active,\nfieldset[disabled] .btn-warning:active,\n.btn-warning.disabled.active,\n.btn-warning[disabled].active,\nfieldset[disabled] .btn-warning.active {\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning .badge {\n  color: #f0ad4e;\n  background-color: #ffffff;\n}\n.btn-danger {\n  color: #ffffff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger:hover,\n.btn-danger:focus,\n.btn-danger:active,\n.btn-danger.active,\n.open .dropdown-toggle.btn-danger {\n  background-image: none;\n}\n.btn-danger.disabled,\n.btn-danger[disabled],\nfieldset[disabled] .btn-danger,\n.btn-danger.disabled:hover,\n.btn-danger[disabled]:hover,\nfieldset[disabled] .btn-danger:hover,\n.btn-danger.disabled:focus,\n.btn-danger[disabled]:focus,\nfieldset[disabled] .btn-danger:focus,\n.btn-danger.disabled:active,\n.btn-danger[disabled]:active,\nfieldset[disabled] .btn-danger:active,\n.btn-danger.disabled.active,\n.btn-danger[disabled].active,\nfieldset[disabled] .btn-danger.active {\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger .badge {\n  color: #d9534f;\n  background-color: #ffffff;\n}\n.btn-link {\n  color: #428bca;\n  font-weight: normal;\n  cursor: pointer;\n  border-radius: 0;\n}\n.btn-link,\n.btn-link:active,\n.btn-link[disabled],\nfieldset[disabled] .btn-link {\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.btn-link,\n.btn-link:hover,\n.btn-link:focus,\n.btn-link:active {\n  border-color: transparent;\n}\n.btn-link:hover,\n.btn-link:focus {\n  color: #2a6496;\n  text-decoration: underline;\n  background-color: transparent;\n}\n.btn-link[disabled]:hover,\nfieldset[disabled] .btn-link:hover,\n.btn-link[disabled]:focus,\nfieldset[disabled] .btn-link:focus {\n  color: #777777;\n  text-decoration: none;\n}\n.btn-lg {\n  padding: 9px 14px 9px;\n  font-size: 15px;\n  line-height: normal;\n  border-radius: 2px;\n}\n.btn-sm {\n  padding: 5px 9px 5px;\n  font-size: 11px;\n  line-height: normal;\n  border-radius: 2px;\n}\n.btn-xs {\n  padding: 3px 9px 3px;\n  font-size: 11px;\n  line-height: normal;\n  border-radius: 2px;\n}\n.btn-block {\n  display: block;\n  width: 100%;\n}\n.btn-block + .btn-block {\n  margin-top: 5px;\n}\ninput[type=\"submit\"].btn-block,\ninput[type=\"reset\"].btn-block,\ninput[type=\"button\"].btn-block {\n  width: 100%;\n}\n<<<<<<< .mine\n/**\n * 定义表单\n * author: 陆康永\n * time: 2015-06-15\n */\nlabel,\ninput,\nbutton,\nselect,\ntextarea {\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 20px;\n=======\n/**\n * 定义表单\n * author: 陆康永\n * time: 2015-06-15\n */\n.uneditable-input {\n  cursor: not-allowed;\n>>>>>>> .r934\n}\n<<<<<<< .mine\nfieldset {\n  padding: 0;\n  margin: 0;\n  border: 0;\n=======\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 14px * 1.5;\n  line-height: 20px * 2;\n  color: #333333;\n  border: 0;\n  border-bottom: 1px solid #e5e5e5;\n>>>>>>> .r934\n}\n<<<<<<< .mine\nlabel {\n=======\nlegend small {\n  font-size: 20px * 0.75;\n  color: #999999;\n}\n.form-help-block {\n>>>>>>> .r934\n  display: block;\n<<<<<<< .mine\n  margin-bottom: 5px;\n=======\n  margin-bottom: 10px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\nselect,\ntextarea,\ninput {\n  display: inline-block;\n  height: 20px;\n  padding: 4px 6px;\n  margin-bottom: 20px / 2;\n  font-size: 14px;\n  line-height: 20px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: #555555;\n  -moz-border-radius: 4px;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  vertical-align: middle;\n}\ninput,\ntextarea,\n.uneditable-input {\n  width: 206px;\n}\ntextarea {\n  height: auto;\n}\ninput {\n  background-color: #ffffff;\n  border: 1px solid #cccccc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n  -webkit-transition: border linear .2s, box-shadow linear .2s;\n  -moz-transition: border linear .2s, box-shadow linear .2s;\n  transition: border linear .2s, box-shadow linear .2s;\n}\ninput:focus {\n  border-color: rgba(82, 168, 236, 0.8);\n  outline: 0;\n  background: red;\n  outline: thin dotted \\9;\n  /* IE6-9 */\n  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\n}\n/**\n * 栅格化\n */\n.container {\n  width: 1190px;\n  margin-left: auto;\n  margin-right: auto;\n  zoom: 1;\n}\n.container:before,\n.container:after {\n  display: table;\n  content: \" \";\n}\n.container:after {\n  clear: both;\n=======\nform {\n  margin: 0 0 20px;\n}\nfieldset {\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: 40px;\n  color: #333333;\n  border: 0;\n  border-bottom: 1px solid #e5e5e5;\n}\nlegend small {\n  font-size: 20px * 0.75;\n  color: #999999;\n}\nlabel {\n  display: block;\n>>>>>>> .r934\n  margin-bottom: 5px;\n}\n<<<<<<< .mine\n.row {\n  zoom: 1;\n  margin-left: -10px;\n=======\nlabel,\ninput,\nbutton,\nselect,\ntextarea {\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 20px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.row:before,\n.row:after {\n  display: table;\n  content: \" \";\n}\n.row:after {\n  clear: both;\n}\n.row > [class*='span'] {\n  display: inline;\n  float: left;\n=======\nselect,\ntextarea,\ninput[type=\"text\"],\ninput[type=\"password\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"],\ninput[type=\"date\"],\ninput[type=\"month\"],\ninput[type=\"time\"],\ninput[type=\"week\"],\ninput[type=\"number\"],\ninput[type=\"email\"],\ninput[type=\"url\"],\ninput[type=\"search\"],\ninput[type=\"tel\"],\ninput[type=\"color\"],\n.uneditable-input {\n  display: inline-block;\n  height: 20px;\n  padding: 4px 6px;\n  margin-bottom: 10px;\n  font-size: 14px;\n  line-height: 20px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: #555555;\n  -moz-border-radius: 4px;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  vertical-align: top;\n}\ntextarea,\n.uneditable-input {\n  width: 206px;\n>>>>>>> .r934\n  margin-left: 10px;\n}\n<<<<<<< .mine\n.span1 {\n  width: 40px;\n=======\ntextarea {\n  height: auto;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span2 {\n  width: 90px;\n=======\ntextarea,\ninput[type=\"text\"],\ninput[type=\"password\"],\ninput[type=\"datetime\"],\ninput[type=\"datetime-local\"],\ninput[type=\"date\"],\ninput[type=\"month\"],\ninput[type=\"time\"],\ninput[type=\"week\"],\ninput[type=\"number\"],\ninput[type=\"email\"],\ninput[type=\"url\"],\ninput[type=\"search\"],\ninput[type=\"tel\"],\ninput[type=\"color\"],\n.uneditable-input {\n  background-color: #ffffff;\n  border: 1px solid #cccccc;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n  -webkit-transition: border linear .2s, box-shadow linear .2s;\n  -moz-transition: border linear .2s, box-shadow linear .2s;\n  transition: border linear .2s, box-shadow linear .2s;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span3 {\n  width: 140px;\n}\n.span4 {\n  width: 190px;\n}\n.span5 {\n  width: 240px;\n}\n.span6 {\n  width: 290px;\n}\n.span7 {\n  width: 340px;\n}\n.span8 {\n  width: 390px;\n}\n.span9 {\n  width: 440px;\n}\n.span10 {\n  width: 490px;\n}\n.span11 {\n  width: 540px;\n}\n.span12 {\n  width: 590px;\n}\n.span13 {\n  width: 640px;\n}\n.span14 {\n  width: 690px;\n}\n.span15 {\n  width: 740px;\n=======\ntextarea:focus,\ninput[type=\"text\"]:focus,\ninput[type=\"password\"]:focus,\ninput[type=\"datetime\"]:focus,\ninput[type=\"datetime-local\"]:focus,\ninput[type=\"date\"]:focus,\ninput[type=\"month\"]:focus,\ninput[type=\"time\"]:focus,\ninput[type=\"week\"]:focus,\ninput[type=\"number\"]:focus,\ninput[type=\"email\"]:focus,\ninput[type=\"url\"]:focus,\ninput[type=\"search\"]:focus,\ninput[type=\"tel\"]:focus,\ninput[type=\"color\"]:focus,\n.uneditable-input:focus {\n  border-color: rgba(82, 168, 236, 0.8);\n  outline: 0;\n>>>>>>> .r934\n  outline: 0\\9;\n  /* IE6-9 */\n  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);\n}\n<<<<<<< .mine\n.span16 {\n  width: 790px;\n=======\ninput[type=\"radio\"],\ninput[type=\"checkbox\"] {\n  margin: 4px 0 0;\n  *margin-top: 0;\n  /* IE7 */\n  margin-top: 1px \\9;\n  /* IE8-9 */\n  line-height: normal;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span17 {\n  width: 840px;\n=======\ninput[type=\"file\"],\ninput[type=\"image\"],\ninput[type=\"submit\"],\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"radio\"],\ninput[type=\"checkbox\"] {\n  width: auto;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span18 {\n  width: 890px;\n=======\nselect,\ninput[type=\"file\"] {\n  height: 30px;\n  /* In IE7, the height of the select element cannot be changed by height, only font-size */\n  *margin-top: 4px;\n  /* For IE7, add top margin to align select with labels */\n  line-height: 30px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span19 {\n  width: 940px;\n=======\nselect {\n  width: 220px;\n  border: 1px solid #cccccc;\n  background-color: #ffffff;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span20 {\n  width: 990px;\n=======\nselect[multiple],\nselect[size] {\n  height: auto;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span21 {\n  width: 1040px;\n=======\nselect:focus,\ninput[type=\"file\"]:focus,\ninput[type=\"radio\"]:focus,\ninput[type=\"checkbox\"]:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n  /* outline: thin dotted #333;\n  // Webkit\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;*/\n  outline: none;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span22 {\n  width: 1090px;\n=======\ninput:-moz-placeholder,\ntextarea:-moz-placeholder {\n  color: #999999;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span23 {\n  width: 1140px;\n=======\ninput:-ms-input-placeholder,\ntextarea:-ms-input-placeholder {\n  color: #999999;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.span24 {\n  width: 1190px;\n=======\ninput::-webkit-input-placeholder,\ntextarea::-webkit-input-placeholder {\n  color: #999999;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.row > .offset1 {\n  margin-left: 60px;\n}\n.row > .offset2 {\n  margin-left: 110px;\n}\n.row > .offset3 {\n  margin-left: 160px;\n}\n.row > .offset4 {\n  margin-left: 210px;\n}\n.row > .offset5 {\n  margin-left: 260px;\n}\n.row > .offset6 {\n  margin-left: 310px;\n}\n.row > .offset7 {\n  margin-left: 360px;\n}\n.row > .offset8 {\n  margin-left: 410px;\n}\n.row > .offset9 {\n  margin-left: 460px;\n}\n.row > .offset10 {\n  margin-left: 510px;\n}\n.row > .offset11 {\n  margin-left: 560px;\n}\n.row > .offset12 {\n  margin-left: 610px;\n}\n.row > .offset13 {\n  margin-left: 660px;\n}\n.row > .offset14 {\n  margin-left: 710px;\n}\n.row > .offset15 {\n  margin-left: 760px;\n=======\ninput.search-query {\n  padding-right: 14px;\n  padding-right: 4px \\9;\n  padding-left: 14px;\n  padding-left: 4px \\9;\n  /* IE7-8 doesn't have border-radius, so don't indent the padding */\n  margin-bottom: 0;\n>>>>>>> .r934\n  -moz-border-radius: 15px;\n  -webkit-border-radius: 15px;\n  border-radius: 15px;\n}\n<<<<<<< .mine\n.row > .offset16 {\n  margin-left: 810px;\n=======\n.help-block {\n  display: block;\n  margin-bottom: 20px / 2;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.row > .offset17 {\n  margin-left: 860px;\n=======\n.help-inline {\n  display: inline-block;\n  *display: inline;\n  /* IE7 inline-block hack */\n  *zoom: 1;\n  vertical-align: middle;\n  padding-left: 5px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.row > .offset18 {\n  margin-left: 910px;\n}\n.row > .offset19 {\n  margin-left: 960px;\n}\n.row > .offset20 {\n  margin-left: 1010px;\n}\n.row > .offset21 {\n  margin-left: 1060px;\n}\n.row > .offset22 {\n  margin-left: 1110px;\n}\n.row > .offset23 {\n  margin-left: 1160px;\n}\n/**\n * 定义布局\n * author: 陆康永\n * time: 2015-06-15\n */\n.container {\n  width: 1200px;\n  margin: 0 auto;\n=======\n.input-append,\n.input-prepend {\n  display: inline-block;\n  margin-bottom: 10px;\n  vertical-align: middle;\n  font-size: 0;\n  white-space: nowrap;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.container .layout1-main {\n  width: 1200px;\n=======\n.input-append input,\n.input-prepend input,\n.input-append select,\n.input-prepend select,\n.input-append .uneditable-input,\n.input-prepend .uneditable-input,\n.input-append .dropdown-menu,\n.input-prepend .dropdown-menu,\n.input-append .popover,\n.input-prepend .popover {\n  font-size: 14px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.container .layout2-side1 {\n  width: 230px;\n  float: left;\n}\n.container .layout2-main {\n  width: 970px;\n  float: left;\n}\n.container .layout3-side1 {\n  width: 230px;\n  float: left;\n}\n.container .layout3-main {\n  width: 740px;\n  float: left;\n}\n.container .layout3-side2 {\n  width: 230px;\n  float: left;\n}\n/*\n * Tables.less\n * Tables for, you guessed it, tabular data\n * ---------------------------------------- */\ntable {\n  width: 100%;\n  margin-bottom: 18px;\n  padding: 0;\n  font-size: 13px;\n  border-collapse: collapse;\n}\ntable th,\ntable td {\n  padding: 10px 10px 9px;\n  line-height: 18px;\n  text-align: left;\n}\ntable th {\n  padding-top: 9px;\n  font-weight: bold;\n  vertical-align: middle;\n}\ntable td {\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\ntable tbody th {\n  border-top: 1px solid #ddd;\n  vertical-align: top;\n}\n.condensed-table th,\n.condensed-table td {\n  padding: 5px 5px 4px;\n}\n.bordered-table {\n  border: 1px solid #ddd;\n  border-collapse: separate;\n  *border-collapse: collapse;\n  /* IE7, collapse table to remove spacing */\n  -moz-border-radius: 4px;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n}\n.bordered-table th + th,\n.bordered-table td + td,\n.bordered-table th + td {\n  border-left: 1px solid #ddd;\n}\n.bordered-table thead tr:first-child th:first-child,\n.bordered-table tbody tr:first-child td:first-child {\n  -moz-border-radius: 4px 0 0 0;\n  -webkit-border-radius: 4px 0 0 0;\n  border-radius: 4px 0 0 0;\n}\n.bordered-table thead tr:first-child th:last-child,\n.bordered-table tbody tr:first-child td:last-child {\n  -moz-border-radius: 0 4px 0 0;\n  -webkit-border-radius: 0 4px 0 0;\n  border-radius: 0 4px 0 0;\n}\n.bordered-table tbody tr:last-child td:first-child {\n  -moz-border-radius: 0 0 0 4px;\n  -webkit-border-radius: 0 0 0 4px;\n  border-radius: 0 0 0 4px;\n}\n.bordered-table tbody tr:last-child td:last-child {\n  -moz-border-radius: 0 0 4px 0;\n  -webkit-border-radius: 0 0 4px 0;\n  border-radius: 0 0 4px 0;\n}\ntable .span1 {\n  width: ((40px - 20) * 1) + ((40px - 20) * (1 - 1));\n}\ntable .span2 {\n  width: ((40px - 20) * 2) + ((40px - 20) * (2 - 1));\n}\ntable .span3 {\n  width: ((40px - 20) * 3) + ((40px - 20) * (3 - 1));\n}\ntable .span4 {\n  width: ((40px - 20) * 4) + ((40px - 20) * (4 - 1));\n}\ntable .span5 {\n  width: ((40px - 20) * 5) + ((40px - 20) * (5 - 1));\n}\ntable .span6 {\n  width: ((40px - 20) * 6) + ((40px - 20) * (6 - 1));\n}\ntable .span7 {\n  width: ((40px - 20) * 7) + ((40px - 20) * (7 - 1));\n}\ntable .span8 {\n  width: ((40px - 20) * 8) + ((40px - 20) * (8 - 1));\n}\ntable .span9 {\n  width: ((40px - 20) * 9) + ((40px - 20) * (9 - 1));\n}\ntable .span10 {\n  width: ((40px - 20) * 10) + ((40px - 20) * (10 - 1));\n}\ntable .span11 {\n  width: ((40px - 20) * 11) + ((40px - 20) * (11 - 1));\n}\ntable .span12 {\n  width: ((40px - 20) * 12) + ((40px - 20) * (12 - 1));\n}\ntable .span13 {\n  width: ((40px - 20) * 13) + ((40px - 20) * (13 - 1));\n}\ntable .span14 {\n  width: ((40px - 20) * 14) + ((40px - 20) * (14 - 1));\n}\ntable .span15 {\n  width: ((40px - 20) * 15) + ((40px - 20) * (15 - 1));\n}\ntable .span16 {\n  width: ((40px - 20) * 16) + ((40px - 20) * (16 - 1));\n}\n.zebra-striped tbody tr:nth-child(odd) td,\n.zebra-striped tbody tr:nth-child(odd) th {\n  background-color: #f9f9f9;\n=======\n.input-append input,\n.input-prepend input,\n.input-append select,\n.input-prepend select,\n.input-append .uneditable-input,\n.input-prepend .uneditable-input {\n  position: relative;\n  margin-bottom: 0;\n  *margin-left: 0;\n  vertical-align: top;\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-append input:focus,\n.input-prepend input:focus,\n.input-append select:focus,\n.input-prepend select:focus,\n.input-append .uneditable-input:focus,\n.input-prepend .uneditable-input:focus {\n  z-index: 2;\n}\n.input-append .add-on,\n.input-prepend .add-on {\n  display: inline-block;\n  width: auto;\n  height: 20px;\n  min-width: 16px;\n  *margin-top: 1px;\n  padding: 4px 5px;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 20px;\n  text-align: center;\n  text-shadow: 0 1px 0 #ffffff;\n  background-color: #e6e6e6;\n  border: 1px solid #ccc;\n}\n.input-append .add-on,\n.input-prepend .add-on,\n.input-append .btn,\n.input-prepend .btn,\n.input-append .btn-group > .dropdown-toggle,\n.input-prepend .btn-group > .dropdown-toggle {\n  vertical-align: top;\n  -moz-border-radius: 0;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.input-append .active,\n.input-prepend .active {\n  background-color: #a9dba9;\n  border-color: #46a546;\n}\n.input-append .btn,\n.input-prepend .btn {\n  height: 30px;\n  *margin-top: 1px;\n  line-height: 20px;\n  font-size: 14px;\n  padding: 4px 6px;\n  border-color: #cccccc;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.zebra-striped tbody tr:hover td,\n.zebra-striped tbody tr:hover th {\n  background-color: #f5f5f5;\n}\ntable .header {\n  cursor: pointer;\n}\ntable .header:after {\n  content: \"\";\n  float: right;\n=======\n.input-append .btn:hover,\n.input-prepend .btn:hover,\n.input-append .btn:focus,\n.input-prepend .btn:focus {\n  color: #333333;\n  border-color: #cccccc;\n  text-decoration: none;\n  outline: 0;\n  background-position: 0 -15px;\n  -webkit-transition: background-position 0.1s linear;\n  -moz-transition: background-position 0.1s linear;\n  transition: background-position 0.1s linear;\n}\n.input-prepend .add-on,\n.input-prepend .btn {\n  margin-right: -1px;\n}\n.input-prepend .add-on:first-child,\n.input-prepend .btn:first-child {\n  -moz-border-radius: 4px 0 0 4px;\n  -webkit-border-radius: 4px 0 0 4px;\n  border-radius: 4px 0 0 4px;\n}\n.input-append input,\n.input-append select,\n.input-append .uneditable-input {\n  -moz-border-radius: 4px 0 0 4px;\n  -webkit-border-radius: 4px 0 0 4px;\n  border-radius: 4px 0 0 4px;\n}\n.input-append input + .btn-group .btn:last-child,\n.input-append select + .btn-group .btn:last-child,\n.input-append .uneditable-input + .btn-group .btn:last-child {\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-append .add-on,\n.input-append .btn,\n.input-append .btn-group {\n  margin-left: -1px;\n}\n.input-append .add-on:last-child,\n.input-append .btn:last-child,\n.input-append .btn-group:last-child > .dropdown-toggle {\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-append .btn:last-child,\n.input-append .btn-group:last-child > .dropdown-toggle {\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-prepend.input-append input,\n.input-prepend.input-append select,\n.input-prepend.input-append .uneditable-input {\n  -moz-border-radius: 0;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.input-prepend.input-append input + .btn-group .btn,\n.input-prepend.input-append select + .btn-group .btn,\n.input-prepend.input-append .uneditable-input + .btn-group .btn {\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-prepend.input-append .add-on:first-child,\n.input-prepend.input-append .btn:first-child {\n  margin-right: -1px;\n  -moz-border-radius: 4px 0 0 4px;\n  -webkit-border-radius: 4px 0 0 4px;\n  border-radius: 4px 0 0 4px;\n}\n.input-prepend.input-append .add-on:last-child,\n.input-prepend.input-append .btn:last-child {\n  margin-left: -1px;\n  -moz-border-radius: 0 4px 4px 0;\n  -webkit-border-radius: 0 4px 4px 0;\n  border-radius: 0 4px 4px 0;\n}\n.input-prepend.input-append .btn-group:first-child {\n  margin-left: 0;\n}\n.radio,\n.checkbox {\n  min-height: 20px;\n  padding-left: 20px;\n}\n.radio input[type=\"radio\"],\n.checkbox input[type=\"checkbox\"] {\n  float: left;\n  margin-left: -20px;\n}\n.controls > .radio:first-child,\n.controls > .checkbox:first-child {\n  padding-top: 5px;\n}\n.radio.inline,\n.checkbox.inline {\n  display: inline-block;\n  padding-top: 5px;\n  margin-bottom: 0;\n  vertical-align: middle;\n}\n.radio.inline + .radio.inline,\n.checkbox.inline + .checkbox.inline {\n  margin-left: 10px;\n}\n.input-mini {\n  width: 60px;\n}\n.input-small {\n  width: 90px;\n}\n.input-medium {\n  width: 150px;\n}\n.input-large {\n  width: 210px;\n}\n.input-xlarge {\n  width: 270px;\n}\n.input-xxlarge {\n  width: 530px;\n}\ninput.search-query {\n  padding-right: 14px;\n  padding-right: 4px \\9;\n  padding-left: 14px;\n  padding-left: 4px \\9;\n  /* IE7-8 doesn't have border-radius, so don't indent the padding */\n  margin-bottom: 0;\n  -moz-border-radius: 15px;\n  -webkit-border-radius: 15px;\n  border-radius: 15px;\n}\n/* Allow for input prepend/append in search forms */\n.form-search .input-append .search-query,\n.form-search .input-prepend .search-query {\n  -moz-border-radius: 0;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.form-search .input-append .search-query {\n  -moz-border-radius: 14px 0 0 14px;\n  -webkit-border-radius: 14px 0 0 14px;\n  border-radius: 14px 0 0 14px;\n>>>>>>> .r934\n  margin-top: 7px;\n  border-width: 0 4px 4px;\n  border-style: solid;\n  border-color: #000 transparent;\n  visibility: hidden;\n}\n<<<<<<< .mine\ntable .headerSortUp,\ntable .headerSortDown {\n  background-color: rgba(141, 192, 219, 0.25);\n  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);\n=======\n.form-search .input-append .btn {\n  -moz-border-radius: 0 14px 14px 0;\n  -webkit-border-radius: 0 14px 14px 0;\n  border-radius: 0 14px 14px 0;\n>>>>>>> .r934\n}\n<<<<<<< .mine\ntable .header:hover:after {\n  visibility: visible;\n=======\n.form-search .input-prepend .search-query {\n  -moz-border-radius: 0 14px 14px 0;\n  -webkit-border-radius: 0 14px 14px 0;\n  border-radius: 0 14px 14px 0;\n>>>>>>> .r934\n}\n<<<<<<< .mine\ntable .headerSortDown:after,\ntable .headerSortDown:hover:after {\n  visibility: visible;\n  opacity: 60;\n  filter: alpha(opacity=6000);\n=======\n.form-search .input-prepend .btn {\n  -moz-border-radius: 14px 0 0 14px;\n  -webkit-border-radius: 14px 0 0 14px;\n  border-radius: 14px 0 0 14px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\ntable .headerSortUp:after {\n  border-bottom: none;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 4px solid #000;\n  visibility: visible;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  opacity: 60;\n  filter: alpha(opacity=6000);\n=======\n.form-search input,\n.form-inline input,\n.form-horizontal input,\n.form-search textarea,\n.form-inline textarea,\n.form-horizontal textarea,\n.form-search select,\n.form-inline select,\n.form-horizontal select,\n.form-search .help-inline,\n.form-inline .help-inline,\n.form-horizontal .help-inline,\n.form-search .uneditable-input,\n.form-inline .uneditable-input,\n.form-horizontal .uneditable-input,\n.form-search .input-prepend,\n.form-inline .input-prepend,\n.form-horizontal .input-prepend,\n.form-search .input-append,\n.form-inline .input-append,\n.form-horizontal .input-append {\n  display: inline-block;\n  *display: inline;\n  /* IE7 inline-block hack */\n  *zoom: 1;\n  margin-bottom: 0;\n  vertical-align: middle;\n>>>>>>> .r934\n}\n<<<<<<< .mine\ntable .blue {\n  color: #049cdb;\n  border-bottom-color: #049cdb;\n=======\n.form-search .hide,\n.form-inline .hide,\n.form-horizontal .hide {\n  display: none;\n>>>>>>> .r934\n}\n<<<<<<< .mine\ntable .headerSortUp.blue,\ntable .headerSortDown.blue {\n  background-color: #ade6fe;\n}\ntable .green {\n  color: #46a546;\n  border-bottom-color: #46a546;\n}\ntable .headerSortUp.green,\ntable .headerSortDown.green {\n  background-color: #cdeacd;\n}\ntable .red {\n  color: #9d261d;\n  border-bottom-color: #9d261d;\n}\ntable .headerSortUp.red,\ntable .headerSortDown.red {\n  background-color: #f4c8c5;\n}\ntable .yellow {\n  color: #ffc40d;\n  border-bottom-color: #ffc40d;\n}\ntable .headerSortUp.yellow,\ntable .headerSortDown.yellow {\n  background-color: #fff6d9;\n}\ntable .orange {\n  color: #f89406;\n  border-bottom-color: #f89406;\n}\ntable .headerSortUp.orange,\ntable .headerSortDown.orange {\n  background-color: #fee9cc;\n}\ntable .purple {\n  color: #7a43b6;\n  border-bottom-color: #7a43b6;\n}\ntable .headerSortUp.purple,\ntable .headerSortDown.purple {\n  background-color: #e2d5f0;\n}\n.hide {\n  display: none;\n=======\n.form-search label,\n.form-inline label {\n  display: inline-block;\n  *display: inline;\n}\n.control-group {\n  margin-bottom: 10px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.show {\n  display: block;\n}\n.fl {\n=======\n.form-horizontal .control-group {\n  margin-bottom: 20px;\n  zoom: 1;\n}\n.form-horizontal .control-group:before,\n.form-horizontal .control-group:after {\n  display: table;\n  content: \" \";\n}\n.form-horizontal .control-group:after {\n  clear: both;\n}\n.form-horizontal .control-label {\n  float: left;\n  width: 160px;\n  padding-top: 5px;\n  text-align: right;\n}\n.form-horizontal .controls {\n  *display: inline-block;\n  *padding-left: 20px;\n  margin-left: 180px;\n  *margin-left: 0;\n}\n.form-horizontal .controls:first-child {\n  *padding-left: 180px;\n}\n.form-horizontal .help-block {\n  margin-bottom: 0;\n}\n.form-horizontal input + .help-block,\n.form-horizontal select + .help-block,\n.form-horizontal textarea + .help-block,\n.form-horizontal .uneditable-input + .help-block,\n.form-horizontal .input-prepend + .help-block,\n.form-horizontal .input-append + .help-block {\n  margin-top: 10px;\n}\n.form-horizontal .form-actions {\n  padding-left: 180px;\n}\n/**\n * 栅格化\n */\n.container {\n  width: 1190px;\n  margin-left: auto;\n  margin-right: auto;\n  zoom: 1;\n}\n.container:before,\n.container:after {\n  display: table;\n  content: \" \";\n}\n.container:after {\n  clear: both;\n}\n.row {\n  zoom: 1;\n  margin-left: -10px;\n}\n.row:before,\n.row:after {\n  display: table;\n  content: \" \";\n}\n.row:after {\n  clear: both;\n}\n.row > [class*='span'] {\n  display: inline;\n>>>>>>> .r934\n  float: left;\n<<<<<<< .mine\n}\n.fr {\n  float: right;\n}\n.pr {\n  position: relative;\n=======\n  margin-left: 10px;\n}\n.span1 {\n  width: 40px;\n}\n.span2 {\n  width: 90px;\n}\n.span3 {\n  width: 140px;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.oh {\n  overflow: hidden;\n}\n.fwb {\n  font-weight: normal;\n}\n.b {\n  font-weight: bold;\n=======\n.span4 {\n  width: 190px;\n}\n.span5 {\n  width: 240px;\n}\n.span6 {\n  width: 290px;\n}\n.span7 {\n  width: 340px;\n}\n.span8 {\n  width: 390px;\n}\n.span9 {\n  width: 440px;\n}\n.span10 {\n  width: 490px;\n}\n.span11 {\n  width: 540px;\n}\n.span12 {\n  width: 590px;\n}\n.span13 {\n  width: 640px;\n}\n.span14 {\n  width: 690px;\n}\n.span15 {\n  width: 740px;\n}\n.span16 {\n  width: 790px;\n}\n.span17 {\n  width: 840px;\n}\n.span18 {\n  width: 890px;\n}\n.span19 {\n  width: 940px;\n}\n.span20 {\n  width: 990px;\n}\n.span21 {\n  width: 1040px;\n}\n.span22 {\n  width: 1090px;\n}\n.span23 {\n  width: 1140px;\n}\n.span24 {\n  width: 1190px;\n}\n.row > .offset1 {\n  margin-left: 60px;\n}\n.row > .offset2 {\n  margin-left: 110px;\n}\n.row > .offset3 {\n  margin-left: 160px;\n}\n.row > .offset4 {\n  margin-left: 210px;\n}\n.row > .offset5 {\n  margin-left: 260px;\n}\n.row > .offset6 {\n  margin-left: 310px;\n}\n.row > .offset7 {\n  margin-left: 360px;\n}\n.row > .offset8 {\n  margin-left: 410px;\n}\n.row > .offset9 {\n  margin-left: 460px;\n}\n.row > .offset10 {\n  margin-left: 510px;\n}\n.row > .offset11 {\n  margin-left: 560px;\n}\n.row > .offset12 {\n  margin-left: 610px;\n}\n.row > .offset13 {\n  margin-left: 660px;\n}\n.row > .offset14 {\n  margin-left: 710px;\n}\n.row > .offset15 {\n  margin-left: 760px;\n}\n.row > .offset16 {\n  margin-left: 810px;\n}\n.row > .offset17 {\n  margin-left: 860px;\n}\n.row > .offset18 {\n  margin-left: 910px;\n}\n.row > .offset19 {\n  margin-left: 960px;\n}\n.row > .offset20 {\n  margin-left: 1010px;\n}\n.row > .offset21 {\n  margin-left: 1060px;\n}\n.row > .offset22 {\n  margin-left: 1110px;\n}\n.row > .offset23 {\n  margin-left: 1160px;\n}\n/**\n * 定义布局\n * author: 陆康永\n * time: 2015-06-15\n */\n.container {\n  width: 1200px;\n  margin: 0 auto;\n}\n.container .layout1-main {\n  width: 1200px;\n}\n.container .layout2-side1 {\n  width: 230px;\n  float: left;\n}\n.container .layout2-main {\n  width: 970px;\n  float: left;\n}\n.container .layout3-side1 {\n  width: 230px;\n  float: left;\n}\n.container .layout3-main {\n  width: 740px;\n  float: left;\n}\n.container .layout3-side2 {\n  width: 230px;\n  float: left;\n}\n/*\n * Tables.less\n * Tables for, you guessed it, tabular data\n * ---------------------------------------- */\ntable {\n  width: 100%;\n  margin-bottom: 18px;\n  padding: 0;\n  font-size: 13px;\n  border-collapse: collapse;\n}\ntable th,\ntable td {\n  padding: 10px 10px 9px;\n  line-height: 18px;\n  text-align: left;\n}\ntable th {\n  padding-top: 9px;\n  font-weight: bold;\n  vertical-align: middle;\n}\ntable td {\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\ntable tbody th {\n  border-top: 1px solid #ddd;\n  vertical-align: top;\n}\n.condensed-table th,\n.condensed-table td {\n  padding: 5px 5px 4px;\n}\n.bordered-table {\n  border: 1px solid #ddd;\n  border-collapse: separate;\n  *border-collapse: collapse;\n  /* IE7, collapse table to remove spacing */\n  -moz-border-radius: 4px;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n}\n.bordered-table th + th,\n.bordered-table td + td,\n.bordered-table th + td {\n  border-left: 1px solid #ddd;\n}\n.bordered-table thead tr:first-child th:first-child,\n.bordered-table tbody tr:first-child td:first-child {\n  -moz-border-radius: 4px 0 0 0;\n  -webkit-border-radius: 4px 0 0 0;\n  border-radius: 4px 0 0 0;\n}\n.bordered-table thead tr:first-child th:last-child,\n.bordered-table tbody tr:first-child td:last-child {\n  -moz-border-radius: 0 4px 0 0;\n  -webkit-border-radius: 0 4px 0 0;\n  border-radius: 0 4px 0 0;\n}\n.bordered-table tbody tr:last-child td:first-child {\n  -moz-border-radius: 0 0 0 4px;\n  -webkit-border-radius: 0 0 0 4px;\n  border-radius: 0 0 0 4px;\n}\n.bordered-table tbody tr:last-child td:last-child {\n  -moz-border-radius: 0 0 4px 0;\n  -webkit-border-radius: 0 0 4px 0;\n  border-radius: 0 0 4px 0;\n}\ntable .span1 {\n  width: ((40px - 20) * 1) + ((40px - 20) * (1 - 1));\n}\ntable .span2 {\n  width: ((40px - 20) * 2) + ((40px - 20) * (2 - 1));\n}\ntable .span3 {\n  width: ((40px - 20) * 3) + ((40px - 20) * (3 - 1));\n}\ntable .span4 {\n  width: ((40px - 20) * 4) + ((40px - 20) * (4 - 1));\n}\ntable .span5 {\n  width: ((40px - 20) * 5) + ((40px - 20) * (5 - 1));\n}\ntable .span6 {\n  width: ((40px - 20) * 6) + ((40px - 20) * (6 - 1));\n}\ntable .span7 {\n  width: ((40px - 20) * 7) + ((40px - 20) * (7 - 1));\n}\ntable .span8 {\n  width: ((40px - 20) * 8) + ((40px - 20) * (8 - 1));\n}\ntable .span9 {\n  width: ((40px - 20) * 9) + ((40px - 20) * (9 - 1));\n}\ntable .span10 {\n  width: ((40px - 20) * 10) + ((40px - 20) * (10 - 1));\n}\ntable .span11 {\n  width: ((40px - 20) * 11) + ((40px - 20) * (11 - 1));\n}\ntable .span12 {\n  width: ((40px - 20) * 12) + ((40px - 20) * (12 - 1));\n}\ntable .span13 {\n  width: ((40px - 20) * 13) + ((40px - 20) * (13 - 1));\n}\ntable .span14 {\n  width: ((40px - 20) * 14) + ((40px - 20) * (14 - 1));\n}\ntable .span15 {\n  width: ((40px - 20) * 15) + ((40px - 20) * (15 - 1));\n}\ntable .span16 {\n  width: ((40px - 20) * 16) + ((40px - 20) * (16 - 1));\n}\n.zebra-striped tbody tr:nth-child(odd) td,\n.zebra-striped tbody tr:nth-child(odd) th {\n  background-color: #f9f9f9;\n}\n.zebra-striped tbody tr:hover td,\n.zebra-striped tbody tr:hover th {\n  background-color: #f5f5f5;\n}\ntable .header {\n  cursor: pointer;\n}\ntable .header:after {\n  content: \"\";\n  float: right;\n  margin-top: 7px;\n  border-width: 0 4px 4px;\n  border-style: solid;\n  border-color: #000 transparent;\n  visibility: hidden;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.tac {\n  text-align: center;\n=======\ntable .headerSortUp,\ntable .headerSortDown {\n  background-color: rgba(141, 192, 219, 0.25);\n  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.tal {\n  text-align: left;\n=======\ntable .header:hover:after {\n  visibility: visible;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.tar {\n  text-align: right;\n}\n.vam * {\n  vertical-align: middle;\n}\n.wsn {\n  word-wrap: normal;\n  white-space: normal;\n}\n.pre {\n  overflow: hidden;\n  text-align: left;\n  white-space: pre-wrap;\n  word-wrap: break-word;\n  word-break: break-all;\n}\n.wwb {\n  white-space: normal;\n=======\ntable .headerSortDown:after,\ntable .headerSortDown:hover:after {\n  visibility: visible;\n  opacity: 60;\n  filter: alpha(opacity=6000);\n}\ntable .headerSortUp:after {\n  border-bottom: none;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 4px solid #000;\n  visibility: visible;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  opacity: 60;\n  filter: alpha(opacity=6000);\n}\ntable .blue {\n  color: #049cdb;\n  border-bottom-color: #049cdb;\n}\ntable .headerSortUp.blue,\ntable .headerSortDown.blue {\n  background-color: #ade6fe;\n}\ntable .green {\n  color: #46a546;\n  border-bottom-color: #46a546;\n}\ntable .headerSortUp.green,\ntable .headerSortDown.green {\n  background-color: #cdeacd;\n}\ntable .red {\n  color: #9d261d;\n  border-bottom-color: #9d261d;\n}\ntable .headerSortUp.red,\ntable .headerSortDown.red {\n  background-color: #f4c8c5;\n}\ntable .yellow {\n  color: #ffc40d;\n  border-bottom-color: #ffc40d;\n}\ntable .headerSortUp.yellow,\ntable .headerSortDown.yellow {\n  background-color: #fff6d9;\n}\ntable .orange {\n  color: #f89406;\n  border-bottom-color: #f89406;\n}\ntable .headerSortUp.orange,\ntable .headerSortDown.orange {\n  background-color: #fee9cc;\n}\ntable .purple {\n  color: #7a43b6;\n  border-bottom-color: #7a43b6;\n}\ntable .headerSortUp.purple,\ntable .headerSortDown.purple {\n  background-color: #e2d5f0;\n}\n.hide {\n  display: none;\n>>>>>>> .r934\n  word-wrap: break-word;\n  word-break: break-all;\n}\n<<<<<<< .mine\n.ti {\n=======\n.show {\n  display: block;\n}\n.fl {\n  float: left;\n}\n.fr {\n  float: right;\n}\n.pr {\n  position: relative;\n}\n.oh {\n>>>>>>> .r934\n  overflow: hidden;\n<<<<<<< .mine\n  text-indent: -8888px;\n=======\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.ti2 {\n  text-indent: 2em;\n=======\n.fwb {\n  font-weight: normal;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.tdu,\n.tdu:hover {\n  text-decoration: underline;\n=======\n.b {\n  font-weight: bold;\n>>>>>>> .r934\n}\n<<<<<<< .mine\n.tdn,\n.tdn:hover {\n=======\n.tac {\n  text-align: center;\n}\n.tal {\n  text-align: left;\n}\n.tar {\n  text-align: right;\n}\n.vam * {\n  vertical-align: middle;\n}\n.wsn {\n  word-wrap: normal;\n  white-space: normal;\n}\n.pre {\n  overflow: hidden;\n  text-align: left;\n  white-space: pre-wrap;\n  word-wrap: break-word;\n  word-break: break-all;\n}\n.wwb {\n  white-space: normal;\n  word-wrap: break-word;\n  word-break: break-all;\n}\n.ti {\n  overflow: hidden;\n  text-indent: -8888px;\n}\n.ti2 {\n  text-indent: 2em;\n}\n.tdu,\n.tdu:hover {\n  text-decoration: underline;\n}\n.tdn,\n.tdn:hover {\n>>>>>>> .r934\n  text-decoration: none;\n}\n.b {\n  font-weight: 700;\n}\n.muted {\n  color: #999999;\n}\n/*# sourceMappingURL=cfec12.css.map */",
+			"file": "dev/view/css/cfec12.css",
+			"file_size": 41842,
+			"file_write_time": 130789230069815081,
+			"settings":
+			{
+				"buffer_size": 41684,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dev/view/css/docs/table.html",
+			"settings":
+			{
+				"buffer_size": 9282,
+				"line_ending": "Windows",
+				"name": "html:5"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3930,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/cfec.less",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/view/less/docs/btn.html",
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n  \"message\": \"success\",\n  \"type\": \"json\",\n  \"data\": {\n    \"password\": null,\n    \"username\": \"s2\",\n    \"enabled\": true,\n    \"authorities\": [{\n      \"authority\": \"ROLE_SUPPLIER\"\n    }],\n    \"accountNonExpired\": true,\n    \"accountNonLocked\": true,\n    \"credentialsNonExpired\": true,\n    \"status\": true,\n    \"hashCode\": null,\n    \"userType\": 1,\n    \"createTime\": null,\n    \"createBy\": 0,\n    \"updateTime\": null,\n    \"updateBy\": 0,\n    \"updateId\": null,\n    \"companyId\": 273835,\n    \"accountId\": 241640,\n    \"userId\": 1303191,\n    \"companyName\": \"jigou\",\n    \"cantonfairId\": null,\n    \"deleted\": 0,\n    \"email\": \"zhongj@cf-ec.com\",\n    \"firstName\": \"ji\",\n    \"lastName\": \"gou\",\n    \"emailValidation\": false,\n    \"userAccount\": \"s2\",\n    \"hasBizRule\": true,\n    \"hasException\": false,\n    \"retCode\": 0,\n    \"lastLoginTime\": \"2015-05-06\",\n    \"activeType\": 0,\n    \"currentPackage\": 10,\n    \"companyEname\": \"jigou\",\n    \"qrId\": null,\n    \"actived\": true,\n    \"imAccount\": null,\n    \"imPassword\": null,\n    \"userPhoto\": \"http://192.168.10.17/group1/M00/3B/08/wKgKEVKArRWADxZhAADoWuv0jVo190.jpg\",\n    \"serverTime\": 1430989797474,\n    \"activateTime\": null,\n    \"includePackages\": [{\n      \"expireTime\": \"2015-08-26 16:14:10.0\",\n      \"id\": 19\n    }, {\n      \"expireTime\": null,\n      \"id\": 11\n    }],\n    \"accountType\": 1\n  },\n  \"status\": \"success\",\n  \"page\": {\n    \"total\": 0,\n    \"description\": null,\n    \"page\": 1,\n    \"keyword\": null,\n    \"pageSize\": 10,\n    \"maxPage\": 0,\n    \"title\": null\n  },\n  \"errorCode\": null\n} ",
+			"settings":
+			{
+				"buffer_size": 1513,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>后台</title>\n  <link rel=\"stylesheet\" href=\"/components_module/bootstrap/dist/css/bootstrap.css\">\n  <link rel=\"stylesheet\" href=\"./view/css/home.css\">\n</head>\n<body ng-controller=\"MainCtrl\">\n  <header class=\"navbar navbar-static-top docs-nav\" id=\"top\" role=\"banner\">\n    <div class=\"container\">\n      <div class=\"navbar-header\">\n        <a ui-sref=\"index\" class=\"navbar-brand\">用户中心</a>\n      </div>\n      <nav class=\"navbar-collapse\">\n        <ul class=\"nav navbar-nav\">\n          <li ui-sref-active=\"active\" ng-repeat=\"menu in menus\"><a ui-sref=\"{{menu.path}}\" ng-bind=\"menu.title\"></a></li>\n        </ul>\n        <ul class=\"nav navbar-nav navbar-right\" ng-visible=\"userInfo\">\n          <li>\n            <a ui-sref=\"index\" ng-bind=\"userInfo.name\"></a>\n          </li>\n          <li>\n            <a ng-click=\"logout()\">退出</a>\n          </li>\n        </ul>\n      </nav>\n\n    </div>\n  </header>\n\n	<div ui-view ng-class=\"slide\"></div>\n\n	<!-- build:js static/js/vendor.js-->\n	<script src=\"/components_module/requirejs/require.js\" data-main=\"config\"></script>\n	<!-- endbuild -->\n</body>\n</html>",
+			"file": "dev/index.html",
+			"file_size": 1212,
+			"file_write_time": 130763117085477425,
+			"settings":
+			{
+				"buffer_size": 1159,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "'use strict';\n\nrequire.config({\n  urlArgs: \"_=\" + (new Date()).getTime(),\n  paths: {\n    'jquery': '/components_module/jquery/dist/jquery',\n    'angular': '/components_module/angular/angular',\n    'ui-route' : '/components_module/angular-ui-router/release/angular-ui-router',    \n    'ui-bootstrap' : '/components_module/angular-bootstrap/ui-bootstrap-tpls.min',\n    'animate' : '/components_module/angular-animate/angular-animate',\n    'app' : './app',\n    'route' : './route'\n  },\n  shim: {\n    jquery : {\n      exports: '$'\n    },\n    angular: {\n      exports: 'angular'\n    },\n    'ui-route' : {\n      deps: ['angular'],\n      exports: 'ui-route'\n    },\n    'ui-bootstrap' : {\n      deps: ['angular']\n    },\n    'animate':{\n      deps: ['angular'],\n      exports: 'ngAnimate'\n    },\n    app : {\n      exports: 'app',\n      deps: ['angular']\n    }\n  }\n});\n\nrequire([  \n  'jquery'\n  ,'angular'\n  ,'ui-route'\n  ,'ui-bootstrap'\n  ,'animate'\n  ,'route'\n  ,'./components/controller/controller'\n  ,'./permission'  \n  ,'app'], function(app, anguler) {\n\n  //在Angular运行之前获取到用户的permission的映射关系\n  var path = 'http://192.168.200.201:8080';\n  $.get(path + '/seller_center/informationSetting/fetchSellerInfo.cf', {'sellerId': 1}, function(data){    \n    //把用户数据缓存在本地\n    localStorage.userInfo = JSON.stringify(data);\n    angular.bootstrap(document, ['webapp']);\n  })  \n\n});",
+			"file": "dev/config.js",
+			"file_size": 1471,
+			"file_write_time": 130763053973371433,
+			"settings":
+			{
+				"buffer_size": 1362,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "define(['angular'], function(angular) { \n\n  var app = angular.module('webapp', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'webapp.Ctrl']);\n  // app.config(function ($httpProvider) {\n  //    $httpProvider.defaults.transformRequest = function(data){\n  //        if (data === undefined) {\n  //            return data;\n  //        }\n  //        return $.param(data);\n  //    }\n  //    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';\n  // });\n  // app.config(function($httpProvider) {\n  //   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';\n  //   $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';\n\n  //   var param = function(obj) {\n  //     var query = '',\n  //       name, value, fullSubName, subName, subValue, innerObj, i;\n\n  //     for (name in obj) {\n  //       value = obj[name];\n\n  //       if (value instanceof Array) {\n  //         for (i = 0; i subValue = value[i]; fullSubName = name + '[' + i + ']'; innerObj = {}; innerObj[fullSubName] = subValue; query += param(innerObj) + '&';\n  //         }\n  //       } else if (value instanceof Object) {\n  //         for (subName in value) {\n  //           subValue = value[subName];\n  //           fullSubName = name + '[' + subName + ']';\n  //           innerObj = {};\n  //           innerObj[fullSubName] = subValue;\n  //           query += param(innerObj) + '&';\n  //         }\n  //       } else if (value !== undefined && value !== null)\n  //         query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';\n  //     }\n\n  //     return query.length ? query.substr(0, query.length - 1) : query;\n  //   };\n  //   $httpProvider.defaults.transformRequest = [function(data) {\n  //     return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;\n  //   }];\n  // });\n  return app\n})\n\n",
+			"file": "dev/app.js",
+			"file_size": 1993,
+			"file_write_time": 130761508831625513,
+			"settings":
+			{
+				"buffer_size": 1946,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "define(['app', './menus'], function(app){ \n\n  app.config(function($stateProvider, $urlRouterProvider, $httpProvider, menus) {\n    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';\n    $urlRouterProvider.otherwise('/index');\n\n    $stateProvider\n      //首页\n      .state('index', {\n        url: '/index',\n        templateUrl: './components/controller/index/index.html'\n      })\n      //登入\n      .state('login', {\n        url: '/login',\n        templateUrl: './components/controller/login/login.html',\n        controller: 'loginCtrl'\n      })\n      //账号设置\n      .state('set', {\n        url: '/set',\n        views: {\n          '': {\n            templateUrl: './view/template/layout.html'\n          },\n          'side@set' : {\n            templateUrl: './view/template/menu.html'\n          },\n          'main@set': {\n            templateUrl : './components/controller/set/account.html',\n            controller: 'AccountCtrl'\n          }\n        }\n      })\n      //资料设置\n      .state('sets', {\n        url: '/sets',\n        views: {\n          '': {\n            templateUrl: './view/template/layout.html'\n          },\n          'side@sets' : {\n            templateUrl: './view/template/menu.html'\n          },\n          'main@sets': {\n            templateUrl : './components/controller/set/user.html',\n            controller: 'UserCtrl'\n          }\n        }\n      })\n       //收货地址\n      .state('address', {\n        url: '/address',\n        views: {\n          '': {\n            templateUrl: './view/template/layout.html'\n          },\n          'side@address' : {\n            templateUrl: './view/template/menu.html'\n          },\n          'main@address': {\n            templateUrl : './components/controller/address/index.html',\n            controller: 'AddressCtrl'\n          }\n        }\n      })\n      //卖家申请\n      .state('applySeller', {\n        url: '/applySeller',\n        views: {\n          '': {\n            templateUrl: './view/template/layout.html'\n          },\n          'side@applySeller' : {\n            templateUrl: './view/template/menu.html'\n          },\n          'main@applySeller': {\n            templateUrl : './components/controller/applySeller/index.html'\n          }\n        }\n      })\n      //商品\n      .state('goods', {\n        url: '/goods',\n        views: {\n          '': {\n            templateUrl: './view/template/layout.html'\n          },\n          'side@goods' : {\n            templateUrl: './view/template/menu.html'\n          },\n          'main@goods': {\n            templateUrl : './components/controller/goods/index.html'\n          }\n        }\n      });\n    \n    angular.forEach(menus, function(menu){\n      //设置子分类\n      if ('set' === menu.path) {\n        angular.forEach(menu.items, function(nav){\n          $stateProvider.state('set.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@set': {\n                templateUrl : './components/controller/'+ nav.template,\n                controller: nav.controller\n              }\n            }\n          })\n        })\n        angular.forEach(menu.hideItems, function(nav){\n          $stateProvider.state('set.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@set': {\n                templateUrl : './components/controller/'+ nav.template,\n                controller: nav.controller\n              }\n            }\n          })\n        })\n      }\n\n      //设置子分类\n      if ('sets' === menu.path) {\n        angular.forEach(menu.items, function(nav){\n          $stateProvider.state('sets.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@sets': {\n                templateUrl : './components/controller/'+ nav.template,\n                controller: nav.controller\n              }\n            }\n          })\n        })\n        angular.forEach(menu.hideItems, function(nav){\n          $stateProvider.state('sets.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@sets': {\n                templateUrl : './components/controller/'+ nav.template,\n                controller: nav.controller\n              }\n            }\n          })\n        })\n      }\n      //商品子分类\n      if ('goods' === menu.path) {\n        angular.forEach(menu.items, function(nav){\n          $stateProvider.state('set.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@goods': {\n                templateUrl : './components/controller/'+ nav.template\n              }\n            }\n          })\n        })\n      }\n      //地址子分类\n      if ('address' === menu.path) {\n        angular.forEach(menu.items, function(nav){\n          $stateProvider.state('address.' + nav.path, {\n            url: '/' + nav.path,\n            views: {              \n              'main@address': {\n                templateUrl : './components/controller/'+ nav.template,\n                controller: nav.controller\n              }\n            }\n          })\n        })\n      }\n    })\n\n  })\n\n});",
+			"file": "dev/route.js",
+			"file_size": 5376,
+			"file_write_time": 130761518018924091,
+			"settings":
+			{
+				"buffer_size": 5112,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// 身份验证\n// 权限控制\n\ndefine(['app'], function(app){\n  //var permissionList = localStorage.userinfo;\n  app.run(function(permissions){\n    permissions.setPermissions(localStorage.userinfo);\n  })\n\n  //用户\n  app.factory('userService', function(){\n    var userInfo = JSON.parse(localStorage.userInfo),\n        user = {};\n    if ('success' !== userInfo.status) {\n      user.isLogin = false;\n    } else {\n\n      user = userInfo.data\n      user.name = userInfo.data.username;\n      user.isLogin = true;\n    }\n    return user\n  })\n\n  //在取得当前用户的权限集合后,我们将这个集合存档到对应的一个service中\n  app.factory('permissions', ['$rootScope', function($rootScope){\n    var permissionList;\n    return {\n      setPermissions : function(permissions) {\n        permissionList = permissions;\n        //通过$broadcast广播事件,当权限发生变更的时候.\n        $rootScope.$broadcast('permissionsChanged')\n      }\n    }\n  }]);\n\n  //\n\n})\n\n",
+			"file": "dev/permission.js",
+			"file_size": 1021,
+			"file_write_time": 130763053098873473,
+			"settings":
+			{
+				"buffer_size": 871,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "docs/css/docs.css",
+			"settings":
+			{
+				"buffer_size": 1980,
+				"line_ending": "Windows",
+				"name": "/* Special grid styles"
+			}
+		},
+		{
+			"contents": "var express = require('express');\nvar logger = require('morgan');\nvar cookieParser = require('cookie-parser');\nvar bodyParser = require('body-parser');\n\n//var routes = require('./server/routes/index');\n\n\nvar app = express();\n\n// app.use(express.bodyParser());\n// app.use(express.methodOverrider());\n// app.use(express.cookieParser());\n\n\napp.use(express.Router());\n\napp.all('*', function(req, res, next) {\n  res.set({\n    'Access-Control-Allow-Origin': \"*\",\n    'Access-Control-Allow-Methods': \"GET, POST, DELETE, PUT\",\n    'Access-Control-Allow-Headers': 'X-Requested-With',\n    'Access-Control-Max-Age': \"60\"\n  })\n  next();\n});\n\n//身份认证\napp.get('/api/authenticate', function(req, res) {\n  // console.log(1, __dirname);\n  // res.sendfile('dev/index.html');  \n\n  if (!req.query.name || !req.query.password) {\n    res.send({\n      \"state\": \"failure\"\n    });\n    return;\n  }\n  var data = {\n    \"message\": \"success\",\n    \"type\": \"json\",\n    \"data\": {\n      \"password\": null,\n      \"username\": \"s2\",\n      \"userType\": 1,\n      \"companyId\": 273835,\n      \"userId\": 1303191,\n      //权限\n      \"permission\": {\n        \"main\": true,\n        \"set\": true,\n        \"goods\": true,\n      },\n      \"token\": 123\n    },\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n});\n\n//获取买家个人资料\napp.get('/seller_center/informationSetting/fetchSellerInfo.cf', function(req, res) {\n\n  //验证token\n  var token = req.query.sellerId;\n\n  if (token == 1) {\n    //获取该用户信息\n    var data = {\n      \"message\": \"success\",\n      \"type\": \"json\",\n      \"data\": {\n        \"password\": null,\n        \"username\": \"s2\",\n        \"id\": 1,\n        \"sellerId\": 1,\n        \"CompanyId\":1,\n        \"userType\": 1,\n        \"companyId\": 273835,\n        \"email\": '191815416@qq.com',\n        \"photo\": \"http://static.acfun.tv/dotnet/artemis/u/cms/www/default/avatarNone.jpg\",\n        \"userId\": 1303191,\n        \"mobile\": 18679633373,\n        \"city\": '中国',\n        \"address\": \"广东广州市海珠区城区琶洲\",\n        \"postcode\": 336600,\n        \"fax\": 368448544,\n        \"msn\": '',\n        \"qq\": 191815416,\n        //权限\n        \"permission\": {\n          \"main\": true,\n          \"set\": true,\n          \"goods\": true,\n        },\n        \"token\": 123\n      },\n      \"status\": \"success\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  } else {\n    var data = {\n      \"message\": \"账号或者密码错误\",\n      \"type\": \"json\",\n      \"data\": {},\n      \"status\": \"error\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  }\n\n});\n\n//修改邮箱\napp.get('/Modifyemail', function(req, res) {\n  if ('123456@qq.com' === req.query.odd) {\n    var data = {\n      \"message\": \"验证信已发送到您的邮箱 \" + req.query.new + \" ，请点击验证信中的“确认修改邮箱”，即可完成修改。\",\n      \"type\": \"json\",\n      \"data\": {},\n      \"status\": \"success\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  } else {\n    var data = {\n      \"message\": \"修改失败\",\n      \"type\": \"json\",\n      \"data\": {},\n      \"status\": \"error\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  }\n})\n\napp.get('/getCode', function(req, res) {\n  if (req.query.mobile) {\n    var data = {\n      \"message\": \"验证码已经发到 \" + req.query.mobile + \" 中，360秒内有效。\",\n      \"type\": \"json\",\n      \"data\": {},\n      \"status\": \"success\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  } else {\n    var data = {\n      \"message\": \"验证码发送失败\",\n      \"type\": \"json\",\n      \"data\": {},\n      \"status\": \"error\",\n      \"errorCode\": null\n    }\n    res.send(data);\n  }\n})\napp.get('/modifymobile', function(req, res) {\n    if (req.query.cur && req.query.code && req.query.new && req.query.code == 123456) {\n      var data = {\n        \"message\": \"修改手机成功\",\n        \"type\": \"json\",\n        \"data\": {},\n        \"status\": \"success\",\n        \"errorCode\": null\n      }\n      res.send(data);\n    } else {\n      var data = {\n        \"message\": \"修改手机失败\",\n        \"type\": \"json\",\n        \"data\": {},\n        \"status\": \"error\",\n        \"errorCode\": null\n      }\n      res.send(data);\n    }\n  })\n  //添加/更新买家个人资料\napp.post('/buyer/saveBuyerInfo', function(req, res) {\n  var data = {\n    \"message\": \"保存成功\",\n    \"type\": \"json\",\n    \"data\": {},\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n})\n\n\n//保存安全问题\napp.post('/seller_center/sellerAccountSetting/saveSecurityIssuesInfo', function(req, res) {\n  var data = {\n    \"message\": \"保存成功\",\n    \"type\": \"json\",\n    \"data\": {},\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n})\n// //添加/更新买家公司信息\n// app.post('/buyer/saveBuyerCompInfo', function(req, res){\n\n// })\n\n//获取卖家公司信息\napp.get('/companyController/getBuyerComp', function(req, res) {\n  var data = {\n    \"message\": \"\",\n    \"type\": null,\n    \"data\": {\n      \"buyerId\": 2,\n      \"countryId\": 32,\n      \"companyName\": \"广电商\",\n      \"companyLogo\": \"http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201308/04183205ty7x.jpg\",\n      \"companyDesc\": \"b2b电子商务网站\",\n      \"companyWebsite\": \"http://www.e-cantonfair.com\",\n      \"yearBuyingAmt\": 40,\n      \"companyFoundYear\": \"2010\",\n      \"zipCode\": 3366600,\n      \"address\": \"广东广州市海珠区城区琶洲广交会大厦\",\n      \"districtId\": 1,\n      \"companyType\": 5,\n      \"companyNature\": 1\n    },\n    \"status\": \"success\",\n    \"errorCode\": null,\n  }\nres.send(data);\n})\n\n//保存卖家信息成功\napp.post('/companyController/saveBuyerCompInfo', function(req, res) {\n  var data = {\n    \"message\": \"保存成功\",\n    \"type\": \"json\",\n    \"data\": {},\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n})\n//添加买家地址\napp.post('/BuyerAddrController/saveBuyerAddr', function(req, res){\n  var data = {\n    \"message\": \"保存成功\",\n    \"type\": \"json\",\n    \"data\": {},\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n})\n\napp.post('/BuyerAddrController/delBuyerAddr', function(req, res){\n  var data = {\n    \"message\": \"删除成功\",\n    \"type\": \"json\",\n    \"data\": {},\n    \"status\": \"success\",\n    \"errorCode\": null\n  }\n  res.send(data);\n})\n//获取买家收货地址\napp.get('/BuyerAddrController/saveBuyerAddr', function(req, res){\n  var data = {\n    \"message\": \"\", \n    \"type\": null, \n    \"data\": [\n        {\n          \"name\" : \"周\",\n          \"area\" : \"广东广州市海珠区城区\",   \n          \"address\" : \"凤浦中路679号广交会大厦\",\n          \"mobile\" : 18679966673,\n          \"tel\": 0793291261,\n          \"email\": \"191815416@qq.com\",\n          \"isDefaultAddress\": 1,\n          \"zipCode\": 3366600,\n          \"countryId\": 1,\n          \"regionCode\": \"广州市\"\n        },\n        {\n          \"name\" : \"赵\",\n          \"area\" : \"广东广州市海珠区城区\",   \n          \"address\" : \"凤浦中路679号广交会大厦\",\n          \"mobile\" : 18679966673,\n          \"tel\": 0793291261,\n          \"email\": \"191815416@qq.com\",\n          \"isDefaultAddress\": 0 ,\n          \"zipCode\": 3366600,\n          \"countryId\": 1,\n          \"regionCode\": \"广州市\"  \n        },\n        {\n          \"name\" : \"李\",\n          \"area\" : \"广东广州市海珠区城区\",   \n          \"address\" : \"凤浦中路679号广交会大厦\",\n          \"mobile\" : 18679966673,\n          \"tel\": 0793291261,\n          \"email\": \"191815416@qq.com\",\n          \"isDefaultAddress\": 0,\n          \"zipCode\": 3366600,\n          \"countryId\": 1,\n          \"regionCode\": \"广州市\"   \n        },\n        {\n          \"name\" : \"王\",\n          \"area\" : \"广东广州市海珠区城区\",   \n          \"address\" : \"凤浦中路679号广交会大厦\",\n          \"mobile\" : 18679966673,\n          \"tel\": 0793291261,\n          \"email\": \"191815416@qq.com\",\n          \"isDefaultAddress\": 0,\n          \"zipCode\": 3366600,\n          \"countryId\": 1,\n          \"regionCode\": \"广州市\"   \n        }\n    ], \n    \"status\": \"success\", \n    \"errorCode\": null, \n    \"page\": {\n        \"total\": 0, \n        \"page\": 1, \n        \"pageSize\": 10, \n        \"maxPage\": 0\n    }\n  };\n\n  res.send(data)\n})\n\napp.listen(3000);\nmodule.exports = app;",
+			"file": "app.js",
+			"file_size": 8512,
+			"file_write_time": 130763930825829828,
+			"settings":
+			{
+				"buffer_size": 7531,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"strip_tags('asdf')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/work/cfec",
+		"/D/work/cfec/dev",
+		"/D/work/cfec/dev/components/component",
+		"/D/work/cfec/dev/components/component/dialog",
+		"/D/work/cfec/dev/view/css",
+		"/D/work/cfec/dev/view/css/docs",
+		"/D/work/cfec/dev/view/less",
+		"/D/work/cfec/docs",
+		"/D/work/cfec/docs/css",
+		"/D/work/cfec/docs/view",
+		"/D/work/cfec/docs/view/css-component",
+		"/D/work/cfec/text"
+	],
+	"file_history":
+	[
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/work/cfec/app.js",
+		"/D/work/cfec/dev/menus.js",
+		"/D/work/cfec/README - 副本.md",
+		"/D/work/cfec/text/前端开发方式.md",
+		"/D/work/cfec/text/前端代码规范.md",
+		"/D/work/cfec/text/前端的进度和安排.md",
+		"/D/work/bolg-photo/server/index.php",
+		"/D/work/bolg-photo/static/js/main.js",
+		"/D/work/bolg-photo/index.html",
+		"/D/work/cfec/dev/components/controller/set/safetyproblem.html",
+		"/D/work/cfec/dev/components/controller/set/changMobile.html",
+		"/D/work/cfec/dev/components/controller/set/changEmail.html",
+		"/D/work/cfec/dev/components/controller/set/user.html",
+		"/D/work/cfec/dev/components/controller/set/changPassword.html",
+		"/D/work/cfec/dev/components/controller/set/securityissue.html",
+		"/D/work/cfec/dev/components/controller/address/index.js",
+		"/D/work/cfec/dev/components/controller/login/login.html",
+		"/D/work/cfec/dev/components/controller/login/login.js",
+		"/D/work/cfec/dev/components/controller/controller.js",
+		"/D/work/cfec/dev/components/controller/address/returns.html",
+		"/D/work/cfec/dev/components/service/ajax.js",
+		"/D/work/cfec/dev/components/controller/main.js",
+		"/D/work/cfec/dev/components/controller/set/index.js",
+		"/D/work/cfec/dev/components/service/dialog.js",
+		"/D/work/cfec/dev/components/controller/module.js",
+		"/D/work/cfec/dev/components/controller/set/company.html",
+		"/D/work/cfec/dev/components/controller/set/account.html",
+		"/D/svn/fpage/trunk/fsc/service/ajax.js",
+		"/D/svn/fpage/trunk/.bowerrc",
+		"/D/svn/fpage/trunk/bower.json",
+		"/C/Users/crab1_000/Downloads/iodineCalculation.jsp",
+		"/D/work/cfec/components_module/angular-bootstrap/ui-bootstrap.js",
+		"/D/work/cfec/components_module/angular-bootstrap/ui-bootstrap-tpls.js",
+		"/D/work/cfec/components_module/angular-bootstrap/ui-bootstrap-tpls.min.js",
+		"/D/work/cfec/dev/components/controller/login/dd.md",
+		"/C/Users/crab1_000/Downloads/前端架构（webapp）.md",
+		"/D/work/cfec/dev/main.js",
+		"/D/work/cfec/dev/route.js",
+		"/D/work/cfec/dev/view/template/menu.html",
+		"/D/work/cfec/pulib/dev/index.html",
+		"/D/work/cfec/dev/index.html",
+		"/D/work/cfec/dev/config.js",
+		"/D/work/cfec/server/routes.js",
+		"/D/work/cfec/dev/components/controller/index/index.html",
+		"/D/work/cfec/docs/route.js",
+		"/D/work/cfec/docs/menus.js",
+		"/D/work/cfec/docs/app.js",
+		"/D/work/cfec/docs/bootstrap.js",
+		"/D/work/cfec/docs/main.js",
+		"/D/work/cfec/dev/components/component/drag/index.html",
+		"/D/work/cfec/dev/components/component/base/base.js",
+		"/D/work/cfec/dev/components/component/event/event.js",
+		"/D/work/cfec/docs/index.html",
+		"/D/work/cfec/dev/components/component/class/class.js",
+		"/D/work/cfec/dev/components/directive/index.js",
+		"/D/work/cfec/dev/app.js",
+		"/D/work/cfec/dev/view/css/home.css",
+		"/D/work/cfec/dev/components/controller/set/address.html",
+		"/D/work/cfec/dev/components/controller/set/index.html",
+		"/D/work/cfec/dev/view/template/layout.html",
+		"/D/work/cfec/dev/components/controller/set/index.main.html",
+		"/D/work/cfec/dev/components/controller/set/index.side.html",
+		"/D/work/cfec/docs/view/module.main.html",
+		"/D/work/cfec/docs/view/module.side.html",
+		"/D/work/cfec/docs/view/module.js",
+		"/D/work/cfec/dev/components/component/drag/drag.js",
+		"/D/work/cfec/demo/view/module.main.html",
+		"/D/work/cfec/demo/index.html",
+		"/D/work/cfec/demo/view/module.js",
+		"/D/work/cfec/demo/view/module.html",
+		"/D/work/cfec/demo/view/module.side.html",
+		"/D/work/cfec/demo/view/menu.json",
+		"/D/work/cfec/demo/view/about.html",
+		"/D/work/cfec/dev/components/directive/hello.js",
+		"/D/work/cfec/demo/app.js",
+		"/D/work/cfec/demo/route.js",
+		"/D/work/cfec/demo/view/dev-module.html",
+		"/D/work/cfec/demo/view/standard.html",
+		"/D/work/cfec/demo/menus.js",
+		"/D/work/cfec/demo/css/demo.css",
+		"/D/work/cfec/dev/components/component/cookie/readme.html",
+		"/D/work/cfec/demo/view/ctrl.js",
+		"/D/work/cfec/demo/ctrl.js",
+		"/C/Users/crab1_000/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/crab1_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/work/cfec/dev/hello.html",
+		"/D/work/cfec/dev/components/component/readme.md",
+		"/D/work/cfec/demo/main.js",
+		"/D/work/cfec/demo/bootstrap.js",
+		"/D/work/screen/app.js",
+		"/D/QQ/191815416/FileRecv/04-10万达城：一带一路拉南昌2.html",
+		"/D/work/cfec/dev/components/controller/index/index.js",
+		"/D/work/private/电气/static/html/supplier.product.html",
+		"/D/work/private/电气/static/html/supplier.about.html",
+		"/D/work/private/电气/static/css/global.css",
+		"/D/work/private/电气/static/html/supplier.index.html",
+		"/D/work/private/电气/static/html/supplier.goods.html",
+		"/D/work/screen/README.md",
+		"/D/work/private/电气/static/src",
+		"/D/work/private/电气/static/dest",
+		"/C/Users/crab1_000/Desktop/cra.js",
+		"/C/Users/crab1_000/Desktop/crab.1.1.0.js",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/js/framework/utils/ui/window/baseWindow.js",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/js/utils/windowView.js",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/117/content.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/117/active.html",
+		"/D/svn/source/npl/about.html",
+		"/D/svn/source/npl/index.html",
+		"/C/Users/crab1_000/Desktop/array.js",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/page/common/block_footer_js.jsp",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/page/newproduct/new_Product_Pulish_Center.jsp",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/cfone/page/newproduct/common/block_header_117.jsp",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/full360/files/111vip120001.xml",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/index_1.html",
+		"/D/Server/Tomcat/apache-tomcat-7.0.53/webapps/ROOT/117/css/index.css",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8_2.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/10.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/9_4.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/9_3.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/9_2.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/9.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8_6.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8_5.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8_4.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1222/8_3.html",
+		"/C/xampp/htdocs/myxh/a/photo/2014/1223/13.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\work\\cfec\\dev\\view\\less",
+			"D:\\work\\cfec\\dev",
+			"D:\\work\\private\\电气\\static",
+			"",
+			"D:\\web\\bower_components\\ratchet\\sass",
+			"",
+			"76b532",
+			"C:\\xampp\\htdocs\\myxh"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span20",
+			"span4",
+			"span12",
+			"border-radius",
+			"oom",
+			"clearfix",
+			"e-wi",
+			"extra-space",
+			"col-offset",
+			"grid-gutter-width",
+			"col-width",
+			"gril",
+			"clearfix",
+			"gray-light",
+			"@link-color",
+			"static",
+			"/static",
+			"$rootScope",
+			"ng-model=\"password",
+			"$name",
+			"userId",
+			"请填写地址",
+			"o",
+			"O",
+			"o",
+			"userServeice",
+			"'",
+			">\n",
+			"length",
+			"type=\"number\"",
+			"options",
+			"2",
+			"1",
+			"for=\"password\"",
+			"$scope",
+			"sm-9",
+			"from",
+			"addresss",
+			"0793291261",
+			"18679966673",
+			"numfmt",
+			"\"tel\"",
+			"ol-sm-3",
+			"sm-10",
+			"sm-2",
+			"checkbox",
+			"”",
+			"“",
+			" id=\"\"",
+			"4",
+			"required",
+			"modalInstance",
+			"ngD",
+			"ngDialog",
+			"sessionStorage",
+			"isAuthenticated",
+			"AuthenticationService",
+			"';\n",
+			"define(['app'], function(app){\n//   app\n//     .controller('MainCtrl', ['$scope', 'menus', function($scope, menus){\n//       //console.log(menus);\n//       $scope.menus = menus;\n//     }])\n//     .controller('AccountCtrl', ['$scope', function($scope){\n\n//     }])\n\n\n\n// });",
+			"className",
+			"$stateProvider",
+			"$urlRouterProvider",
+			"ctor",
+			"modulerr",
+			"true",
+			"bs-",
+			"detection",
+			"convert",
+			"spaces",
+			"md5",
+			"webapp",
+			"files",
+			"return",
+			"fircfg",
+			"2694c6",
+			"07c",
+			"company-main",
+			"media-body",
+			".col-md",
+			".col-md-3",
+			"产品展示",
+			".d-area",
+			"174",
+			"130",
+			"xs",
+			"80",
+			"160",
+			"table",
+			"li-t",
+			">\n",
+			"body",
+			"><",
+			".table-caption",
+			"table-caption",
+			".introduce-btn-117",
+			".theme_banner_b_nr",
+			".icon-like",
+			".txt-li li",
+			"height=\"218\"",
+			"data-type=\"3\"",
+			"height=\"246\"",
+			"230x230_3",
+			"src",
+			"gray",
+			"pull-right",
+			".txt-li",
+			".booth-menu",
+			"myxh",
+			"myxh/",
+			"myxh",
+			"myxh/",
+			"myxh",
+			"<!",
+			"myxh/",
+			"myxh",
+			"my",
+			"<!",
+			"myxh",
+			"<img",
+			" data-src",
+			"_src",
+			"active-itme",
+			"images",
+			"src=\"",
+			"img",
+			"2015年4月15日第117届广交会起，设立“广交会新品发布中心”，打造领航中国制造国际化发展的行业名品发布中心，充分利用互联网点对点精准传播的优势，以“靶向传播、精准推送”为技术核心，组合广交会线上线下渠道独家海外客商资源，通过“定向人群、智慧传播”，将中国名牌企业的新产品、新技术、新设计及时、精准、高效推送给目标采购商。",
+			"img",
+			"getLatestPrice"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"069",
+			"2694c6",
+			"get.className",
+			"76b532",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\work\\cfec"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 13,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/svn/fsc/fsc/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4837,
+								4837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "dev/components/component/dialog/dialog.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10282,
+								10282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 547.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "docs/view/css-component/breadcrumbs.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "docs/view/css.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								468
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "docs/view/css-docs.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47420,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										11257,
+										11262
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								14923,
+								14923
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "dev/view/less/task.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "dev/view/css/docs/layout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								766,
+								766
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "docs/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1066,
+								1066
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "docs/route.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2838,
+								2838
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/D/work/bolg-photo/static/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5973,
+								5980
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/D/work/bolg-photo/static/js/fullSlide.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "dev/view/css/home.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3600,
+								2362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1687.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "dev/components/templat/dialog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								892,
+								897
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"modal fade in\" ng-controller=\"DialogCt",
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/D/work/bolg-photo/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1115,
+								1115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "dev/view/less/base/variables.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1215,
+								1220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "dev/view/less/base/btn.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3045,
+								3045
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1886.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "dev/view/less/base/mixins.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4394,
+								4394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1711.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "dev/view/less/base/grid.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										120,
+										123
+									],
+									[
+										226,
+										229
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "dev/view/less/base/util.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "docs/view/dev-css.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "dev/view/less/base/table.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								972,
+								985
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "dev/view/css/cfec12.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1590,
+								1590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1858.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "dev/view/css/docs/table.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1344,
+								1344
+							]
+						],
+						"settings":
+						{
+							"auto_name": "html:5",
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 253.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "dev/view/less/cfec.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "dev/view/less/docs/btn.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								329,
+								337
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "dev/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "dev/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1212,
+								1212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "dev/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1928,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "dev/route.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4913,
+								4913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "dev/permission.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 38,
+					"file": "docs/css/docs.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1533,
+								1533
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/* Special grid styles",
+							"is_xml": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 863.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1273,
+								1273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.60396705186,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 406.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setindex.js",
+				"dev\\components\\controller\\set\\index.js"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"securityissue",
+				"dev\\components\\controller\\set\\securityissue.html"
+			],
+			[
+				"login",
+				"dev\\components\\controller\\login\\login.js"
+			],
+			[
+				"c",
+				"dev\\config.js"
+			],
+			[
+				"adder",
+				"dev\\components\\controller\\set\\address.html"
+			],
+			[
+				"acc",
+				"dev\\components\\controller\\set\\account.html"
+			],
+			[
+				"windowview",
+				"js\\utils\\windowView.js"
+			],
+			[
+				"js/framework/utils/ui/window/basewindow.js",
+				"js\\framework\\utils\\ui\\window\\baseWindow.js"
+			],
+			[
+				"117",
+				"js\\special\\117\\index.js"
+			],
+			[
+				"117in",
+				"117\\css\\index.css"
+			],
+			[
+				"117index",
+				"js\\special\\117\\index.js"
+			],
+			[
+				"block_footer_js.jsp",
+				"cfone\\page\\common\\block_footer_js.jsp"
+			],
+			[
+				"rank",
+				"cfone\\page\\newproduct\\ranklist.jsp"
+			],
+			[
+				"sky",
+				"js\\page\\skype-uri.js"
+			],
+			[
+				"index.css",
+				"templets\\default\\css\\index.css"
+			],
+			[
+				"tindex.htm",
+				"templets\\default\\index.htm"
+			],
+			[
+				"head_in",
+				"templets\\default\\head_index.htm"
+			],
+			[
+				"head_top",
+				"templets\\default\\head_top.htm"
+			],
+			[
+				"side",
+				"templets\\default\\side.htm"
+			],
+			[
+				"admin.html",
+				"data\\admin\\index.html"
+			],
+			[
+				"dede/index.ht",
+				"dede\\templets\\index_body.htm"
+			],
+			[
+				"index_",
+				"dede\\index_body.php"
+			],
+			[
+				"inc_menu_module.php",
+				"dede\\inc\\inc_menu_module.php"
+			],
+			[
+				"nc_menu.php",
+				"dede\\inc\\inc_menu.php"
+			],
+			[
+				"inc_menu_func.php",
+				"dede\\inc\\inc_menu_func.php"
+			],
+			[
+				"index_menu_load.php",
+				"dede\\index_menu_load.php"
+			],
+			[
+				"999",
+				"new\\new\\new\\css\\admin_9947b49_9947b49_9947b49.css"
+			],
+			[
+				"indextpl",
+				"templates\\index.tpl.php"
+			],
+			[
+				"inde",
+				"css\\index.css"
+			],
+			[
+				"js/buyer/view/productdetailmodule",
+				"C\\js\\buyer\\view\\productDetailModule.js"
+			],
+			[
+				"/js/buyer/view/searchmodule.js",
+				"C\\js\\buyer\\view\\searchModule.js"
+			],
+			[
+				"/view/buyerindexmodule.js",
+				"C\\js\\buyer\\view\\buyerIndexModule.js"
+			],
+			[
+				"/js/buyer/view/pushspcard.js",
+				"C\\js\\buyer\\view\\pushSpCard.js"
+			],
+			[
+				"/buyer/view/buyerindexmodule.js",
+				"C\\js\\buyer\\view\\buyerIndexModule.js"
+			],
+			[
+				"fra",
+				"css\\supplier\\theme\\default\\frame.css"
+			],
+			[
+				"skype",
+				"js\\page\\skype-uri.js"
+			],
+			[
+				"search.css",
+				"css\\page\\search.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\work\\private\\private.sublime-workspace"
+			]
+		],
+		"width": 656.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

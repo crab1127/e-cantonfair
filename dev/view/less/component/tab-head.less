@@ -1,0 +1,105 @@
+//
+// tab-head
+// --------------------------------------------------
+@import "../base/variables.less";
+@import "../base/mixins.less";
+
+.tab-head{
+  padding: @tabHeadBasePadding 0 0;
+  border-bottom: 1px solid @tabHeadBorder;
+  margin-bottom: (@tabHeadBasePadding* 2);
+  line-height: @tabHeadLineHeight;
+  .clearfix();
+  a{
+    font-size: @baseFontSize;
+    color:@grayDark;
+    text-decoration: none;
+  }
+  .tab-tt {
+    float:left;
+    padding: @tabHeadTTPadding;
+    font-size:  @baseFontSize;
+    line-height: @tabHeadLineHeight;
+    margin-bottom:0;
+  }
+  .tab-more{
+    float: right;
+    margin-left:  @tabHeadBasePadding;
+    padding: @tabHeadTTPadding;
+  }
+  &.tab-pullRight > .tab-menu{
+    float:right;
+  }
+  .tab-menu{
+    float: left;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    >li{
+      float:left;
+      position: relative;
+      margin:0 0 0 4px;
+      bottom:-1px;
+      a{
+        display: block;
+        
+        padding: @tabHeadTTPadding;
+        border: 1px solid @tabHeadBorder;
+        border-radius: @baseBorderRadius @baseBorderRadius 0 0;
+        text-align: center;
+        background: #f8f8f8;
+        #gradient > .vertical(@tabHeadBackgroundHighlight,@tabHeadBackground);
+      }
+      &.active a{
+         border-bottom: 1px solid @white;
+        background:@white;
+        #gradient > .vertical(@white,@white);
+      }
+    }
+    >li:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.tab-hasBackground{
+  background: @tabHeadBackground;
+  border-radius: @borderRadiusLarge @borderRadiusLarge 0 0;
+}
+//small table-head
+.tab-head.tab-small
+{
+  padding: @tabHeadSmallPadding/2 0 0;
+  margin-bottom: @tabHeadSmallPadding;
+  line-height: @tabHeadSmallLineHeight;
+  .clearfix();
+  a{
+    font-size: @fontSizeSmall;
+  }
+  .tab-tt {
+    float:left;
+    padding: @tabHeadSmallTTPadding;
+    font-size:  @baseFontSize;
+    line-height: @tabHeadSmallLineHeight;
+    margin-bottom:0;
+  }
+  .tab-more{
+    float: right;
+    margin-left:  @tabHeadSmallPadding;
+    padding:  @tabHeadSmallTTPadding;
+  }
+  .tab-menu{
+    float: left;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    >li{
+      position: relative;
+      bottom:-1px;
+      a{
+        display: block;
+        padding:  @tabHeadSmallTTPadding;
+        border-radius: @baseBorderRadius @baseBorderRadius 0 0;
+      }
+    }
+  }
+}

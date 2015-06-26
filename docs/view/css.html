@@ -1,0 +1,41 @@
+<div class="docs-jumbotron jumbotron">
+  <div class="container">
+    <h1>css框架</h1>
+    <p></p>
+  </div>
+</div>
+<div class="container docs-cotainer">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="docs-sidebar">
+        <ul class="nav docs-sidenav">
+          <li>
+            <a href="javascript:;" ng-click="tolist('css-docs');">全局css样式</a>
+            <ul class="nav">
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">栅格系统</a></li>
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">布局系统</a></li>
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">表格</a></li>
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">表单</a></li>
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">按钮</a></li>
+              <li><a href="javascript:;" ng-click="tolist('css-docs');">辅助类</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">组件</a>
+            <ul class="nav">
+              <li><a href="javascript:;" id="list" ng-click="tolist('list');">list</a></li>
+              <li><a href="javascript:;" id="pagination" ng-click="tolist('pagination');">pagination</a></li>
+              <li><a href="javascript:;" id="breadcrumbs" ng-click="tolist('breadcrumbs');">breadcrumbs</a></li>
+              <li><a href="javascript:;" id="btn-group" ng-click="tolist('btn-group');">btn-group</a></li>
+              <li><a href="javascript:;" id="dropdowns" ng-click="tolist('dropdowns');">dropdowns</a></li>
+              <li><a href="javascript:;" id="tab-head" ng-click="tolist('tab-head');">tab-head</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-9">
+      <iframe ng-init="src='./view/css-component/css-docs.html'" src="{{src}}" frameborder="0" width="100%" style="height: 8272px;" ng-model="ifm" id="ifm" name="ifm"></iframe>
+    </div>
+  </div>
+</div>

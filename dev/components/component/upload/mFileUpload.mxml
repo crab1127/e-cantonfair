@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="300" minHeight="30" fontSize="12" color="#000000" backgroundColor="#FFFFFF" backgroundAlpha="0.0" backgroundGradientAlphas="[0.0, 0.0]" horizontalScrollPolicy="off" verticalScrollPolicy="off" height="30" applicationComplete="app(event)">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Image;
+			import mx.events.FlexEvent;
+			import mx.graphics.codec.*;
+			
+			private var fileUploadList:FileReferenceList = null;
+			private var fileList:Array = null;
+			private var curFileUpload:FileReference = null;
+			private var isBusy:Boolean = false;
+			private var allFileSize:Number;
+			private var allFinishFileSize:Number;
+			private var allFileCount:Number;
+			private var fileIndex:Number;
+			private var returnData:String = '';
+			private var image:Image;
+			private var noZipImageId:Number;
+			
+			private var paraBtnUploadText:String = '上 传';
+			private var paraBtnCancelText:String = '取 消';
+			private var paraImageWidth:int = 0;
+			private var paraImageHeight:int = 0;
+			private var paraImageQuality:int = 80;
+			private var paraMaxFileCount:int = 0;
+			private var paraMaxFileSize:Number = 0;
+			private var paraFilter:String = "*.*";
+			private var paraJsFunction:String = '';
+			private var paraLabelFormat:String = '{%} {uploadSize}/{allSize} [{fileIndex}/{fileCount}] {fileSize} {fileName}';
+			private var paraServerUrl:String = '';
+			//private var paraServerUrl:String = 'http://localhost:1354/WebSite1/mFileUpload/saveImage.aspx';
+			
+			//初始化
+			protected function app(event:FlexEvent):void
+			{
+				createMenu();
+				
+				btnUpload.enabled = false;
+				
+				ExternalInterface.addCallback("setPara", setPara);
+				ExternalInterface.addCallback("isBusy", getIsBusy);
+				
+				if(parameters != null)
+				{
+					for(var str:String in parameters)
+					{
+						setPara(str, parameters[str]);
+					}
+				}
+				
+				if(paraServerUrl == '')
+				{
+					showError("serverUrl未指定！", false);
+					return;
+				}
+				
+				resetUpload();
+			}
+			
+			//关于
+			private function createMenu():void
+			{
+				var mainMenu:ContextMenu = new ContextMenu();	
+				mainMenu.hideBuiltInItems();	//隐藏内置菜单
+				var menuItem:ContextMenuItem = new ContextMenuItem("关于...");
+				mainMenu.customItems.push(menuItem);
+				menuItem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT , function(e:ContextMenuEvent):void{					
+					var url:URLRequest = new URLRequest("http://www.cnblogs.com/zjfree/");
+					navigateToURL(url, "_blank");
+				});
+				this.contextMenu = mainMenu;
+			}
+			
+			//显示错误
+			private function showError(str:String, isJs:Boolean = true):void
+			{
+				bar.visible = false;
+				lblInfo.setStyle("color", 0xFF0000);
+				lblInfo.text = str;
+				if(isJs)
+				{
+					jsFunction("error", str);
+				}	
+			}
+			
+			//回调JS函数
+			private function jsFunction(type:String, str:String):void
+			{
+				if(!ExternalInterface.available)
+				{
+					return;
+				}
+				if(paraJsFunction == '')
+				{
+					return;
+				}
+				try
+				{
+					ExternalInterface.call(paraJsFunction, type, str);
+				}
+				catch(err:Error)
+				{
+					showError("JS函数[" + paraJsFunction + "]调用错误！信息：" + err.message, false);
+				}
+			}
+			
+			//获取状态
+			private function getIsBusy():Boolean
+			{
+				return isBusy;
+			}
+			
+			//初始化上传
+			private function resetUpload():void
+			{
+				if(paraServerUrl == '')
+				{
+					return;
+				}
+				if(isBusy)
+				{
+					return;
+				}
+				bar.setProgress(0,100);
+				bar.visible = false;
+				lblInfo.text = '';
+				btnUpload.enabled = true;
+				btnUpload.label = paraBtnUploadText;
+			}
+			
+			//设置参数
+			private function setPara(para:String, value:Object):Boolean
+			{
+				if(isBusy)
+				{
+					return false;
+				}
+				if(value == null)
+				{
+					return false;
+				}
+				switch(para)
+				{
+					case 'serverUrl':		//服务器上传响应URL
+						if(String(value) == '')
+						{
+							return false;
+						}
+						paraServerUrl = String(value);
+						if(!btnUpload.enabled)
+						{
+							resetUpload();
+						}
+						break;
+					case 'jsFunction':		//回调JS
+						paraJsFunction = String(value);
+						break;
+					case 'filter':			//文件格式 "*.jpg;*.png"
+						paraFilter = String(value);
+						break;
+					case 'maxFileCount':	//一次可上传的文件数量限制
+						paraMaxFileCount = limitInt(value, 0, 200);
+						break;
+					case 'maxFileSize':		//单文件最大限制
+						paraMaxFileSize = limitInt(value, 0, int.MAX_VALUE);
+						break;
+					case 'imageWidth':		//JPG图片缩放宽度
+						paraImageWidth = limitInt(value, 0, 2000);
+						break;
+					case 'imageHeight':		//JPG图片缩放高度
+						paraImageHeight = limitInt(value, 0, 2000);
+						break;
+					case 'imageQuality':	//JPG图片缩放质量
+						paraImageQuality = limitInt(value, 1, 100);
+						break;
+					case 'uploadText':		//上传按钮文本
+						paraBtnUploadText = String(value);
+						btnUpload.label = paraBtnUploadText;
+						break;
+					case 'cancelText':		//取消按钮文本
+						paraBtnCancelText = String(value);
+						break;
+					case 'labelFormat':		//上传时文本提示
+						paraLabelFormat = String(value);
+						break;
+					default:
+						return false;
+						break;
+				}
+				
+				return true;
+			}
+			
+			//数值限制
+			private function limitInt(value:Object, min:int, max:int):int
+			{
+				var val:int = int(value);
+				if(val < min)
+				{
+					val = min;
+				}
+				if(val > max)
+				{
+					val = max;
+				}
+				return val;
+			}
+			
+			//格式化文件大小
+			private function formatSize(size:Number):String
+			{
+				var strReturn:String = "";
+				var tempSize:Number = Math.abs(size);
+				if (tempSize < 1024)
+				{
+					strReturn += tempSize.toString() + "B";
+				}
+				else if (tempSize < 1024 * 1024)
+				{
+					tempSize = tempSize / 1024;
+					strReturn += formatNumber(tempSize, 2) + "K";
+				}
+				else if (tempSize < 1024 * 1024 * 1024)
+				{
+					tempSize = tempSize / 1024 / 1024;
+					strReturn += formatNumber(tempSize, 2) + "M";
+				}
+				else
+				{
+					tempSize = tempSize / 1024 / 1024 / 1024;
+					strReturn += formatNumber(tempSize, 2) + "G";
+				}
+				
+				if (size < 0)
+				{
+					strReturn = "-" + strReturn;
+				}
+				
+				return strReturn;
+			}
+			
+			//格式化两位小数
+			private function formatNumber(i:Number, j:int):Number
+			{
+				i = i * Math.pow(10, j);
+				i = Math.round(i);
+				i = i / Math.pow(10, j);
+				return i;
+			}
+			
+			//上传按钮 
+			protected function btnUpload_clickHandler(event:MouseEvent):void
+			{
+				if(btnUpload.label == paraBtnUploadText)
+				{
+					selectFile();
+				}
+				else
+				{
+					if(curFileUpload != null)
+					{
+						curFileUpload.cancel();
+					}
+					isBusy = false;
+					bar.setProgress(allFileSize, allFileSize);
+					bar.visible = false;
+					lblInfo.setStyle("color", 0xFF0000);
+					lblInfo.text = "用户取消!";
+					btnUpload.label = paraBtnUploadText;
+					jsFunction("upload_cancel", "用户取消了上传");
+				}
+			}
+			
+			//选择上传文件
+			private function selectFile():void
+			{
+				fileList = new Array();
+				fileUploadList = new FileReferenceList();
+				fileUploadList.addEventListener(Event.SELECT, file_select);
+				var fileFilter:FileFilter = new FileFilter(paraFilter,paraFilter);
+				if(paraMaxFileCount == 1)
+				{
+					//单个文件上传
+					curFileUpload = new FileReference();
+					curFileUpload.addEventListener(Event.SELECT, simpleFile_select);
+					curFileUpload.browse([fileFilter]);
+				}
+				else
+				{
+					fileUploadList.browse([fileFilter]);
+				}
+			}
+			
+			//单文件上传
+			private function simpleFile_select(e:Event):void
+			{
+				fileList.push(curFileUpload);
+				file_select(e);
+			}
+			
+			//多文件上传
+			private function file_select(e:Event):void
+			{
+				if(fileUploadList.fileList != null)
+				{
+					fileList = fileUploadList.fileList;
+				}
+				if(fileList.length == 0)
+				{
+					return;
+				}
+				if(paraMaxFileCount > 0 && paraMaxFileCount < fileList.length)
+				{
+					showError("只允许同时上传" + paraMaxFileCount.toString() + "个文件！");
+					return;
+				}
+				allFileSize = 0;
+				fileIndex = 0;
+				noZipImageId = -1;
+				for(var i:int=0; i<fileList.length; i++)
+				{
+					var fileUpload:FileReference = fileList[i];
+					if(paraMaxFileSize > 0 && paraMaxFileSize < fileUpload.size)
+					{
+						showError("文件[" + fileUpload.name + "]太大了！单个文件不可超过 " + formatSize(paraMaxFileSize) + "！");
+						return;
+					}
+					allFileSize += fileUpload.size;
+				}
+				
+				lblInfo.setStyle("color", 0x000000);
+				lblInfo.text = '准备上传！';
+				allFileCount = fileList.length;
+				bar.setProgress(0, allFileSize);
+				btnUpload.label = paraBtnCancelText;
+				lblInfo.visible = true;
+				bar.visible = true;
+				returnData = '';
+				jsFunction("upload_start", fileList.length + '|' + formatSize(allFileSize));
+				isBusy = true;
+				upload();
+			}
+			
+			//开始上传
+			private function upload():void
+			{
+				if(!isBusy)
+				{
+					return;
+				}
+				curFileUpload = fileList[fileIndex];
+				curFileUpload.addEventListener(IOErrorEvent.IO_ERROR, uploadError);
+				curFileUpload.addEventListener(SecurityErrorEvent.SECURITY_ERROR, uploadError);
+				if(noZipImageId != fileIndex && curFileUpload.type.toLowerCase() == ".jpg" && (paraImageWidth > 0 || paraImageHeight > 0))
+				{
+					curFileUpload.addEventListener(Event.COMPLETE, loadImageComplete);
+					curFileUpload.load();
+				}
+				else
+				{
+					curFileUpload.removeEventListener(Event.COMPLETE, loadImageComplete);
+					//curFileUpload.addEventListener(Event.COMPLETE, file_complete);
+					curFileUpload.addEventListener(ProgressEvent.PROGRESS, file_progress);				
+					curFileUpload.addEventListener(DataEvent.UPLOAD_COMPLETE_DATA, uploadCompleteDataHandler);
+					
+					var request:URLRequest = new URLRequest(paraServerUrl);
+					curFileUpload.upload(request);
+				}
+			}
+			
+			//加载image
+			private function loadImageComplete(evt:Event):void
+			{
+				var imageloader:Loader = new Loader();
+				imageloader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void{								
+					var bitmap:Bitmap = Bitmap(e.target.content);
+					if((bitmap.width < paraImageWidth || paraImageWidth == 0) && (bitmap.height < paraImageHeight || paraImageHeight == 0))
+					{
+						//当图片尺寸小于需要缩放尺寸时，无需缩放使用普通上传
+						bitmap = null;
+						curFileUpload.data.clear();						
+						noZipImageId = fileIndex;
+						upload();
+						return;
+					}
+					image = new Image();
+					image.addEventListener(FlexEvent.CREATION_COMPLETE, function(e:FlexEvent):void{
+						var bd : BitmapData = new BitmapData( image.width, image.height ); 
+						var m : Matrix = new Matrix(); 
+						bd.draw( image, m );
+						
+						var jpegEnc:JPEGEncoder = new JPEGEncoder(paraImageQuality);
+						var jpegData:ByteArray = jpegEnc.encode(bd);
+						bitmap = null;
+						curFileUpload.data.clear();
+						image.source = null;
+						
+						var req:URLRequest = new URLRequest(paraServerUrl);						
+						req.contentType = 'applicatoin/octet-stream';
+						req.method = URLRequestMethod.POST;
+						req.data = jpegData;
+						var arrHead:Array = new Array();
+						arrHead.push(new URLRequestHeader("fileName", encodeURIComponent(curFileUpload.name)));
+						req.requestHeaders = arrHead;
+						
+						var loader:URLLoader = new URLLoader();
+						loader.addEventListener(Event.COMPLETE, imageUploadComplete);
+						loader.addEventListener(IOErrorEvent.IO_ERROR, function(evt:IOErrorEvent):void{
+							imageUploadError("上传图片失败！错误信息：" + evt.text);
+						});
+						loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, function(evt:SecurityErrorEvent):void{
+							imageUploadError("上传图片失败！错误信息：" + evt.text);
+						});
+						try
+						{
+							updateProgress();
+							loader.load(req);
+						} 
+						catch (error:Error)
+						{
+							imageUploadError("上传失败！" + error.message);
+						}
+					});
+					//消除图片锯齿
+					bitmap.smoothing = true; 
+					bitmap.pixelSnapping = PixelSnapping.ALWAYS;
+					image.source = bitmap;
+					image.x = 0;
+					image.y = 100;
+					if(paraImageWidth == 0)
+					{
+						//按高度缩放
+						image.height = paraImageHeight;
+						image.width = paraImageHeight / bitmap.height * bitmap.width;
+					}
+					else if(paraImageHeight == 0)
+					{
+						//按宽度缩放
+						image.width = paraImageWidth;
+						image.height = paraImageWidth / bitmap.width * bitmap.height;
+					}
+					else
+					{
+						//等比缩放
+						if(paraImageWidth / paraImageHeight > bitmap.width / bitmap.height)
+						{
+							image.height = paraImageHeight;
+							image.width = paraImageHeight / bitmap.height * bitmap.width;
+						}
+						else
+						{
+							image.width = paraImageWidth;
+							image.height = paraImageWidth / bitmap.width * bitmap.height;
+						}
+					}
+					
+					addChild(image);
+				});
+				imageloader.loadBytes(curFileUpload.data);
+			}
+			
+			//图片上传错误
+			private function imageUploadError(str:String):void
+			{
+				if(curFileUpload != null)
+				{
+					curFileUpload.cancel();
+				}
+				isBusy = false;
+				btnUpload.label = paraBtnUploadText;
+				showError(str);
+			}
+			
+			//图片上传成功
+			private function imageUploadComplete(evt:Event):void
+			{
+				file_complete(evt.target.data);
+			}
+			
+			//上传回发数据
+			private function uploadCompleteDataHandler(e:DataEvent):void
+			{
+				file_complete(e.data);
+			}
+			
+			//上传完毕后的事件
+			private function file_complete(data:String):void
+			{
+				jsFunction("upload_file_complete", data);				
+				fileIndex++;
+				if(fileIndex < fileList.length)
+				{
+					returnData += data + '|';
+					upload();
+				}
+				else
+				{
+					returnData += data;
+					jsFunction("upload_complete", returnData);
+					
+					isBusy = false;
+					bar.setProgress(allFileSize, allFileSize);
+					bar.visible = false;
+					lblInfo.setStyle("color", 0xFFFFFF);
+					lblInfo.text = "上传成功!";
+					btnUpload.label = paraBtnUploadText;
+				}
+			}
+			
+			//上传进度条
+			private function file_progress (e:ProgressEvent):void
+			{
+				updateProgress(e.bytesLoaded);
+			}
+			
+			//更新上传进度
+			private function updateProgress(size:Number = 0):void
+			{
+				var finishFileSize:Number = 0;
+				for(var i:int=0; i<fileIndex; i++)
+				{
+					finishFileSize += fileList[i].size;
+				}
+				finishFileSize += size;
+				allFinishFileSize = finishFileSize;
+				bar.setProgress(allFinishFileSize, allFileSize);
+				
+				//50% 2.3M/10.23M [1/50] 2.3M sssffffffffffff.jpg
+				//{%} {uploadSize}/{allSize} [{fileIndex}/{fileCount}] {fileSize} {fileName}
+				var str:String = paraLabelFormat;
+				str = str.replace("{%}", Math.round(100.0 * allFinishFileSize / allFileSize).toString() + "%");
+				str = str.replace("{uploadSize}", formatSize(allFinishFileSize));
+				str = str.replace("{allSize}", formatSize(allFileSize));
+				str = str.replace("{fileIndex}", (fileIndex + 1).toString());
+				str = str.replace("{fileCount}", allFileCount.toString());
+				str = str.replace("{fileSize}", formatSize(fileList[fileIndex].size));
+				str = str.replace("{fileName}", fileList[fileIndex].name);
+				
+				lblInfo.text = str;
+				lblInfo.setStyle("color", 0x000000);
+				jsFunction("upload_progress", lblInfo.text);
+			}
+						
+			//上传失败
+			private function uploadError(e:ErrorEvent):void
+			{
+				if(curFileUpload != null)
+				{
+					curFileUpload.cancel();
+				}
+				isBusy = false;
+				btnUpload.label = paraBtnUploadText;
+				showError("上传时发生错误！" + e.text);
+			}
+			
+		]]>
+	</mx:Script>
+	<mx:HBox y="0" verticalAlign="middle" width="100%" x="3" height="30">
+		<mx:Button label="上 传" fontWeight="normal" id="btnUpload" click="btnUpload_clickHandler(event)"/>
+		<mx:Canvas width="100%" height="24" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+			<mx:ProgressBar id="bar" labelPlacement="center" fontWeight="normal"  mode="manual" width="100%" x="0" verticalCenter="0" label=" "/>
+			<mx:Label x="3" text="" verticalCenter="0" id="lblInfo"/>
+		</mx:Canvas>
+	</mx:HBox>
+</mx:Application>

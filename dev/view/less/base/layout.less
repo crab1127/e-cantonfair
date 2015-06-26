@@ -1,0 +1,44 @@
+/**
+ * 定义布局
+ * author: 陆康永
+ * time: 2015-06-15
+ */
+@containerCenter:        0 auto;
+@containerWidth:         1200px;
+@layout1Width:           230px;
+@layout2Width:           230px;
+
+.container{
+    width:@containerWidth;
+    margin:@containerCenter;
+  //一栏布局
+  .layout1-main{
+    width: @containerWidth;
+  }
+  //两栏布局
+  .layout2-side1{
+    width: @layout1Width;
+    float: left;    
+  }
+  .layout2-main{
+    width: (@containerWidth - @layout1Width);
+    float: left;
+  }
+
+  //三栏布局
+  .layout3-side1{
+    width: @layout1Width;
+    float: left;   
+  }
+  .layout3-main{
+    width: (@containerWidth - @layout1Width - @layout2Width);
+    float: left;
+  }
+   .layout3-side2{
+    width: @layout2Width;
+    float: left;   
+  }
+
+}
+
+

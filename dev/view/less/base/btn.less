@@ -1,0 +1,188 @@
+/**
+ * 按钮
+ * author: 周王献
+ * time: 2015-06-15
+ */
+
+//定义混入
+
+//按钮尺寸
+.button-size(@padding; @font-size; @border-radius) {
+  padding: @padding;
+  font-size: @font-size;
+  line-height: normal;
+  border-radius:@border-radius;
+}
+//按钮变化
+.button-variant(@color; @background; @border){
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active{
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+
+  .badge{
+    color: @background;
+    background-color: @color;
+  }
+}
+
+//基础css
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  color:#333;
+  border: 1px solid transparent;
+  background-image:none;
+  .button-size(5px 14px 6px, @basefont, @border-radius);
+  .user-select(none);
+
+  &:hover,
+  &:focus {
+    color: #333;
+    text-decoration: none;
+  }
+
+  &,
+  &:active,
+  &.active{
+    &:focus {
+      //.tab-focus();
+    }
+  }
+
+  //活动时 内阴影
+  &:active,
+  &.active{
+    outline: 0;
+    background-image: none;
+    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125))
+  }
+
+  //禁止
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &{
+    cursor: not-allowed;
+    pointer-events: none;
+    .opacity(.65);
+    .box-shadow(none);
+  }
+}
+
+// 其他按钮
+//
+
+.btn-default{
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+.btn-primary{
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border)
+}
+// Success appears as green
+.btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+}
+// Info appears as blue-green
+.btn-info {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+// Warning appears as orange
+.btn-warning {
+  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  color: @link-color;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(9px 14px 9px; (@basefont + 2px);  @border-radius);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(5px 9px 5px; (@basefont - 2px);  @border-radius);
+}
+.btn-xs {
+  .button-size(3px 9px 3px; (@basefont - 2px);  @border-radius);
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

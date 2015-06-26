@@ -1,0 +1,202 @@
+<h3 id="dialog-">Dialog组件文档</h3>
+<p><a href="/dev/components/component/dialog/index.html">Demo链接</a></p>
+<ul>
+<li>依赖：<code>require.js</code> <code>dialog.css</code> </li>
+<li>调用方式：<pre><code>require([&#39;dialog&#39;], function (dialog){
+   dialog.alert(msg, fn);
+}
+</code></pre></li>
+</ul>
+<p>该文档分为两部份：</p>
+<ul>
+<li>用户文档：用于调用者查看</li>
+<li>开发者文档：用于二次开发或扩展查看</li>
+</ul>
+<h3 id="-">用户文档</h3>
+<ul>
+<li><p><code>alert(msg, fn)</code>：模拟原生<code>window.alert</code>方法</p>
+<blockquote>
+<p>参数说明</p>
+<ul>
+<li>@params {String} msg - 显示在弹出窗口上的内容</li>
+<li>@params { ? Function} fn - 点击<code>确定</code>按钮之后的回调</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>confirm(msg, fn)</code>：模拟原生<code>window.confirm</code>方法</p>
+<blockquote>
+<p>参数说明</p>
+<ul>
+<li>@params {String} msg - 显示在弹出窗口上的内容</li>
+<li>@params { ? Function} fn - 点击<code>确定</code>按钮之后的回调</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>prompt(msg, defaultVal, fn)</code>：模拟原生<code>window.prompt</code>方法</p>
+<blockquote>
+<p>参数说明</p>
+<ul>
+<li>@params {String} msg - 显示在弹出窗口上的内容</li>
+<li>@params {String} defaultVal - 默认值</li>
+<li>@params { ? Function} fn - 点击<code>确定</code>按钮之后的回调。组件会将用户输入的值传回给回调函数，使用者在回调函数中操作用户输入的值。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="-">开发者文档</h3>
+<ul>
+<li>版本号：0.1.0.20150615_beta<blockquote>
+<p>目前主版本是0，次版本是1，修正版本0。当前版本是测试版，如要用于项目，请反复测试不同环境下是否有问题。</p>
+</blockquote>
+</li>
+<li><p>开发过程测试环境：<strong> chrom 43.0.2357.124 m </strong></p>
+</li>
+<li><p>设计说明：<br>所有基于<code>Dialog</code>的组件的Dom都由两个部份组成：<code>baseDom</code>和<code>customDom</code>。皆缓存在<code>cache.doms</code>对象上:</p>
+</li>
+</ul>
+<pre><code> this.cache = {
+     doms:{
+         baseDom : {},
+         customDom : {}
+     },
+     events:{
+         baseEvent : {},
+         customEvent: {}
+     }
+ };
+</code></pre><ul>
+<li><p><code>baseDom</code>表示其基本结构，原则上来说，不允许修改这些Dom的。在后面的版本迭代中，可能会隐藏baseDom，
+所以开发者不要去操作这些dom，只能通过开放的api和配置参数去操作。任何一个<code>Dialog</code>都有这些基本结构：</p>
+<ul>
+<li><code>dialog</code> : 最外层的容器</li>
+<li><code>box</code> : 该容器主要用于css设计</li>
+<li><code>header</code> : 头部</li>
+<li><code>body</code> : 主体</li>
+<li><code>footer</code> : 底部  </li>
+</ul>
+</li>
+<li><p><code>customDom</code>是开放给开发者配置，<strong> 每一个配置参数，默认都生成的是<code>div</code>元素。后期版本中会开放一个属性，用于设置<code>tagName</code> </strong>。</p>
+<ul>
+<li>header ： <code>{attr : &#39;class=&quot;aa&quot; data-tt=&quot;tt&quot;&#39;, content : &quot;&quot;, event:{&quot;click&quot; : function(){//do sth}}}</code></li>
+<li>body : 同上</li>
+<li>footer : 同上</li>
+<li>属性值说明：  <blockquote>
+<ul>
+<li>attr : 设置元素的属性</li>
+<li>content : 设置元素的内容。目前只支持Jquery.append方法能够支持的参数。在下一个<strong>修订版本</strong>中，会支持子集元素配置。<pre><code>{attr : &#39;class=&quot;aa&quot;&#39;, content : {
+    child_1 : {attr : &#39;class=&quot;aa&quot;&#39;, content : {}, event : {}}
+}, event : {}}
+</code></pre></li>
+<li>event : 接受 <code>Jquery.on</code> 方法的参数</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>events对象在该版本中，并没有收集用户定义的event。主要是因为该版本提供的3个组件，都没有自定义的事件函数啊...<br>开发者基于该组件创建其他组件的时候，这个cache就有用了。  </p>
+<p>该组件目前只有一个基类<code>Dialog</code>。开发者可以通过该类快速生成一个Dialog组件的Dom。只需传入一个配置参数即可。<br>组件会将生成的Dom缓存下来，保存在该对象上，给开发者使用。  </p>
+<p>其默认的配置参数如下：</p>
+<pre><code>    this.DEFAULT_CONFIG = {
+      parent : $(&quot;body&quot;),
+      // 基础结构配置
+      BASE_CONF : {
+          dialog : util.createConfig(&#39;class=&quot;dialog&quot;&#39;, null, {}),
+          box : util.createConfig(&#39;class=&quot;box&quot;&#39;, null, {}),
+          header : util.createConfig(&#39;class=&quot;header&quot;&#39;, null, {}),
+          body : util.createConfig(&#39;class=&quot;body&quot;&#39;, null, {}),
+          footer : util.createConfig(&#39;class=&quot;footer&quot;&#39;, null, {})
+      },
+      // 自定义配置
+      CUSTOM_CONF : {
+          header : util.createConfig(&#39;class=&quot;header&quot;&#39;, &quot;header content&quot;, {}),
+          body : util.createConfig(&#39;class=&quot;body&quot;&#39;, &quot;body content&quot;, {}),
+          footer : util.createConfig(&#39;class=&quot;footer&quot;&#39;, &quot;footer content&quot;, {})
+      }
+  };
+  // util.createConfig代码如下
+  // 返回一个配置参数的对象{attr:attr, event : {}, ? content : &quot;&quot;}
+  function(attr, con, eventObj){
+      var ret = {};
+      ret.attr = util.isString(attr) ? attr : &quot;&quot;;
+      ret.event = util.isObjectLiterals(eventObj) ? eventObj : {};
+      if(con != null){
+          ret.content = con;
+      }
+      return ret;
+  }
+</code></pre><ul>
+<li><p>开放API</p>
+<ul>
+<li><p>animate(wrap)</p>
+<blockquote>
+<p>设置弹出动画。开发者可以复写该函数，用于改变默认的动画效果。该函数必须返回wrap，否则报错。
+wrap为<code>baseDom.dialog</code></p>
+</blockquote>
+</li>
+<li><p>bindDomEvent(doms, events)</p>
+<blockquote>
+<p>绑定事件
+doms为一个对象{header : jqueryObj}
+events 为一个对象 {header : {&quot;click&quot; : function(){}}}
+也可以用数组存储doms和events，但是需要下标一一对应</p>
+</blockquote>
+</li>
+<li><p>close(fn)</p>
+<blockquote>
+<p>关闭组件，与hide方法不同，hide只是用样式隐藏掉dom。close是从内存和缓存上直接删除该对象
+删除完成后，执行fn</p>
+</blockquote>
+</li>
+<li><p>domCreatedCallback(doms)</p>
+<blockquote>
+<p>开发者最重要的函数
+在一个组件init之后调用，此时，组件所有的dom都已创建完成
+doms包含了baseDom和customDom</p>
+</blockquote>
+</li>
+<li><p>fillDoms(conf)</p>
+<blockquote>
+<p>填充baseDom，具体调用方法看源码</p>
+</blockquote>
+</li>
+<li><p>getBaseDomEvent()</p>
+<blockquote>
+<p>获取baseDom定义的事件函数的map</p>
+</blockquote>
+</li>
+<li><p>getCustomDomEvent()</p>
+<blockquote>
+<p>获取customDom定义的事件函数的map</p>
+</blockquote>
+</li>
+<li><p>getEventMap(conf)</p>
+<blockquote>
+<p>返回配置参数中的event对应的map</p>
+</blockquote>
+</li>
+<li><p>hide(fn)</p>
+<blockquote>
+<p>隐藏面版，执行回调</p>
+</blockquote>
+</li>
+<li><p>init()</p>
+<blockquote>
+<p>初始化一个组件，具体内容看源码</p>
+</blockquote>
+</li>
+<li><p>mixConfig(conf)</p>
+<blockquote>
+<p>根据conf混淆参数，如果conf中没有配置，则以this.DEFAULT_CONFG为准。</p>
+</blockquote>
+</li>
+<li><p>show(fn)</p>
+<blockquote>
+<p>显示组件</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="-dialog-init-show-">【所有的dialog组件都需要手动init之后，再调用show方法，才会显示在页面上】</h4>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+123
+</body>
+<script type="text/javascript" src="/components_module/requirejs/require.js?aa"></script>
+<script type="text/javascript">
+    var obj = {
+        a:"a",
+        b:{
+            c : "c",
+            _c : {
+                a : 1
+            }
+        },
+        d : true,
+        e : {
+            f : null
+        }
+    };
+
+    var _obj = {
+        d : true,
+        b : {
+            c : '_c'
+        }
+    };
+
+    var __obj = {
+        d : true,
+        b : {
+            c : '_c'
+        }
+    };
+
+    var __, queue;
+
+    require(['tools'], function(tools){
+        console.log(tools.trim("    1123        "));
+        console.log(tools.random(0, 100, 5).sort(function(a, b){
+            return a > b ? 1 : -1;
+        }));
+        console.log(tools.mix(_obj, obj, true));
+        console.log(tools.mix(__obj, obj, false));
+        console.log(__ = tools.clone(__obj, true));
+        console.log(tools.unique([1,1,1,2,3]))
+        tools.each({a:'a', b : 'b'}, function(key, val){
+            console.log(key, val);
+        });
+
+        tools.arrayEach([1,2,3], function(key, val){console.log(key, val)});
+
+        queue = new tools.Queue();
+        for(var i = 0; i < 50; i++){
+            queue.add(i);
+        }
+    })
+</script>
+</html>

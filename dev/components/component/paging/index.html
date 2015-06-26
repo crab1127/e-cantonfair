@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/components_module/bootstrap/dist/css/bootstrap.css"/>
+    <style type="text/css">
+        .btn{border:1px solid #ccc;}
+        .disable{color:#fff;background-color:#ccc;}
+        .current{border-color:red;}
+    </style>
+</head>
+<body>
+    <ul id="page"></ul>
+</body>
+<script type="text/javascript" src="/components_module/requirejs/require.js"></script>
+<script type="text/javascript">
+    // 模拟一个ajax数据
+    var data = {
+        total : 100,
+        list : [
+            {id:"1", name : "name_1", src : ""},
+            {id:"2", name : "name_2", src : ""},
+            {id:"3", name : "name_3", src : ""}
+        ]
+    };
+
+    var page;
+
+    require.config({
+        paths : {
+            "tools" : "/dev/components/component/tools/tools",
+            "jquery" : "/components_module/jquery/dist/jquery"
+        }
+    });
+
+    require(['paging'], function(Page){
+        console.log(page = new Page({
+            parent:$('#page')
+        }));
+    });
+</script>
+</html>

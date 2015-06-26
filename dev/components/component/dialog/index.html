@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/components_module/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="dialog.css"/>
+
+    <style type="text/css">
+        #wrap{width:300px;height:186px;}
+    </style>
+</head>
+<body>
+<!-- base dialog -->
+<h3>基础dialog</h3>
+<div id="wrap"></div>
+<h3>点击下面按钮，生成不同的dialog</h3>
+<input type="button" class="btn btn-default btn-sm" value="alert"/>
+<input type="button" class="btn btn-default btn-sm" value="confirm"/>
+<input type="button" class="btn btn-default btn-sm" value="prompt"/>
+<div>
+    <a href="dialog.html"></a>
+</div>
+</body>
+
+<script src="/components_module/requirejs/require.js"></script>
+<script type="text/javascript">
+
+    require.config({
+        paths:{
+              'jquery': "/components_module/jquery/dist/jquery"
+        }
+    });
+
+    require(['dialog'], function (dialog){
+        var Dialog = dialog.Dialog,
+            $ = dialog.$;
+
+        var d = new Dialog({parent: $("#wrap")});
+        d.init();
+        d.show();
+        console.log(d);
+        
+        $('body > input').click(function(){
+            var val = this.value,
+                msg = "simple text for" + val,
+                log = function(arg){console.log(arg)};
+
+            if(val === "prompt"){
+                dialog[val](msg, 'defaultText', function(val){log(val)});
+            }else{
+                dialog[val](msg, log, function(){log(this)});
+            }
+        });
+
+    });
+</script>
+</html>
