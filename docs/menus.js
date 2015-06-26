@@ -74,20 +74,37 @@ define(['app'], function(app){
         "title" : "req",
         "desc" : "获取路径的参数",
         "isFinish" : true
-      }
+      },
+        {
+            "id" : 15,
+            "title" : "tools",
+            "desc" : "工具函数",
+            "isFinish" : true
+        }
     ],
     "ui" : [
       {
         "id" : 11,
         "title" : "dialog",
         "desc" : "弹窗",
-        "isFinish" : false
+        "isFinish" : true
       },
       {
         "id" : 12,
         "title" : "tab",
         "desc" : "选项卡",
         "isFinish" : false
+      }, {
+        "id" : 13,
+        "title" : "slide",
+        "desc" : "幻灯片",
+        "isFinish" : true
+      },
+      {
+        "id" : 14,
+        "title" : "paging",
+        "desc" : "ajax分页",
+        "isFinish" : true
       }
     ]
   })

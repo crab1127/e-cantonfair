@@ -1,7 +1,7 @@
 //Cookie
 
 define(function(){
-  var decode = decodeURIComponent, 
+  var decode = decodeURIComponent,
       encode = encodeURIComponent,
       Cookie = {
         get : function(name) {
@@ -72,7 +72,7 @@ define(function(){
           i;
 
       for (i = 0; i < cookieLen; i++) {
-        
+
         cookieNameValue = cookieParts[i].match(/([^=]+)=/i);
 
         if (cookieNameValue instanceof Array) {
@@ -110,7 +110,7 @@ define(function(){
     }
   }
 
-  
+
 
   return Cookie
-})
+});

@@ -1,5 +1,5 @@
 'use strict';
- 
+
 module.exports = function (grunt) {
   //加载grunt插件
   require('load-grunt-tasks')(grunt);
@@ -31,11 +31,20 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: '<%= cfec.app %>/static/css/<%= pkg.name %>.css.map'
+          sourceMapFilename: '<%= cfec.app %>/view/css/<%= pkg.name %>.css.map'
         },
         files: {
-          '<%= cfec.app %>/static/css/<%= pkg.name %>.css': '<%= cfec.app %>/static/less/bootstrap.less'
-        }
+          '<%= cfec.app %>/view/css/<%= pkg.name %>.css': '<%= cfec.app %>/view/less/cfec.less'
+        }        
+      },
+      component: {
+          files:  [{
+            expand: true,
+            cwd: '<%= cfec.app %>/view/less/component',
+            src: '*.less',
+            dest: '<%= cfec.app %>/view/css/component',
+            ext: '.css'
+          }]
       }
     },
 
@@ -62,7 +71,7 @@ module.exports = function (grunt) {
                 connect.static('./dev_assets/static')
               ),
               connect.static(appConfig.app)
-            ] 
+            ]
           }
         }
       },
@@ -115,30 +124,6 @@ module.exports = function (grunt) {
       }
     },
 
-    markdown : {
-      all: {
-        files: [{
-          expand: true,
-          src: 'dev/components/component/*/*.md',
-          ext: '.html'
-        }],
-        options: {
-          preCompile: function(src, context) {},
-          postCompile: function(src, context) {},
-          templateContext: {},
-          contextBinder: true,
-          contextBinderMark: '@@@',
-          markdownOptions: {
-            gfm: true,
-            highlight: 'manual',
-            codeLines: {
-              before: '<span>',
-              after: '</span>'
-            }
-          }
-        }
-      }
-    },
 
     md2html: {
       multiple_files: {
@@ -150,7 +135,22 @@ module.exports = function (grunt) {
           ext: '.html'
         }]
       }
+    },
+
+    //
+    watch: {
+      client: {
+        files: ['*.html','css/*.css'],
+        options: {
+          livereload: true
+        }
+      },
+      less: {
+        files: ['<%= cfec.app %>/view/less/**/*.less','<%= cfec.app %>/view/less/*.less'],
+        tasks: 'less'
+      }
     }
+
 
 
   });
@@ -160,14 +160,14 @@ module.exports = function (grunt) {
    * 提供3个自定义任务
    * server - 本地开发
    *  - less编译， 文件监听， 自动刷新， 启动本地服务器
-   *  
+   *
    * build -上线部署
    *  - 请求合并，压缩，校验，加md5戳，发布到指定目录
    *
    * test - 测试代码
    */
   grunt.registerTask('server', 'compile then start a connect web server', function (target) {
-    
+
   });
 
   grunt.registerTask('build', [])
