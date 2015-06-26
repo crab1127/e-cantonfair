@@ -1,5 +1,5 @@
 'use strict';
-
+ 
 module.exports = function (grunt) {
   //加载grunt插件
   require('load-grunt-tasks')(grunt);
