@@ -31,6 +31,6 @@
     destroy: function(){
 
     }
-  })
-  return Base
- })
+  });
+  return Base;
+ });
