@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>select</title>
+	<link rel="stylesheet" href="/dev/view/css/cfec.css">
+	<style>
+	ul,li{
+		list-style: none;
+	}
+	.level{
+		width: 200px;
+		float:left;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="J_input"></div>
+
+	<script src="/components_module/requirejs/require.js"></script>
+	<script>
+	require.config({
+		paths: {
+			'artTemplate': '/components_module/artTemplate/dist/template',
+			'jquery': '/components_module/jquery/jquery',
+			'class': '/dev/components/component/class/class',
+			'base': '/dev/components/component/base/base',
+			'event': '/dev/components/component/event/event',
+			'selectCategory': '/dev/components/component/selectCategory/index'
+		}
+	});
+	require(['jquery', 'selectCategory'], function($, selectCategory) {
+		var a = new selectCategory({
+			id: $('#J_input'),
+      api: ['http://192.168.200.223:8080/seller_center/category/loadIndusCategorys.cf','http://192.168.200.223:8080/seller_center/category/loadRootCategorysByIndusId.cf', 'http://192.168.200.223:8080/seller_center/category/loadCategorysByParentId.cf'],
+      isOneLevel: true
+		});
+    a.on('cateChang', function(id){
+      console.log(a.crumbs);
+    });
+		// console.log(a);
+		// a.on('Text', function(num){
+		// 	if (num > 5) {
+		// 		alert('超过了5个字');
+		// 	}
+		// })
+	});
+	</script>
+</body>
+</html>

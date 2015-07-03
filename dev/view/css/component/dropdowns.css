@@ -37,7 +37,7 @@
 .dropdown-menu .divider {
   *display: none;
   height: 1px;
-  margin: 9px 1px;
+  margin: -0.3em 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -48,7 +48,7 @@
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 1.4em;
   color: #404040;
   text-decoration: none;
   white-space: nowrap;
@@ -132,7 +132,7 @@
   border-style: solid;
   border-width: 5px 0 5px 5px;
   border-left-color: #cccccc;
-  top: 8px;
+  top: -1.3em;
   right: 10px;
 }
 .dropdown-submenu:hover > a:after {

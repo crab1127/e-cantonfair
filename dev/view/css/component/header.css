@@ -1,0 +1,113 @@
+.fl {
+  float: left;
+}
+.con {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background: #f5f5f5;
+}
+.header > .top {
+  width: 1220px;
+  height: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 44px;
+  color: #575757;
+  font-family: "Arial";
+}
+.header > .top .top-welcome {
+  width: 259px;
+  padding-left: 7px;
+  overflow: hidden;
+  float: left;
+}
+.header > .top .sign {
+  width: 931px;
+  float: left;
+}
+.header > .top .sign a {
+  color: #575757;
+  text-decoration: none;
+}
+.header > .top .sigin-col1 {
+  width: 465px;
+  float: left;
+}
+.header > .top .sigin-col1 .icon {
+  color: #cfcfcf;
+}
+.header > .top .sigin-col1 a {
+  padding-right: 24px;
+}
+.header > .top .sigin-col2 {
+  width: 466px;
+  float: left;
+}
+.header > .top .sigin-col2 a {
+  padding-left: 14px;
+}
+.header > .top .sigin-col2 .icon {
+  position: relative;
+  bottom: -5px;
+  color: #ff4200;
+  font-size: 27px;
+  line-height: 40px;
+}
+.header > .top .sigin-col2 .total {
+  color: #ff4200;
+}
+.header > .btm {
+  height: 60px;
+  line-height: 60px;
+  background: url("../images/bg-header.jpg") repeat-x;
+}
+.header > .btm .addr {
+  width: 267px;
+  height: 53px;
+  float: left;
+  text-indent: -999em;
+  overflow: hidden;
+  background: url("../images/header-logo.jpg") no-repeat;
+}
+.header > .btm .nav {
+  position: relative;
+  width: 928px;
+  float: left;
+  overflow: hidden;
+}
+.header > .btm a {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  padding-right: 23px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+}
+.header > .btm i {
+  position: absolute;
+  font-size: 26px;
+  line-height: 10px;
+  color: #fff;
+  top: -3px;
+  left: 4px;
+}
+.footer {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 20px;
+  padding-top: 46px;
+}
+.footer .col-list {
+  float: left;
+  width: 300px;
+}
+.footer .col-list ul {
+  padding-left: 73px;
+}

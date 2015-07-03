@@ -1,0 +1,90 @@
+.footer {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 14px;
+  padding-top: 40px;
+  font-size: 14px;
+  font-family: "Calibri";
+  color: #5c5c5c;
+}
+.footer .col-list {
+  float: left;
+  width: 300px;
+}
+.footer .col-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 73px;
+  font-weight: bold;
+}
+.footer .col-list ul > .title {
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer .col-list ul > li {
+  line-height: 23px;
+}
+.footer .btm {
+  padding-top: 20px;
+  font-weight: bold;
+}
+.footer .btm.text-center {
+  width: 773px;
+  margin: 0 auto;
+}
+.footer .btm .connect-us {
+  float: left;
+  line-height: 32px;
+  height: 32px;
+}
+.footer .btm .connect-us span {
+  padding-right: 12px;
+}
+.footer .btm .col-email,
+.footer .btm .col-page {
+  float: left;
+  line-height: 32px;
+}
+.footer .btm .col-email {
+  width: 232px;
+  padding-left: 41px;
+  float: left;
+}
+.footer .btm .col-page {
+  width: 121px;
+  padding-left: 40px;
+  float: left;
+}
+.footer .btm .icon {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 3px;
+  background: url(../images/sprite.png) no-repeat;
+}
+.footer .btm .icon-media-1,
+.footer .btm .icon-media-2,
+.footer .btm .icon-media-3,
+.footer .btm .icon-media-4 {
+  width: 32px;
+  height: 32px;
+  background-position-y: -164px;
+}
+.footer .btm .icon-media-1 {
+  background-position-x: -5px;
+}
+.footer .btm .icon-media-2 {
+  background-position-x: -37px;
+}
+.footer .btm .icon-media-3 {
+  background-position-x: -69px;
+}
+.footer .btm .icon-media-4 {
+  background-position-x: -101px;
+}
+.footer .btm .copy-right {
+  height: 30px;
+  padding-top: 4px;
+  line-height: 30px;
+  text-align: center;
+}

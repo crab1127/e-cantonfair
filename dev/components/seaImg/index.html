@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{margin: 0;padding: 0; font:12/1.4 arial;}
+    ul,li{list-style: none;margin: 0;padding: 0;}
+    img{border:0;}
+    .cc:after{
+      clear: both;
+      display: block;
+      content: '';
+      height: 0;
+      overflow: hidden;
+    }
+    .seaimg-container{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      background:#222;
+    }
+    .seaimg-container .seaimg-body{
+      position: relative;
+      padding-top:25px;
+    }
+    .seaimg-container .seaimg-body-img img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    .seaimg-container .btn-prev-seaimg{
+      position: absolute;
+      left:0;
+      top:0;
+      width:50%;
+      height: 100%;
+      cursor: url(http://tb2.bdstatic.com/tb/static-album/img/mouseleft.cur),pointer;
+    }
+    .seaimg-container .btn-next-seaimg{
+      position: absolute;
+      right: 0;
+      top:0;
+      width:50%;
+      height: 100%;
+      cursor: url(http://tb2.bdstatic.com/tb/static-album/img/mouseright.cur),pointer;
+    }
+    .seaimg-container .seaimg-nav{
+      height: 100px;
+      position: relative;
+      width:1055px;
+      margin: 0 auto;
+    }
+    .seaimg-container .seaimg-nav-prev{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 20px;
+      height: 80px;
+      background: #999;
+      font-weight: 700;
+      color:#fff;
+      line-height: 80px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .seaimg-container .seaimg-nav-next{
+      position: absolute;
+      right:0;
+      top: 0;
+      width: 20px;
+      height: 80px;
+      line-height: 80px;
+      font-weight: 700;
+      color:#fff;
+      background: #999;
+      text-align: center;
+      cursor: pointer;
+    }
+    .seaimg-container .seaimg-nav-wrap{
+      width:100%;
+      padding: 10px;
+      background: #666;
+      position: relative;
+    }
+    .seaimg-container .seaimg-body-desc{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      line-height: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .seaimg-container .seaimg-nav-main{
+      margin:0 30px;
+      overflow: hidden;
+    }
+    .fr{
+      float: right;
+    }
+    .seaimg-container .seaimg-nav-main ul{
+      position: relative;
+      left: 0;
+    }
+    .seaimg-container .seaimg-nav-main li{float:left;padding: 0 5px;}
+    .seaimg-container .seaimg-nav-main li img{
+      -webkit-box-sizing:border-box;
+      -ms-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+      width:80px; height: 80px;
+    }
+    .seaimg-container .seaimg-nav-main li.active img{
+      border:2px solid #c00;
+    }
+    .seaimg-container .seaimg-page{
+      width: 1000px;
+      margin: 0 auto;
+      color:#ddd;
+    }
+    .seaimg-container .seaimg-page a,
+    .seaimg-container .seaimg-page a:hover{
+      color:#ddd;
+    }
+  </style>
+</head>
+<body>
+<!--   <div class="seaimg-container">
+    <div class="seaimg-body">
+      <div class="seaimg-body-img">
+        <img src="./images/01.jpg" alt="" height="100%">
+        <a href="">查看大图</a>
+      </div>
+      <a class="btn-prev-seaimg"></a>
+      <a class="btn-next-seaimg"></a>
+      <div class="seaimg-body-desc">
+        <div class="fl">标题</div>
+      </div>
+    </div>
+    <div class="seaimg-nav">
+      <div class="seaimg-nav-prev"></div>
+      <div class="seaimg-nav-main">
+        <ul>
+          <li>
+            <img src="./images/01.jpg" alt="" width="100" height="100"></li>
+          <li>
+            <img src="./images/02.jpg" alt="" width="100" height="100"></li>
+          <li>
+            <img src="./images/03.jpg" alt="" width="100" height="100"></li>
+        </ul>
+      </div>
+      <div class="seaimg-nav-next"></div>
+    </div>
+  </div> -->
+  <script src="/components_module/requirejs/require.js"></script>
+  <script>
+  require.config({
+    paths: {
+      'artTemplate': '/components_module/artTemplate/dist/template',
+      'jquery': '/components_module/jquery/jquery',
+      'class': '/dev/components/component/class/class',
+      'base': '/dev/components/component/base/base',
+      'event': '/dev/components/component/event/event',
+      'seaimg': '/dev/components/component/seaimg/seaimg'
+    }
+  });
+  require(['jquery', 'seaimg'], function($, seaimg) {
+    var a = new seaimg({
+      isAutoPlay: true,
+      model:[
+        {'img':'./images/01.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '01'},
+        {'img':'./images/02.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '02'},
+        {'img':'./images/03.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '03'},
+        {'img':'./images/04.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '04'},
+        {'img':'./images/05.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '05'},
+        {'img':'./images/06.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '06'},
+        {'img':'./images/07.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '07'},
+        {'img':'./images/08.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '08'},
+        {'img':'./images/01.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '01'},
+        {'img':'./images/02.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '02'},
+        {'img':'./images/03.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '03'},
+        {'img':'./images/04.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '04'},
+        {'img':'./images/05.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '05'},
+        {'img':'./images/06.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '06'},
+        {'img':'./images/07.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '07'},
+        {'img':'./images/08.jpg', 'smImg': './images/01_sm.jpg', 'width':1577, 'height':2280, 'title': '08'}
+      ]
+    });
+    // console.log(a);
+    // a.on('Text', function(num){
+    //  if (num > 5) {
+    //    alert('超过了5个字');
+    //  }
+    // })
+  });
+  </script>
+</body>
+</html>

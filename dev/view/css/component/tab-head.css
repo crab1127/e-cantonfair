@@ -7,7 +7,7 @@
   padding: 10px 0 0;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 20px;
-  line-height: 35px;
+  line-height: 2.4em;
   zoom: 1;
 }
 .tab-head:before,
@@ -21,19 +21,22 @@
 .tab-head a {
   font-size: 14px;
   color: #404040;
+  padding: 0 15px;
   text-decoration: none;
 }
 .tab-head .tab-tt {
   float: left;
   padding: 0 15px;
   font-size: 14px;
-  line-height: 35px;
+  line-height: 2.4em;
   margin-bottom: 0;
 }
 .tab-head .tab-more {
   float: right;
   margin-left: 10px;
-  padding: 0 15px;
+}
+.tab-head .tab-more a {
+  display: block;
 }
 .tab-head.tab-pullRight > .tab-menu {
   float: right;
@@ -52,7 +55,6 @@
 }
 .tab-head .tab-menu > li a {
   display: block;
-  padding: 0 15px;
   border: 1px solid #d4d4d4;
   border-radius: 4px 4px 0 0;
   text-align: center;
@@ -88,7 +90,7 @@
 .tab-head.tab-small {
   padding: 2.5px 0 0;
   margin-bottom: 5px;
-  line-height: 25px;
+  line-height: 1.4em;
   zoom: 1;
 }
 .tab-head.tab-small:before,
@@ -101,17 +103,21 @@
 }
 .tab-head.tab-small a {
   font-size: 11.9px;
+  padding: 0 5px;
 }
 .tab-head.tab-small .tab-tt {
   float: left;
   padding: 0 5px;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 11.9px;
+  line-height: 1.4em;
   margin-bottom: 0;
 }
 .tab-head.tab-small .tab-more {
   float: right;
   margin-left: 5px;
+}
+.tab-head.tab-small .tab-more a {
+  display: block;
   padding: 0 5px;
 }
 .tab-head.tab-small .tab-menu {
@@ -126,6 +132,5 @@
 }
 .tab-head.tab-small .tab-menu > li a {
   display: block;
-  padding: 0 5px;
   border-radius: 4px 4px 0 0;
 }

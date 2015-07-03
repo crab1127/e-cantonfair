@@ -5,9 +5,12 @@
  */
 @containerCenter:        0 auto;
 @containerWidth:         1200px;
-@layout1Width:           230px;
+@layout1Width:           224px;
 @layout2Width:           230px;
 
+@ladyout1BorderWidth:       1px;
+@ladyout2BorderWidth:       0;
+@ladyoutmainBorderWidth:    0;
 .container{
     width:@containerWidth;
     margin:@containerCenter;
@@ -21,7 +24,7 @@
     float: left;    
   }
   .layout2-main{
-    width: (@containerWidth - @layout1Width);
+    width: (@containerWidth - @layout1Width - (@ladyout1BorderWidth + @ladyoutmainBorderWidth)*2);
     float: left;
   }
 
@@ -31,7 +34,7 @@
     float: left;   
   }
   .layout3-main{
-    width: (@containerWidth - @layout1Width - @layout2Width);
+    width: (@containerWidth - @layout1Width - @layout2Width - (@ladyout1BorderWidth + @ladyoutmainBorderWidth)*2);
     float: left;
   }
    .layout3-side2{

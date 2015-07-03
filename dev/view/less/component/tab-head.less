@@ -13,6 +13,7 @@
   a{
     font-size: @baseFontSize;
     color:@grayDark;
+     padding: @tabHeadTTPadding;
     text-decoration: none;
   }
   .tab-tt {
@@ -25,7 +26,10 @@
   .tab-more{
     float: right;
     margin-left:  @tabHeadBasePadding;
-    padding: @tabHeadTTPadding;
+    //padding: @tabHeadTTPadding;
+    a{
+      display: block;
+    }
   }
   &.tab-pullRight > .tab-menu{
     float:right;
@@ -43,7 +47,7 @@
       a{
         display: block;
         
-        padding: @tabHeadTTPadding;
+       
         border: 1px solid @tabHeadBorder;
         border-radius: @baseBorderRadius @baseBorderRadius 0 0;
         text-align: center;
@@ -74,18 +78,22 @@
   .clearfix();
   a{
     font-size: @fontSizeSmall;
+     padding:  @tabHeadSmallTTPadding;
   }
   .tab-tt {
     float:left;
     padding: @tabHeadSmallTTPadding;
-    font-size:  @baseFontSize;
+    font-size:  @fontSizeSmall;
     line-height: @tabHeadSmallLineHeight;
     margin-bottom:0;
   }
   .tab-more{
     float: right;
     margin-left:  @tabHeadSmallPadding;
-    padding:  @tabHeadSmallTTPadding;
+    a{
+      display: block;
+       padding:  @tabHeadSmallTTPadding;
+    }
   }
   .tab-menu{
     float: left;
@@ -97,7 +105,6 @@
       bottom:-1px;
       a{
         display: block;
-        padding:  @tabHeadSmallTTPadding;
         border-radius: @baseBorderRadius @baseBorderRadius 0 0;
       }
     }

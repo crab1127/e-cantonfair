@@ -1,0 +1,30 @@
+.pointer{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  *width:100%;
+  z-index: 50;
+  text-align: center;
+  line-height: 0;
+  >i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 5px;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+    background: #ccc;
+    &:first-child{
+      margin-left:0;
+    }
+    &.pointer-active{
+      background: #40a1d9;
+    }
+  }
+  &.pointer-right{
+    right:10px;
+    left:auto;
+  }
+}

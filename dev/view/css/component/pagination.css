@@ -4,7 +4,16 @@
  * time: 2015-06-15
  */
 .pagination {
-  margin: 20px 0;
+  margin: 1.4em 0;
+  zoom: 1;
+}
+.pagination:before,
+.pagination:after {
+  display: table;
+  content: " ";
+}
+.pagination:after {
+  clear: both;
 }
 .pagination ul {
   display: inline-block;
@@ -22,6 +31,7 @@
 }
 .pagination ul > li {
   display: inline;
+  float: left;
 }
 .pagination ul > li > a {
   text-decoration: none;
@@ -33,9 +43,8 @@
 }
 .pagination ul > li > a,
 .pagination ul > li > span {
-  float: left;
   padding: 4px 12px;
-  line-height: 20px;
+  line-height: 1.4em;
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
