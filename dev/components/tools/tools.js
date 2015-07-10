@@ -136,13 +136,15 @@ define(function () {
     }
 
     function clone(obj, isDeep) {
-        var ret;
+        var ret, fn;
         if (!(isArray(obj) || isObject(obj)))
             return obj;
 
-        ret = obj.constructor === Array ? [] : {};
+        ret = obj.constructor === Array
+            ? ( ( fn = arrayEach ) && [])
+            : ( ( fn = each ) && {} );
 
-        each(obj, function (key, val) {
+        fn(obj, function (key, val) {
             ret[key] = isDeep ? clone(val) : val;
         });
 
@@ -252,8 +254,6 @@ define(function () {
 
         clone: function (obj, isDeep) {
             var ret;
-
-            if (!isObject(obj)) return obj;
 
             if (isObject(JSON)
                 && isFunction(JSON.stringify)

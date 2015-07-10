@@ -42,29 +42,39 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
         this.len = this.model.length;
 
         $('body').on('click', '.btn-prev-seaimg', function(){
-
+          clearInterval(self.tiemr);
           if(self.dataIndex === 0){
-            alert('第一张图片');
             return false;
-          }
-          if (self.dataIndex > 5 && (self.dataIndex < self.len - 5)) {
-            var distance = parseInt($('body').find('.seaimg-nav-main ul').css('left')) + self.navItmeWidth;
-            self.navSlide(distance)
           }
           self.dataIndex = self.dataIndex - 1;
+          var index = self.dataIndex,width;
+          if(self.dataIndex > 5 && (self.dataIndex < self.len - 6) ){
+            width = -self.navItmeWidth * (index - 5);
+          } else if( self.dataIndex <= 5) {
+            width = 0;
+          } else if(self.dataIndex >= (self.len - 6)) {
+            width = -self.navItmeWidth * (self.len - 11);
+          }
+          self.navSlide(width);
           self.slideTo();
+          self.autoPlay();
         }).on('click', '.btn-next-seaimg', function(){
-
+          clearInterval(self.tiemr);
           if(self.dataIndex === self.len - 1){
-            alert('最后一张图片');
             return false;
           }
-          if (self.dataIndex > 4 && (self.dataIndex < self.len - 6)) {
-            var distance = parseInt($('body').find('.seaimg-nav-main ul').css('left')) - self.navItmeWidth;
-            self.navSlide(distance);
-          }
           self.dataIndex = self.dataIndex + 1;
+          var index = self.dataIndex,width;
+          if(self.dataIndex > 5 && (self.dataIndex < self.len - 6) ){
+            width = -self.navItmeWidth * (index - 5);
+          } else if( self.dataIndex <= 5) {
+            width = 0;
+          } else if(self.dataIndex >= (self.len - 6)) {
+            width = -self.navItmeWidth * (self.len - 11);
+          }
+          self.navSlide(width);
           self.slideTo();
+          self.autoPlay();
         }).on('click', '.seaimg-nav-main li', function() {
           //直接点击菜单
           var index = $(this).index(),width;
@@ -79,6 +89,7 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
           }
           self.navSlide(width);
           self.slideTo();
+
         }).on('click', '.seaimg-nav-next', function(){
           var index = self.dataIndex,
               left = parseInt($('body').find('.seaimg-nav-main ul').css('left')),
@@ -88,11 +99,14 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
 
           if ((navWidth - navW - Math.abs(left)) >= navW) {
             w = navW;
-          } else {
+          } else if((navWidth - navW - Math.abs(left)) <= 0){
+            w = navWidth - navW
+          }else{
             w = navWidth - navW - Math.abs(left)
           }
           self.navSlide(-w);
-
+          $('body').find('.seaimg-nav-prev').show();
+          $('body').find('.seaimg-nav-next').show();
         }).on('click', '.seaimg-nav-prev', function(){
           //获取
           var index = self.dataIndex,
@@ -107,14 +121,23 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
             w = 0;
           }
           self.navSlide(-w);
+          $('body').find('.seaimg-nav-prev').show();
+          $('body').find('.seaimg-nav-next').show();
         });
+
         $(window).on('resize', function(){
           setTimeout(self.size(),100)
         });
+
+        this.autoPlay();
+      },
+      autoPlay: function() {
+        var time = this.get('time') || 8000;
         if(this.get('isAutoPlay')) {
-          setInterval(function(){
+          clearInterval(this.tiemr);
+          this.tiemr = setInterval(function(){
             $('.btn-next-seaimg').trigger('click');
-          }, 8000)
+          }, time)
         }
       },
       //绚烂函数
@@ -128,7 +151,8 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
         $('body').find('.seaimg-body-img img').attr('src', this.model[0].img)
         this.size();
 
-        this.initNav()
+        this.initNav();
+        this.show();
 
       },
       //初次加载图片
@@ -218,6 +242,7 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
         $('body').find('.seaimg-body-img img').attr('src', this.model[this.dataIndex].img);
         this.size();
         this._preloadImg(this.dataIndex);
+        this.show();
         //高亮
         $('body').find('.seaimg-nav li').removeClass('active').eq(this.dataIndex).addClass('active');
         //分也
@@ -234,7 +259,21 @@ define('seaimg', ['jquery', 'event', 'artTemplate'], function($, Event, artTempl
       },
       //菜单滑动
       navSlide: function(width) {
-        $('body').find('.seaimg-nav-main ul').animate({left:width}, 600);
+        clearInterval(this.timer)
+        this.timer = setTimeout(function(){
+          $('body').find('.seaimg-nav-main ul').animate({left:width}, 600);
+        },2)
+      },
+      show: function() {
+        var dataIndex = this.dataIndex;
+        if (dataIndex <= 5) {
+          $('body').find('.seaimg-nav-prev').hide();
+        } else if(dataIndex >= this.len - 6) {
+          $('body').find('.seaimg-nav-next').hide();
+        } else{
+          $('body').find('.seaimg-nav-prev').show();
+          $('body').find('.seaimg-nav-next').show();
+        }
       }
     })
     //help

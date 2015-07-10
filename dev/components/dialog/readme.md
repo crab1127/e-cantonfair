@@ -59,7 +59,15 @@
   * `box` : 该容器主要用于css设计
   * `header` : 头部
   * `body` : 主体
-  * `footer` : 底部  
+  * `footer` : 底部
+  
+><div style="border:1px dotted #0cc;text-align:center;">
+>   <div>header</div>
+>   <div style="border-top:1px dotted #ccc;padding:50px 0;">body</div>
+>   <div style="border-top:1px dotted #ccc;">footer</div>   
+><div>
+
+#### Notes: dialog和box在最外层，html结构为：.dialog > .box > .header + .body + .footer
 
 + `customDom`是开放给开发者配置，__ 每一个配置参数，默认都生成的是`div`元素。后期版本中会开放一个属性，用于设置`tagName` __。
   * header ： `{attr : 'class="aa" data-tt="tt"', content : "", event:{"click" : function(){//do sth}}}`
@@ -112,6 +120,30 @@ events对象在该版本中，并没有收集用户定义的event。主要是因
       }
       return ret;
   }
+```
+* 调用方法
+
+```
+    require(['dialog'], function( dialog ){
+        var Dialog = dialog.Dialog,
+            $ = dialog.$;
+        var conf = {
+            parent : $('.dialog'),
+            customConf:{
+                header : {
+                    attr : "class=\"a\"",                   // 属性
+                    // content可以为htmp碎片，Dom节点
+                    content : "123",                        // 内容
+                    event : { click, function(){//do sth}}  // 事件
+                },
+                body : {},
+                footer : {}
+            }
+        };
+        var dialog = new Dialog(conf);
+        dialog.init();  // 初始化组件，生成html、绑定事件，执行回调等
+        dialog.show();  // 显示组件
+    });
 ```
 
 * 开放API

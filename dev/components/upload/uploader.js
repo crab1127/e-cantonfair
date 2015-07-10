@@ -47,7 +47,9 @@ define(['swfobject'], function(swfobject){
         };
         this.config = {};
         this.init(conf || {});
-        this.init = null;
+        // 如果用户提交之后，页面返回数据失败，则需要重新生成一个iframe，用以下一次提交
+        // 所以init不能置为空
+        // this.init = null;
     }
 
     Upload.prototype.init = function(conf){
@@ -76,6 +78,10 @@ define(['swfobject'], function(swfobject){
                 "error" : function(data){
                     console.log('erorr debug');
                     _this.config.error(Upload.getResponsText(_this.cache.doms.iframe));
+                    // 出现错误，需要删除iframe，并重新生成一个新的
+                    // 用于用户再次提交
+                    Upload.removeDom( _this.config.parent, {"iframe" : _doms.iframe} );
+                    _this.init({});
                 }
             }
         });

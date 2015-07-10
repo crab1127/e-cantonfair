@@ -14,17 +14,19 @@ require.config({
     'highcharts': 'http://crab.e-cantonfair.com:3333/components_module/highcharts/highcharts',
 
     //自己的模块
-    'uploader': 'http://crab.e-cantonfair.com:3333/dev/components/component/upload/uploader',
-    'dialog': 'http://crab.e-cantonfair.com:3333/dev/components/component/dialog/dialog',
-    'swfobject': 'http://crab.e-cantonfair.com:3333/dev/components/component/upload/swfobject',
-    'paging': 'http://crab.e-cantonfair.com:3333/dev/components/component/paging/paging',
-    'cookie': 'http://crab.e-cantonfair.com:3333/dev/components/component/cookie/cookie',
-    'tools': 'http://crab.e-cantonfair.com:3333/dev/components/component/tools/tools',
-    'md5': 'http://crab.e-cantonfair.com:3333/dev/components/component/md5/md5',
-    'class': 'http://crab.e-cantonfair.com:3333/dev/components/component/class/class',
-    'base': 'http://crab.e-cantonfair.com:3333/dev/components/component/base/base',
-    'event': 'http://crab.e-cantonfair.com:3333/dev/components/component/event/event',
-    'selectCategory':'http://crab.e-cantonfair.com:3333/dev/components/component/selectCategory/index'
+    'uploader': 'http://crab.e-cantonfair.com:3333/dev/components/upload/uploader',
+    'dialog': 'http://crab.e-cantonfair.com:3333/dev/components/dialog/dialog',
+    'swfobject': 'http://crab.e-cantonfair.com:3333/dev/components/upload/swfobject',
+    'paging': 'http://crab.e-cantonfair.com:3333/dev/components/paging/paging',
+    'cookie': 'http://crab.e-cantonfair.com:3333/dev/components/cookie/cookie',
+    'tools': 'http://crab.e-cantonfair.com:3333/dev/components/tools/tools',
+    'md5': 'http://crab.e-cantonfair.com:3333/dev/components/md5/md5',
+    'class': 'http://crab.e-cantonfair.com:3333/dev/components/class/class',
+    'base': 'http://crab.e-cantonfair.com:3333/dev/components/base/base',
+    'event': 'http://crab.e-cantonfair.com:3333/dev/components/event/event',
+    'selectCategory':'http://crab.e-cantonfair.com:3333/dev/components/selectCategory/index',
+    'webupload': 'http://crab.e-cantonfair.com:3333/dev/components/webUpload/WebUploader',
+    'calendar': 'http://crab.e-cantonfair.com:3333/dev/components/calendar/laydate.dev'
   },
   shim: {
     jquery: {
